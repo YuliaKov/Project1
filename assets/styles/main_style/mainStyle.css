@@ -1,1 +1,69 @@
-/*# sourceMappingURL=mainStyle.css.map */
+.header-top {
+  padding: 24px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-top .header-wrapper {
+  display: flex;
+}
+.header-top .header-wrapper .header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-top .header-wrapper .header-nav .header-nav__items {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.header-top .header-wrapper .header-nav .header-nav__items .header-nav__link {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(193, 211, 222);
+  text-decoration: none;
+}
+.header-top .header-wrapper .header-nav .header-nav__items .header-nav__link:hover {
+  color: rgb(255, 255, 255);
+}
+.header-top .header-wrapper .header-top__buttons {
+  margin-left: 60px;
+}
+.header-top .header-wrapper .header-top__buttons .header-top__connect {
+  margin-right: 24px;
+}
+.header-top .header-wrapper .header-top__buttons .header-top__button {
+  padding: 14px 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(193, 211, 222);
+  background-color: transparent;
+  border: 1px solid rgb(193, 211, 222);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.header-top .header-wrapper .header-top__buttons .header-top__button:hover {
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 100%;
+  height: 896px;
+  background-image: url(../../images/main_img/Header_backgr_main.jpg);
+  background-color: rgb(57, 58, 86);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}/*# sourceMappingURL=mainStyle.css.map */
