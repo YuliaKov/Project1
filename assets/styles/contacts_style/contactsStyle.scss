@@ -1,2 +1,39 @@
 @import '../vars';
 @import '../templates';
+
+.header {
+  max-width: 100%;
+  height: 496px;
+  background-image: url(../../images/contacts_img/Header_backgr_contacts.jpg);
+  background-color: rgb(57, 58, 86);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-top {
+  @extend %header-top;
+}
+
+.title-wrapper {
+  max-width: 1400px;
+  margin: 121px auto;
+}
+
+.header-title {
+  @extend %header-title;
+}
+
+.header-title__contacts {
+  max-width: 440px;
+}
+
+.footer-contacts {
+  margin-top: 80px;
+  margin-bottom: 104px;
+}
+
+.footer-container {
+  max-width: 1400px;
+}

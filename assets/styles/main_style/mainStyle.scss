@@ -24,3 +24,129 @@
 .header-top {
   @extend %header-top;
 }
+
+.header-content-wrapper {
+  max-width: 1400px;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  max-width: 679px;
+}
+
+.header-subtitle {
+  @include subtitle($color_first);
+  margin-bottom: 28px;
+}
+
+.header-title {
+  @extend %header-title;
+  margin-bottom: 28px;
+}
+
+.header-text {
+  @include text($font_add, $color_first);
+}
+
+.form {
+  @extend %form;
+}
+
+.content-principles {
+  background-color: $background-color_first;
+}
+
+.content-principles__wrapper {
+  @extend %wrapper_position;
+  display: flex;
+}
+
+.content-principles__img {
+  max-width: 680px;
+  margin-right: 39px;
+}
+
+.content-principles__subtitle {
+  @include subtitle($color_second);
+  margin-bottom: 40px;
+}
+
+.content-principles__text-main {
+  @include text($font_add, $color_second);
+}
+
+.content-principles__text-add {
+  padding: 30px;
+  margin: 40px 0;
+  background-color: $background-color_add;
+  border: 1px solid $color_nav_form;
+  border-radius: 12px;
+  @include text($font_main, $color_second);
+}
+.content-advertising {
+  background-color: $color_third;
+}
+
+.content-advertising__wrapper {
+  @extend %wrapper_position;
+}
+
+.content-advertising__main-text {
+  @include subtitle($color_first);
+  text-align: center;
+}
+
+.content-advertising__items {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  column-gap: 40px;
+  row-gap: 24px;
+  justify-content: center;
+}
+
+.content-advertising__logo-google {
+  max-width: 75px;
+}
+
+.content-advertising__logo-social {
+  border-top: 1px solid $color-border;
+  display: inline-block;
+  padding-top: 40px;
+}
+
+.content-advertising__logo-fb {
+  margin-right: 12px;
+}
+
+.content-advertising__subtitle {
+  color: $color_first;
+  font-family: $font_main;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.content-advertising__text {
+  @include text($font_main, $color_first);
+  margin-bottom: 32px;
+}
+
+.content-advertising__button {
+  @extend %btn;
+  border: none;
+  color: $color_first;
+  background-color: $color_form-button;
+  max-width: 279px;
+  max-height: 60px;
+  padding: 18px 30px 18px 40px;
+  vertical-align: middle;
+  &::after {
+    content: url(../../images/main_img/arrow_wh.svg);
+    max-width: 12px;
+    margin-left: 20px;
+  }
+}

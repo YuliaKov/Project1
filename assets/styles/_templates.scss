@@ -1,3 +1,12 @@
+%btn {
+  font-family: $font_main;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
 %header-top {
   padding: 24px 30px;
   display: flex;
@@ -32,14 +41,10 @@
 
       .header-top__button {
         padding: 14px 24px;
-        font-family: $font_main;
-        font-size: 16px;
-        font-weight: 700;
         color: $color_nav_form;
         background-color: transparent;
         border: 1px solid $color_nav_form;
-        border-radius: 12px;
-        cursor: pointer;
+        @extend %btn;
       }
 
       .header-top__button:hover {
@@ -48,4 +53,122 @@
       }
     }
   }
+}
+
+%header-title {
+  font-family: $font_main;
+  color: $color_first;
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 79px;
+}
+
+@mixin subtitle($color) {
+  font-family: $font_main;
+  color: $color;
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+@mixin text($font-family, $color) {
+  font-family: $font-family;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: $color;
+}
+
+@mixin form-text($font-weight, $color) {
+  font-family: $font_main;
+  font-size: 16px;
+  font-weight: $font-weight;
+  line-height: 24px;
+  color: $color;
+}
+
+%form-input {
+  border: 2px solid $color_nav_form;
+  border-radius: 12px;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+%form {
+  width: 680px;
+  height: 640px;
+  padding: 60px;
+  background-color: $background-color_third;
+  border-radius: 12px;
+  .form-title {
+    @include subtitle($color_first);
+    margin-bottom: 40px;
+  }
+  .form-item {
+    @extend %form-input;
+    @include form-text(400, $color_nav_form);
+    width: 560px;
+    height: 60px;
+    padding-left: 32px;
+    &::placeholder {
+      color: $color_nav_form;
+    }
+  }
+  .form-message {
+    @extend %form-input;
+    @include form-text(400, $color_nav_form);
+    width: 560px;
+    height: 120px;
+    padding-left: 32px;
+    padding-top: 18px;
+    &::placeholder {
+      color: $color_nav_form;
+    }
+  }
+  .form-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-button {
+      @extend %btn;
+      @include form-text(700, $color_form-button);
+      text-align: start;
+      flex-basis: 208px;
+      height: 60px;
+      margin-right: 20px;
+      border: none;
+      padding: 18px 42px;
+      &::after {
+        content: url(../../images/Header_footer_img/arrow.svg);
+        margin-left: 22px;
+      }
+    }
+    .form-checkbox {
+      flex-basis: 332px;
+      display: flex;
+      align-items: center;
+      .checkbox-item {
+        @extend %form-input;
+        width: 20px;
+        height: 20px;
+      }
+      .checkbox-text {
+        flex-grow: 0;
+        flex-basis: 262px;
+        margin-left: 12px;
+        @include form-text(400, $color_nav_form);
+        .checkbox-link {
+          color: inherit;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+%wrapper_position {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 0;
 }
