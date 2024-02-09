@@ -29,11 +29,6 @@
   max-width: 440px;
 }
 
-.footer-contacts {
-  margin-top: 80px;
-  margin-bottom: 104px;
-}
-
-.footer-container {
-  max-width: 1400px;
+.footer {
+  @extend %footer;
 }

@@ -1,4 +1,4 @@
-.header-top .header-wrapper .header-top__buttons .header-top__button {
+.footer .footer__wrapper .footer-content .footer-form .form-items .form-button, .header-top .header-wrapper .header-top__buttons .header-top__button {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -59,6 +59,200 @@
   line-height: 79px;
 }
 
+.footer .footer__wrapper .footer-content .footer-form .form-items .form-checkbox .checkbox-item, .footer .footer__wrapper .footer-content .footer-form .form-message, .footer .footer__wrapper .footer-content .footer-form .form-item {
+  border: 2px solid rgb(193, 211, 222);
+  border-radius: 12px;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+.footer .footer__wrapper .footer-content .footer-form {
+  width: 680px;
+  padding: 60px;
+  background-color: rgb(55, 111, 255);
+  border-radius: 12px;
+}
+.footer .footer__wrapper .footer-content .footer-form .form-title {
+  font-family: "Inter", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+.footer .footer__wrapper .footer-content .footer-form .form-item {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(193, 211, 222);
+  width: 560px;
+  height: 60px;
+  padding-left: 32px;
+}
+.footer .footer__wrapper .footer-content .footer-form .form-item::-moz-placeholder {
+  color: rgb(193, 211, 222);
+}
+.footer .footer__wrapper .footer-content .footer-form .form-item::placeholder {
+  color: rgb(193, 211, 222);
+}
+.footer .footer__wrapper .footer-content .footer-form .form-message {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(193, 211, 222);
+  width: 560px;
+  height: 120px;
+  padding-left: 32px;
+  padding-top: 18px;
+}
+.footer .footer__wrapper .footer-content .footer-form .form-message::-moz-placeholder {
+  color: rgb(193, 211, 222);
+}
+.footer .footer__wrapper .footer-content .footer-form .form-message::placeholder {
+  color: rgb(193, 211, 222);
+}
+.footer .footer__wrapper .footer-content .footer-form .form-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer__wrapper .footer-content .footer-form .form-items .form-button {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: rgb(55, 111, 255);
+  text-align: start;
+  flex-basis: 208px;
+  height: 60px;
+  margin-right: 20px;
+  border: none;
+  padding: 18px 42px;
+}
+.footer .footer__wrapper .footer-content .footer-form .form-items .form-button::after {
+  content: url(../../images/Header_footer_img/arrow.svg);
+  margin-left: 22px;
+}
+.footer .footer__wrapper .footer-content .footer-form .form-items .form-checkbox {
+  flex-basis: 332px;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__wrapper .footer-content .footer-form .form-items .form-checkbox .checkbox-item {
+  width: 20px;
+  height: 20px;
+}
+.footer .footer__wrapper .footer-content .footer-form .form-items .form-checkbox .checkbox-text {
+  flex-grow: 0;
+  flex-basis: 262px;
+  margin-left: 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(193, 211, 222);
+}
+.footer .footer__wrapper .footer-content .footer-form .form-items .form-checkbox .checkbox-text .checkbox-link {
+  color: inherit;
+  cursor: pointer;
+}
+
+.footer .footer__wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.footer {
+  background-color: rgb(237, 244, 250);
+}
+.footer .footer__wrapper .footer-content {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+.footer .footer__wrapper .footer-content .footer-contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  gap: 40px;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-logo {
+  grid-column: 1/3;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__tel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__tel-num {
+  font-family: "Inter", sans-serif;
+  color: rgb(55, 111, 255);
+  font-size: 26px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__tel-second {
+  align-self: self-end;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__text {
+  color: rgb(139, 155, 171);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__email {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__email-adress {
+  color: rgb(55, 111, 255);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__adress {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__adress-text {
+  color: rgb(57, 58, 86);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__map {
+  grid-column: 1/3;
+  height: 320px;
+  background-image: url(../../images/Header_footer_img/map.jpg);
+  background-position: center;
+}
+.footer .footer__wrapper .footer-content .footer-form .footer-form__title {
+  font-family: "Inter", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+.footer .footer__wrapper .footer-content .footer-form .form__subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+}
+
 .header {
   max-width: 100%;
   height: 496px;
@@ -77,13 +271,4 @@
 
 .header-title__contacts {
   max-width: 440px;
-}
-
-.footer-contacts {
-  margin-top: 80px;
-  margin-bottom: 104px;
-}
-
-.footer-container {
-  max-width: 1400px;
 }/*# sourceMappingURL=contactsStyle.css.map */

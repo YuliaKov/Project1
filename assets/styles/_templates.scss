@@ -3,7 +3,6 @@
   font-size: 16px;
   font-weight: 700;
   border-radius: 12px;
-
   cursor: pointer;
 }
 
@@ -96,7 +95,6 @@
 
 %form {
   width: 680px;
-  height: 640px;
   padding: 60px;
   background-color: $background-color_third;
   border-radius: 12px;
@@ -171,4 +169,159 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 80px 0;
+}
+
+%content-clients {
+  .content-clients__wrapper {
+    @extend %wrapper_position;
+    .content-clients__subtitle {
+      @include subtitle($color_second);
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .content-clients__items {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, auto);
+      place-items: center;
+      margin-bottom: 80px;
+      .content-clients_item {
+        width: 264px;
+        height: 111px;
+        border: 2px solid $color_nav_form;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .content-clients_img {
+          max-width: 210px;
+          max-height: 105px;
+        }
+      }
+    }
+    .content-call {
+      background-color: $color_form-button;
+      border-radius: 12px;
+      padding-top: 60px;
+      padding-left: 60px;
+      padding-bottom: 60px;
+      display: flex;
+      align-items: center;
+      gap: 42px;
+      .content-call__description {
+        flex-basis: 40%;
+        .content-call__subtitle {
+          @include subtitle($color_first);
+          margin-bottom: 40px;
+        }
+
+        .content-call__text {
+          font-family: $font_main;
+          color: $color_first;
+          font-size: 26px;
+          font-weight: 400;
+        }
+      }
+      .content-call__tel {
+        font-family: $font_main;
+        font-size: 68px;
+        font-weight: 700;
+        color: $color_first;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+%footer {
+  background-color: $background-color_first;
+  .footer__wrapper {
+    @extend %wrapper_position;
+    // padding: 80px auto 124px;
+    .footer-content {
+      display: grid;
+      gap: 40px;
+      grid-template-columns: 1fr 1fr;
+      .footer-contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 40px;
+        .footer-logo {
+          grid-column: 1/3;
+        }
+        .footer-contacts__tel {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          justify-content: space-between;
+        }
+        .footer-contacts__tel-num {
+          font-family: $font_main;
+          color: $color_form-button;
+          font-size: 26px;
+          font-weight: 600;
+          text-decoration: underline;
+        }
+        .footer-contacts__tel-second {
+          align-self: self-end;
+        }
+
+        .footer-contacts__text {
+          color: $color-border;
+          font-family: $font_main;
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .footer-contacts__email {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          justify-content: flex-start;
+        }
+
+        .footer-contacts__email-adress {
+          color: $color_form-button;
+          font-family: $font_main;
+          font-size: 20px;
+          font-weight: 600;
+          text-decoration: underline;
+        }
+
+        .footer-contacts__adress {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          justify-content: flex-start;
+        }
+        .footer-contacts__adress-text {
+          color: $color_third;
+          font-family: $font_main;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 28px;
+        }
+
+        .footer-contacts__map {
+          grid-column: 1/3;
+          height: 320px;
+          background-image: url(../../images/Header_footer_img/map.jpg);
+          background-position: center;
+        }
+      }
+      .footer-form {
+        @extend %form;
+        .footer-form__title {
+          @include subtitle($color_first);
+          margin-bottom: 24px;
+        }
+
+        .form__subtitle {
+          @include text($font_main, $color_first);
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
 }

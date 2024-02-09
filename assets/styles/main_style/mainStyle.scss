@@ -143,10 +143,17 @@
   max-width: 279px;
   max-height: 60px;
   padding: 18px 30px 18px 40px;
-  vertical-align: middle;
   &::after {
     content: url(../../images/main_img/arrow_wh.svg);
     max-width: 12px;
     margin-left: 20px;
   }
+}
+
+.content-clients {
+  @extend %content-clients;
+}
+
+.footer {
+  @extend %footer;
 }

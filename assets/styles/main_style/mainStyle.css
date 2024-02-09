@@ -1,4 +1,4 @@
-.content-advertising__button, .form .form-items .form-button, .header-top .header-wrapper .header-top__buttons .header-top__button {
+.content-advertising__button, .form .form-items .form-button, .footer .footer__wrapper .footer-content .footer-form .form-items .form-button, .header-top .header-wrapper .header-top__buttons .header-top__button {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -59,21 +59,20 @@
   line-height: 79px;
 }
 
-.form .form-items .form-checkbox .checkbox-item, .form .form-message, .form .form-item {
+.form .form-items .form-checkbox .checkbox-item, .footer .footer__wrapper .footer-content .footer-form .form-items .form-checkbox .checkbox-item, .form .form-message, .footer .footer__wrapper .footer-content .footer-form .form-message, .form .form-item, .footer .footer__wrapper .footer-content .footer-form .form-item {
   border: 2px solid rgb(193, 211, 222);
   border-radius: 12px;
   background-color: transparent;
   margin-bottom: 20px;
 }
 
-.form {
+.form, .footer .footer__wrapper .footer-content .footer-form {
   width: 680px;
-  height: 640px;
   padding: 60px;
   background-color: rgb(55, 111, 255);
   border-radius: 12px;
 }
-.form .form-title {
+.form .form-title, .footer .footer__wrapper .footer-content .footer-form .form-title {
   font-family: "Inter", sans-serif;
   color: rgb(255, 255, 255);
   font-size: 38px;
@@ -81,7 +80,7 @@
   line-height: 40px;
   margin-bottom: 40px;
 }
-.form .form-item {
+.form .form-item, .footer .footer__wrapper .footer-content .footer-form .form-item {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -91,13 +90,13 @@
   height: 60px;
   padding-left: 32px;
 }
-.form .form-item::-moz-placeholder {
+.form .form-item::-moz-placeholder, .footer .footer__wrapper .footer-content .footer-form .form-item::-moz-placeholder {
   color: rgb(193, 211, 222);
 }
-.form .form-item::placeholder {
+.form .form-item::placeholder, .footer .footer__wrapper .footer-content .footer-form .form-item::placeholder {
   color: rgb(193, 211, 222);
 }
-.form .form-message {
+.form .form-message, .footer .footer__wrapper .footer-content .footer-form .form-message {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -108,18 +107,18 @@
   padding-left: 32px;
   padding-top: 18px;
 }
-.form .form-message::-moz-placeholder {
+.form .form-message::-moz-placeholder, .footer .footer__wrapper .footer-content .footer-form .form-message::-moz-placeholder {
   color: rgb(193, 211, 222);
 }
-.form .form-message::placeholder {
+.form .form-message::placeholder, .footer .footer__wrapper .footer-content .footer-form .form-message::placeholder {
   color: rgb(193, 211, 222);
 }
-.form .form-items {
+.form .form-items, .footer .footer__wrapper .footer-content .footer-form .form-items {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.form .form-items .form-button {
+.form .form-items .form-button, .footer .footer__wrapper .footer-content .footer-form .form-items .form-button {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -132,20 +131,20 @@
   border: none;
   padding: 18px 42px;
 }
-.form .form-items .form-button::after {
+.form .form-items .form-button::after, .footer .footer__wrapper .footer-content .footer-form .form-items .form-button::after {
   content: url(../../images/Header_footer_img/arrow.svg);
   margin-left: 22px;
 }
-.form .form-items .form-checkbox {
+.form .form-items .form-checkbox, .footer .footer__wrapper .footer-content .footer-form .form-items .form-checkbox {
   flex-basis: 332px;
   display: flex;
   align-items: center;
 }
-.form .form-items .form-checkbox .checkbox-item {
+.form .form-items .form-checkbox .checkbox-item, .footer .footer__wrapper .footer-content .footer-form .form-items .form-checkbox .checkbox-item {
   width: 20px;
   height: 20px;
 }
-.form .form-items .form-checkbox .checkbox-text {
+.form .form-items .form-checkbox .checkbox-text, .footer .footer__wrapper .footer-content .footer-form .form-items .form-checkbox .checkbox-text {
   flex-grow: 0;
   flex-basis: 262px;
   margin-left: 12px;
@@ -155,15 +154,168 @@
   line-height: 24px;
   color: rgb(193, 211, 222);
 }
-.form .form-items .form-checkbox .checkbox-text .checkbox-link {
+.form .form-items .form-checkbox .checkbox-text .checkbox-link, .footer .footer__wrapper .footer-content .footer-form .form-items .form-checkbox .checkbox-text .checkbox-link {
   color: inherit;
   cursor: pointer;
 }
 
-.content-advertising__wrapper, .content-principles__wrapper {
+.content-advertising__wrapper, .content-principles__wrapper, .footer .footer__wrapper, .content-clients .content-clients__wrapper {
   max-width: 1400px;
   margin: 0 auto;
   padding: 80px 0;
+}
+
+.content-clients .content-clients__wrapper .content-clients__subtitle {
+  font-family: "Inter", sans-serif;
+  color: rgb(36, 42, 86);
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.content-clients .content-clients__wrapper .content-clients__items {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  place-items: center;
+  margin-bottom: 80px;
+}
+.content-clients .content-clients__wrapper .content-clients__items .content-clients_item {
+  width: 264px;
+  height: 111px;
+  border: 2px solid rgb(193, 211, 222);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-clients .content-clients__wrapper .content-clients__items .content-clients_item .content-clients_img {
+  max-width: 210px;
+  max-height: 105px;
+}
+.content-clients .content-clients__wrapper .content-call {
+  background-color: rgb(55, 111, 255);
+  border-radius: 12px;
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+.content-clients .content-clients__wrapper .content-call .content-call__description {
+  flex-basis: 40%;
+}
+.content-clients .content-clients__wrapper .content-call .content-call__description .content-call__subtitle {
+  font-family: "Inter", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+.content-clients .content-clients__wrapper .content-call .content-call__description .content-call__text {
+  font-family: "Inter", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  font-weight: 400;
+}
+.content-clients .content-clients__wrapper .content-call .content-call__tel {
+  font-family: "Inter", sans-serif;
+  font-size: 68px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: rgb(237, 244, 250);
+}
+.footer .footer__wrapper .footer-content {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+.footer .footer__wrapper .footer-content .footer-contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  gap: 40px;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-logo {
+  grid-column: 1/3;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__tel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__tel-num {
+  font-family: "Inter", sans-serif;
+  color: rgb(55, 111, 255);
+  font-size: 26px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__tel-second {
+  align-self: self-end;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__text {
+  color: rgb(139, 155, 171);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__email {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__email-adress {
+  color: rgb(55, 111, 255);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__adress {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__adress-text {
+  color: rgb(57, 58, 86);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__map {
+  grid-column: 1/3;
+  height: 320px;
+  background-image: url(../../images/Header_footer_img/map.jpg);
+  background-position: center;
+}
+.footer .footer__wrapper .footer-content .footer-form .footer-form__title {
+  font-family: "Inter", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+.footer .footer__wrapper .footer-content .footer-form .form__subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
 }
 
 * {
@@ -323,7 +475,6 @@
   max-width: 279px;
   max-height: 60px;
   padding: 18px 30px 18px 40px;
-  vertical-align: middle;
 }
 .content-advertising__button::after {
   content: url(../../images/main_img/arrow_wh.svg);
