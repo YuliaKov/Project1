@@ -55,7 +55,9 @@
 }
 
 .content-principles {
-  background-color: $background-color_first;
+  background-image: url(../../images/Header_footer_img/bg-img-net.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content-principles__wrapper {
@@ -132,7 +134,7 @@
 
 .content-advertising__text {
   @include text($font_main, $color_first);
-  margin-bottom: 32px;
+  margin-bottom: 8px;
 }
 
 .content-advertising__button {
