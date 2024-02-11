@@ -1,2 +1,183 @@
 @import '../vars';
 @import '../templates';
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.header-top {
+  @extend %header-top;
+}
+.header {
+  max-width: 100%;
+  height: 496px;
+  background-image: url(../../images/about_img/Header_backgr_about.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*Название страницы и ее описание*/
+  .header-title {
+    margin-left: 14%;
+    padding-top: 118.5px;
+    max-width: 29%;
+    .header-title__title {
+      font-family: $font_main;
+      color: rgb(255, 255, 255);
+      font-size: 68px;
+      font-weight: 900;
+      line-height: 79px;
+      margin: 0;
+      padding-bottom: 28px;
+    }
+    .header-title__description {
+      font-family: $font_add;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+}
+/*Основная статья*/
+.content {
+  background-color: $background-color_first;
+  padding: 80px 14%;
+  display: flex;
+  flex-direction: column;
+  min-height: 688px;
+  justify-content: space-around;
+  .content__title {
+    color: rgb(36, 42, 86);
+    font-family: $font_main;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .content__list {
+    @extend %normal-text;
+    color: $background-color_second;
+    ul {
+      list-style: inside;
+    }
+  }
+  .content__important {
+    @extend %normal-text;
+    color: $background-color_second;
+    /*Рамка*/
+    border: 1px solid rgb(193, 211, 222);
+    border-radius: 12px;
+    background: rgb(251, 247, 241);
+    padding: 30px;
+  }
+  .content__remark {
+    @extend %normal-text;
+    color: $background-color_second;
+  }
+}
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  padding: 80px 14%;
+  column-gap: 10px;
+  .benefits__picture {
+    max-width: 670px;
+    .benefits__picture_size {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  .betefits__list {
+    display: flex;
+    flex-direction: column;
+
+    .betefits__title {
+      color: $color_second;
+      font-family: $font_main;
+      font-size: 38px;
+      font-weight: 900;
+      line-height: 40px;
+      border-bottom: 1px solid #c1d3de;
+      padding: 40px 0;
+    }
+  }
+}
+.benefits__collapsible {
+  border-bottom: 1px solid #c1d3de;
+  .collapse-button__title {
+    padding-left: 10px;
+    color: $color_third;
+    font-family: $font_main;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  input {
+    display: none;
+  }
+  .benefits__information {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .collapse-summary {
+    .collapse-button {
+      width: 22px;
+      height: 22px;
+      background-size: contain;
+      background-image: url(../../images/about_img/circle-plus.png);
+      display: inline-block;
+    }
+  }
+  input:checked ~ .collapse-summary {
+    .collapse-button {
+      background-image: url(../../images/about_img/circle-minus.png);
+    }
+  }
+  .collapse-details {
+    display: none;
+    padding-left: 32px;
+    padding-bottom: 20px;
+    @extend %normal-text;
+  }
+  input:checked ~ .collapse-details {
+    display: block;
+  }
+}
+// верхний подвал
+.aside-top-wrapper {
+  background-color: $background-color_second;
+  display: grid;
+  align-content: center;
+  padding: 0 14%;
+  min-height: 328px;
+  .aside-top {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+}
+.text-smalfooter {
+  @extend %footer-top-normal;
+  color: $color_first;
+  padding-top: 20px;
+}
+.text-bigfoofer1 {
+  @include footer-top-bold(38px, 900);
+  color: $color_first;
+}
+.text-bigfoofer {
+  @include footer-top-bold(68px, 700);
+  color: $color_first;
+}
+
+.content-clients {
+  @extend %content-clients;
+}
+
+.footer {
+  @extend %footer;
+}

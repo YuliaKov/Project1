@@ -44,8 +44,8 @@
 /*Первый контейнер - два Мака*/
 .container-info {
   background-image: url(../../images/adwords_img/smm-section-bgImg.png);
-  padding-left: 13.5%;
-  padding-right: 13.5%;
+  max-width: 1400px;
+  margin: 0 auto;
   background-color: $background-color_first;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -173,8 +173,8 @@
   max-height: 1305px;
   padding-bottom: 80px;
   .container-cost {
-    padding-left: 14%;
-    padding-right: 12.5%;
+    max-width: 1400px;
+    margin: 0 auto;
 
     .container-cost__title {
       color: $color_second;
@@ -189,16 +189,17 @@
     }
 
     .container-cost__tables {
-      max-width: 1399px;
+      max-width: 1400px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       .container-cost__tables-small-business,
       .container-cost__tables-medium-business {
-        max-width: 400px;
+        max-width: 440px;
         border: 1px solid $color_nav_form;
         border-radius: 12px;
         margin-left: 25px;
         background-color: $color_first;
+        position: relative;
         .text-top {
           background-color: $color_first;
         }
@@ -212,7 +213,6 @@
           margin: 22px 30px;
         }
         .text-top {
-          position: relative;
           display: flex;
           flex-direction: row;
           /*border: 2px black solid;*/
@@ -246,11 +246,11 @@
             }
           }
         }
-        .text-top-img {
-          /*border: 1px black solid;*/
+        .text-top-img-bag,
+        .text-top-img-bags {
           position: absolute;
-          margin-left: 270px;
-          margin-top: -30px;
+          right: 39px;
+          top: -5px;
         }
 
         .text--bgr-blue {
@@ -311,15 +311,19 @@
 
   /* минимальный бюджет*/
   .container-cost_bottom {
-    margin-left: 15%;
-    margin-right: 15%;
-    height: 120px;
+    max-width: 1400px;
+    margin: 0 auto;
+
     font-family: $font_add;
-    border: 1px solid $color_nav_form;
-    border-radius: 12px;
+
     margin-top: 60px;
     .container-cost_bottom-wrapper {
       max-width: 1399px;
+      border: 1px solid $color_nav_form;
+      border-radius: 12px;
+      height: 120px;
+      background-color: $background-color_first;
+      // padding: 2px;
       /* border: 2px rgb(139, 20, 20) solid;*/
       display: flex;
       flex-direction: row;
@@ -360,8 +364,8 @@
   .container-types {
     display: flex;
     flex-direction: column;
-    margin-left: 15%;
-    margin-right: 15%;
+    max-width: 1400px;
+    margin: 0 auto;
     .container-types__ads {
       /*border: 1px black solid;*/
       display: flex;
@@ -415,8 +419,8 @@
     padding-top: 80px;
   }
   .container-offer__box {
-    margin-left: 14%;
-    margin-right: 14%;
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     margin-bottom: 80px;
@@ -467,8 +471,8 @@
 /*ЭТАПЫ****************/
 .container-stages {
   .container-st {
-    margin-left: 15%;
-    margin-right: 15%;
+    max-width: 1400px;
+    margin: 0 auto;
     .container-stages_title {
       padding-top: 80px;
       font-family: $font_main;
@@ -521,8 +525,8 @@
 .container-results {
   background-image: url(../../images/adwords_img/smm-section-bgImg.png);
   .container-res {
-    margin-left: 14%;
-    margin-right: 14%;
+    max-width: 1400px;
+    margin: 0 auto;
     padding-bottom: 80px;
     .container-results__title {
       padding-top: 77px;
@@ -540,7 +544,7 @@
       padding-bottom: 80px;
       display: grid;
       gap: 60px;
-      grid-template-columns: 1fr 47%;
+      grid-template-columns: 1fr 1fr;
       .container-results__item {
         /*border: 1px black solid;*/
         display: flex;

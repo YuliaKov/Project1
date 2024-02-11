@@ -342,6 +342,9 @@
   text-align: left;
 }
 
+/*шаблон для всех обычныйх текстов*/
+/*mixin для верхней полосы футера жирный текст*/
+/*шаблон для верхней полосы футера обычный текст*/
 * {
   box-sizing: border-box;
 }
@@ -381,8 +384,8 @@
 /*Первый контейнер - два Мака*/
 .container-info {
   background-image: url(../../images/adwords_img/smm-section-bgImg.png);
-  padding-left: 13.5%;
-  padding-right: 13.5%;
+  max-width: 1400px;
+  margin: 0 auto;
   background-color: rgb(237, 244, 250);
   display: grid;
   grid-template-columns: 50% 50%;
@@ -504,8 +507,8 @@
   /* минимальный бюджет*/
 }
 .wrapper-container-cost .container-cost {
-  padding-left: 14%;
-  padding-right: 12.5%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .wrapper-container-cost .container-cost .container-cost__title {
   color: rgb(36, 42, 86);
@@ -519,18 +522,19 @@
   padding-bottom: 60px;
 }
 .wrapper-container-cost .container-cost .container-cost__tables {
-  max-width: 1399px;
+  max-width: 1400px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* кнопка закончилась*/
 }
 .wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-small-business,
 .wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-medium-business {
-  max-width: 400px;
+  max-width: 440px;
   border: 1px solid rgb(193, 211, 222);
   border-radius: 12px;
   margin-left: 25px;
   background-color: rgb(255, 255, 255);
+  position: relative;
 }
 .wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-small-business .text-top,
 .wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-medium-business .text-top {
@@ -545,7 +549,6 @@
 .wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-services .text-top,
 .wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-small-business .text-top,
 .wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-medium-business .text-top {
-  position: relative;
   display: flex;
   flex-direction: row;
   /*border: 2px black solid;*/
@@ -586,13 +589,15 @@
   padding-top: 20px;
   font-weight: 400;
 }
-.wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-services .text-top-img,
-.wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-small-business .text-top-img,
-.wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-medium-business .text-top-img {
-  /*border: 1px black solid;*/
+.wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-services .text-top-img-bag,
+.wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-services .text-top-img-bags,
+.wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-small-business .text-top-img-bag,
+.wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-small-business .text-top-img-bags,
+.wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-medium-business .text-top-img-bag,
+.wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-medium-business .text-top-img-bags {
   position: absolute;
-  margin-left: 270px;
-  margin-top: -30px;
+  right: 39px;
+  top: -5px;
 }
 .wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-services .text--bgr-blue,
 .wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-small-business .text--bgr-blue,
@@ -645,16 +650,17 @@
   padding-left: 15px;
 }
 .wrapper-container-cost .container-cost_bottom {
-  margin-left: 15%;
-  margin-right: 15%;
-  height: 120px;
+  max-width: 1400px;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
-  border: 1px solid rgb(193, 211, 222);
-  border-radius: 12px;
   margin-top: 60px;
 }
 .wrapper-container-cost .container-cost_bottom .container-cost_bottom-wrapper {
   max-width: 1399px;
+  border: 1px solid rgb(193, 211, 222);
+  border-radius: 12px;
+  height: 120px;
+  background-color: rgb(237, 244, 250);
   /* border: 2px rgb(139, 20, 20) solid;*/
   display: flex;
   flex-direction: row;
@@ -691,8 +697,8 @@
 .wrapper .container-types {
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
-  margin-right: 15%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .wrapper .container-types .container-types__ads {
   /*border: 1px black solid;*/
@@ -745,8 +751,8 @@
   padding-top: 80px;
 }
 .container-offer .container-offer__box {
-  margin-left: 14%;
-  margin-right: 14%;
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   margin-bottom: 80px;
@@ -794,8 +800,8 @@
 
 /*ЭТАПЫ****************/
 .container-stages .container-st {
-  margin-left: 15%;
-  margin-right: 15%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .container-stages .container-st .container-stages_title {
   padding-top: 80px;
@@ -847,8 +853,8 @@
   background-image: url(../../images/adwords_img/smm-section-bgImg.png);
 }
 .container-results .container-res {
-  margin-left: 14%;
-  margin-right: 14%;
+  max-width: 1400px;
+  margin: 0 auto;
   padding-bottom: 80px;
 }
 .container-results .container-res .container-results__title {
@@ -867,7 +873,7 @@
   padding-bottom: 80px;
   display: grid;
   gap: 60px;
-  grid-template-columns: 1fr 47%;
+  grid-template-columns: 1fr 1fr;
 }
 .container-results .container-res .container-results__items .container-results__item {
   /*border: 1px black solid;*/

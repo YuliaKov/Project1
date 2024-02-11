@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .content-advertising__button, .form .form-items .form-button, .footer .footer__wrapper .footer-content .footer-form .form-items .form-button, .header-top .header-wrapper .header-top__buttons .header-top__button {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -325,6 +326,9 @@
   font-weight: 400;
 }
 
+/*шаблон для всех обычныйх текстов*/
+/*mixin для верхней полосы футера жирный текст*/
+/*шаблон для верхней полосы футера обычный текст*/
 * {
   box-sizing: border-box;
 }

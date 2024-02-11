@@ -352,3 +352,24 @@
   letter-spacing: 0%;
   text-align: left;
 }
+
+/*шаблон для всех обычныйх текстов*/
+%normal-text {
+  font-family: $font_main;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/*mixin для верхней полосы футера жирный текст*/
+@mixin footer-top-bold($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $font_main;
+}
+/*шаблон для верхней полосы футера обычный текст*/
+%footer-top-normal {
+  font-family: $font_main;
+  font-size: 26px;
+  font-weight: 400;
+}
