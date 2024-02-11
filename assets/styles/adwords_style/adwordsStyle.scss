@@ -1,2 +1,575 @@
 @import '../vars';
 @import '../templates';
+
+* {
+  box-sizing: border-box;
+}
+
+.container-all {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 100%;
+  height: 496px;
+  background-image: url(../../images/adwords_img/Header_backgr_adwords.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-top {
+  @extend %header-top;
+}
+
+.header__content {
+  width: 560px * 100% / $width;
+  margin-top: 93px;
+  margin-left: 261px * 100% / $width;
+  .header__content-title {
+    font-family: $font_main;
+    font-size: 68px;
+    font-weight: 900;
+    color: $color_first;
+  }
+  .header__content-description {
+    color: $color_first;
+    font-family: $font_add;
+    font-weight: 400;
+    font-size: 17px;
+  }
+}
+
+/*Первый контейнер - два Мака*/
+.container-info {
+  background-image: url(../../images/adwords_img/smm-section-bgImg.png);
+  padding-left: 13.5%;
+  padding-right: 13.5%;
+  background-color: $background-color_first;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  .container-info__img {
+    padding-top: 54px;
+    padding-bottom: 53px;
+    /*border: 2px black solid;*/
+    margin-right: 40px;
+    .img-macbook2 {
+      max-width: 100%;
+    }
+  }
+  .container-info__content {
+    /*border: 2px black solid;*/
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 107px;
+
+    .container-info__content-question {
+      font-family: $font_main;
+      color: $color_second;
+      font-size: 26px;
+      font-weight: 700;
+      text-align: left;
+      line-height: 130%;
+      letter-spacing: 0%;
+    }
+    .container-info__content-note {
+      .container-note {
+        margin: 40px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 680px;
+        background-color: rgb(251, 247, 241);
+        border: 1px solid $color_nav_form;
+        border-radius: 12px;
+        .container-info__content-note-img {
+          /*border: 1px black solid;*/
+          margin: 30px 17px 30px 25px;
+        }
+        .container-info__content-note-text-tx {
+          font-family: $font_main;
+          color: $color_second;
+          font-size: 19px;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: 0%;
+          text-align: left;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .container-info__content-description {
+      font-family: $font_add;
+      color: $color_second;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0%;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* Контейнер номер 2- Кому показываем рекламу*/
+.container-viewers {
+  .container-viewers__title {
+    color: $color_second;
+    font-family: $font_main;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .container-viewer {
+    /*border: 2px rgb(10, 0, 0) solid;*/
+    display: flex;
+    gap: 2%;
+    margin: 2% 14% 5% 15%;
+    margin-top: 60px;
+    justify-content: space-between;
+    .container-viewer__items {
+      gap: 2%;
+      display: flex;
+      flex-direction: column;
+      /*border: 2px $color_nav_form solid;*/
+      .container-viewer__items-img {
+        width: 120px;
+        height: 120px;
+        border: 2px $color_nav_form solid;
+        /*border: 2px $color_nav_form solid;*/
+        border-radius: 12px;
+        padding: 5%;
+        align-self: center;
+      }
+      .container-viewer__items-text {
+        /*border: 2px rgb(10, 0, 0) solid;*/
+        width: 100%;
+        margin-top: 40px;
+        height: 56px;
+        color: $color_third;
+        font-family: $font_main;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*начало блока СтоимостьТаблица*/
+
+.wrapper-container-cost {
+  background-image: url(../../images/adwords_img/smm-section-bgImg.png);
+  /*border: 1px solid $background-color_first;*/
+  // opacity: 0/5;
+  max-height: 1305px;
+  padding-bottom: 80px;
+  .container-cost {
+    padding-left: 14%;
+    padding-right: 12.5%;
+
+    .container-cost__title {
+      color: $color_second;
+      font-family: $font_main;
+      font-size: 38px;
+      font-weight: 900;
+      line-height: 40px;
+      letter-spacing: 0%;
+      text-align: center;
+      padding-top: 80px;
+      padding-bottom: 60px;
+    }
+
+    .container-cost__tables {
+      max-width: 1399px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      .container-cost__tables-small-business,
+      .container-cost__tables-medium-business {
+        max-width: 400px;
+        border: 1px solid $color_nav_form;
+        border-radius: 12px;
+        margin-left: 25px;
+        background-color: $color_first;
+        .text-top {
+          background-color: $color_first;
+        }
+      }
+
+      .container-cost__tables-services,
+      .container-cost__tables-small-business,
+      .container-cost__tables-medium-business {
+        .container-cost__tables-business-wrapper {
+          /*border: 2px red solid;*/
+          margin: 22px 30px;
+        }
+        .text-top {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          /*border: 2px black solid;*/
+          @extend %table-font;
+          height: 150px;
+          .text-top-box {
+            /*border: 1px rgb(73, 229, 49) solid;*/
+            margin-bottom: 20px;
+            /*border: 1px black solid;*/
+            display: flex;
+            flex-direction: column;
+            .text-top--bold1 {
+              /*border: 1px rgb(73, 229, 49) solid;*/
+              line-height: 130%;
+              letter-spacing: 0%;
+              text-align: left;
+              margin-top: 30px;
+              font-weight: 700;
+              font-family: $font_main;
+              font-size: 26px;
+            }
+            .text-top--bold {
+              /*border: 1px rgb(73, 229, 49) solid;*/
+              font-weight: 700;
+              padding-top: 5px;
+            }
+            .text-top--regular {
+              /*border: 1px rgb(73, 229, 49) solid;*/
+              padding-top: 20px;
+              font-weight: 400;
+            }
+          }
+        }
+        .text-top-img {
+          /*border: 1px black solid;*/
+          position: absolute;
+          margin-left: 270px;
+          margin-top: -30px;
+        }
+
+        .text--bgr-blue {
+          border-top: 1px solid $color_nav_form;
+          @extend %table-font;
+          line-height: 250%;
+          padding-left: 10px;
+          background-color: $background-color_first;
+        }
+        .text--bgr-white {
+          border-top: 1px solid$color_nav_form;
+          @extend %table-font;
+          background-color: $color_first;
+          line-height: 250%;
+          padding-left: 10px;
+        }
+      }
+      .container-cost__tables-services {
+        /*border: 1px rgb(9, 2, 2) solid;*/
+        padding: 1%;
+        max-width: 440px;
+        .container-cost__tables-services-wrapper {
+          /*border: 1px red solid;*/
+          margin: 22px;
+          .text--bgr-blue,
+          .text--bgr-white {
+            font-weight: 700;
+          }
+        }
+      }
+
+      .container-cost__tables-btn {
+        border-top: 1px solid $color_nav_form;
+
+        .tables-btn-order {
+          margin-top: 20px;
+          background-color: $color_form-button;
+          border: 1px $color_form-button solid;
+          border-radius: 10px;
+          width: 238px;
+          height: 60px;
+          color: $color_first;
+          font-family: $font_add;
+          font-weight: 200;
+          color: $color_first;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+
+          .container-cost__tables-btn-vector {
+            padding-left: 15px;
+          }
+        }
+      }
+      /* кнопка закончилась*/
+    }
+  }
+
+  /* минимальный бюджет*/
+  .container-cost_bottom {
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 120px;
+    font-family: $font_add;
+    border: 1px solid $color_nav_form;
+    border-radius: 12px;
+    margin-top: 60px;
+    .container-cost_bottom-wrapper {
+      max-width: 1399px;
+      /* border: 2px rgb(139, 20, 20) solid;*/
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .container-cost_bottom-imgbox {
+        margin-left: 1%;
+        .container-cost_bottom-img {
+          padding: 40px;
+        }
+      }
+      .container-cost_bottom-texts {
+        justify-content: center;
+        /*border: 2px rgb(139, 20, 20) solid;*/
+        .container-cost_bottom-text {
+          color: $color_third;
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+/*ЧТо такое реклама в Гугл**/
+.wrapper {
+  .container-types__title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: $color_second;
+    font-family: $font_main;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .container-types {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    .container-types__ads {
+      /*border: 1px black solid;*/
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1px 0px 80px 0px;
+      .container-types__ads-textbox {
+        /*border: 2px black solid;*/
+        justify-content: center;
+        flex-direction: column;
+
+        .container-types__ads-title {
+          font-family: $font_main;
+          color: $color_third;
+          padding-bottom: 10px;
+          font-size: 26px;
+          font-weight: 700;
+          line-height: 130%;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+        .container-types__sads-text {
+          font-family: $font_add;
+          color: $color_third;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 28px;
+          text-align: left;
+          margin-top: 10px;
+        }
+      }
+      .container-types__ads-imgbox {
+        padding: 1%;
+      }
+    }
+  }
+}
+
+/*--Контейнер что предлагаем--*/
+.container-offer {
+  height: 682px;
+  background-color: $background-color_second;
+  .container-offer__title {
+    font-family: $font_main;
+    color: $color_first;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 80px;
+  }
+  .container-offer__box {
+    margin-left: 14%;
+    margin-right: 14%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+    justify-content: space-between;
+    gap: 40px;
+
+    .container-offer__box-items {
+      width: 320px;
+      height: 422 px;
+      align-items: space-between;
+      /*border: 1px black solid;*/
+      margin-top: 60px;
+      border-top: 1px solid rgb(139, 155, 171);
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      .container-offer__box-img {
+        padding-top: 47.5px;
+        align-items: flex-start;
+      }
+      .container-offer__box-content {
+        align-items: flex-start;
+        .container-offer__box-title {
+          font-family: $font_add;
+          color: $color_first;
+          font-size: 26px;
+          font-weight: 700;
+          line-height: 130%;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+        .container-offer__box-text {
+          font-family: $font_main;
+          padding-top: 24px;
+          align-items: flex-start;
+          color: $color_first;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+/*ЭТАПЫ****************/
+.container-stages {
+  .container-st {
+    margin-left: 15%;
+    margin-right: 15%;
+    .container-stages_title {
+      padding-top: 80px;
+      font-family: $font_main;
+      color: $color_second;
+      font-size: 38px;
+      font-weight: 900;
+      line-height: 40px;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+    .container-stages__items {
+      display: grid;
+      padding-top: 60px;
+      /*border: 1px red solid;*/
+      gap: 40px;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-bottom: 80px;
+
+      .container-stages__item {
+        border-top: 1px solid rgb(139, 155, 171);
+        .container-stages__item-check {
+          padding-top: 40px;
+        }
+        .container-stages__item-title {
+          color: $color_third;
+          padding-top: 40px;
+          font-family: Inter;
+          font-size: 26px;
+          font-weight: 700;
+          line-height: 130%;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+        .container-stages__item-text {
+          padding-top: 24px;
+          color: $color_third;
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+/*ЧТО получаем в результате****/
+.container-results {
+  background-image: url(../../images/adwords_img/smm-section-bgImg.png);
+  .container-res {
+    margin-left: 14%;
+    margin-right: 14%;
+    padding-bottom: 80px;
+    .container-results__title {
+      padding-top: 77px;
+      color: $color_second;
+      font-family: Inter;
+      font-size: 38px;
+      font-weight: 900;
+      line-height: 40px;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+    .container-results__items {
+      /*border: 1px black solid;*/
+      margin-top: 60px;
+      padding-bottom: 80px;
+      display: grid;
+      gap: 60px;
+      grid-template-columns: 1fr 47%;
+      .container-results__item {
+        /*border: 1px black solid;*/
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 0.5rem;
+        .container-results__item-icon {
+          /*border: 1px red solid;*/
+          padding: 1%;
+        }
+        .container-results__item-text {
+          align-self: center;
+          font-family: $font_add;
+          color: $color_third;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 28px;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.content-clients {
+  @extend %content-clients;
+}
+
+.footer {
+  @extend %footer;
+}
