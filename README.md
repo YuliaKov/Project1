@@ -1,9 +1,3 @@
-font-family: 'Inter', sans-serif;
-font-family: 'Roboto', sans-serif;
-
-
-
-
 QA - Тест 09.02.2024 
 
 1).ОЛЕСЯ - AdWords
@@ -131,3 +125,29 @@ Header:
 Footer:
 - лишний логотип в верхнем левом углу;
 + все тоже самое, что и в MAIN;
+
+
+
+**TeamLead -  11.02.2024 **
+
+1).ОЛЕСЯ - AdWords
+ - Контейнеры: 1920px и 1400 px 
+ - .container-info - Паддинги внутри лучше задать самому контейнеру, а блоки внутри уже выравнивать с учетом этих паддингов.
+ - .container-note - Отступы внутри лучше выравнивать паддингами родительского контейнера
+ - .container-viewers - лучше ограничить конт по ширине (1400px) и отцентровать. То что в макете с 1 стороны 261px, а с другой 259px это скорее погрешность
+ - .wrapper-container-cost - для чего свойство opacity? Прозрачность для фонового изображения? В данном случае оно не применилось (задается в формате 0.5), но вообще оно применяется ко всему блоку и задает прозрачность в том числе и его содержимому. И весь контент внутри получится полупрозрачным.
+ - .container-cost__tables-small-business, .container-cost__tables-medium-business - я бы чуть переписала "зубы". Сами эти картинки попробуй положить внутрь этих контейнеров (возможно даже без доп обертки). Соответственно контейнерам position: relative, а картинкам - absolute. И top и right задать относительно родительского блока (.container-cost__tables-small-business, .container-cost__tables-medium-business)
+ - .container-results__items - почему одна колонка 47%, а вторая 1fr? В макете они одинаковые.
+
+2) ЭНЖЕ - SEO
+   - обертка header__backgrn - лишняя, у тебя есть div с классом контейнер. Плохого ничего в ней нет, но и пользы не несет.
+   - Ограничивать ширину лучше с помощью max-width. Просто width это слишком жесткое ограничение, которое не позволяет сжиматься вообще никак. И на ноуте содержимое блока уезжает далеко за пределы экрана.
+   - Выравнивание контейнера по центру экрана лучше делать с помощью margin: 0 auto;
+   - поправила путь для backgroung-image в header: background-image: url(../../images/seo_img/Header_backgr_seo.jpg)
+   - для .header-subtitle и .header-title прописаны лишние стили. Я убрала лишнее
+   - .container__main - max-width: 1920px; путь к фоновому изображению
+   - .wrapper__main - max-width: 1400px;    margin: 0 auto;
+   - .container__accordeon - max-width: 1920px;
+   - .wrapper__title-accordeon - max-width: 1400px;    margin-left: auto;    margin-right: auto;
+   - .wrapper__accordeon - max-width: 1400px; margin: 0 auto;
+   - ну и до конца файла те же свойства))) 
