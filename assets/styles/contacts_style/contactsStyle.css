@@ -165,6 +165,35 @@
   padding: 80px 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 100%;
+  height: 496px;
+  background-image: url(../../images/contacts_img/Header_backgr_contacts.jpg);
+  background-color: rgb(57, 58, 86);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title-wrapper {
+  max-width: 1400px;
+  margin: 121px auto;
+}
+
+.header-title__contacts {
+  max-width: 440px;
+}
+
 .footer {
   background-image: url(../../images/Header_footer_img/bg-img-net.png);
   background-repeat: no-repeat;
@@ -195,6 +224,7 @@
   color: rgb(55, 111, 255);
   font-size: 26px;
   font-weight: 600;
+  line-height: 130%;
   text-decoration: underline;
 }
 .footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__tel-second {
@@ -217,6 +247,7 @@
   font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 600;
+  line-height: 28px;
   text-decoration: underline;
 }
 .footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__adress {
@@ -234,8 +265,9 @@
 }
 .footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__map {
   grid-column: 1/3;
+  grid-row: 3/5;
   align-self: self-end;
-  height: 320px;
+  height: 427px;
   border-radius: 12px;
   background-image: url(../../images/Header_footer_img/map.jpg);
   background-position: center;
@@ -263,33 +295,4 @@
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.header {
-  max-width: 100%;
-  height: 496px;
-  background-image: url(../../images/contacts_img/Header_backgr_contacts.jpg);
-  background-color: rgb(57, 58, 86);
-  background-blend-mode: overlay;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.title-wrapper {
-  max-width: 1400px;
-  margin: 121px auto;
-}
-
-.header-title__contacts {
-  max-width: 440px;
 }/*# sourceMappingURL=contactsStyle.css.map */

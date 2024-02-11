@@ -228,6 +228,7 @@
         font-family: $font_main;
         font-size: 68px;
         font-weight: 700;
+        line-height: 79px;
         color: $color_first;
         text-decoration: underline;
       }
@@ -265,6 +266,7 @@
           color: $color_form-button;
           font-size: 26px;
           font-weight: 600;
+          line-height: 130%;
           text-decoration: underline;
         }
         .footer-contacts__tel-second {
@@ -289,6 +291,7 @@
           font-family: $font_main;
           font-size: 20px;
           font-weight: 600;
+          line-height: 28px;
           text-decoration: underline;
         }
 

@@ -226,6 +226,7 @@
   font-family: "Inter", sans-serif;
   font-size: 68px;
   font-weight: 700;
+  line-height: 79px;
   color: rgb(255, 255, 255);
   text-decoration: underline;
 }
@@ -260,6 +261,7 @@
   color: rgb(55, 111, 255);
   font-size: 26px;
   font-weight: 600;
+  line-height: 130%;
   text-decoration: underline;
 }
 .footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__tel-second {
@@ -282,6 +284,7 @@
   font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 600;
+  line-height: 28px;
   text-decoration: underline;
 }
 .footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__adress {
