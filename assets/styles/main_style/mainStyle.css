@@ -198,9 +198,7 @@
 .content-clients .content-clients__wrapper .content-call {
   background-color: rgb(55, 111, 255);
   border-radius: 12px;
-  padding-top: 60px;
-  padding-left: 60px;
-  padding-bottom: 52px;
+  padding: 60px 109px 52px 60px;
   display: flex;
   align-items: center;
   gap: 42px;
@@ -214,6 +212,7 @@
   font-size: 38px;
   font-weight: 900;
   line-height: 40px;
+  width: 618px;
   margin-bottom: 40px;
 }
 .content-clients .content-clients__wrapper .content-call .content-call__description .content-call__text {

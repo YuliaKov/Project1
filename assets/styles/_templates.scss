@@ -204,16 +204,16 @@
     .content-call {
       background-color: $color_form-button;
       border-radius: 12px;
-      padding-top: 60px;
-      padding-left: 60px;
-      padding-bottom: 52px;
+      padding: 60px 109px 52px 60px;
       display: flex;
+      // justify-content: space-between;
       align-items: center;
       gap: 42px;
       .content-call__description {
         flex-basis: 40%;
         .content-call__subtitle {
           @include subtitle($color_first);
+          width: 618px;
           margin-bottom: 40px;
         }
 
