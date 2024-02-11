@@ -150,4 +150,7 @@ Footer:
    - .container__accordeon - max-width: 1920px;
    - .wrapper__title-accordeon - max-width: 1400px;    margin-left: auto;    margin-right: auto;
    - .wrapper__accordeon - max-width: 1400px; margin: 0 auto;
-   - ну и до конца файла те же свойства))) 
+   - ну и до конца файла те же свойства)))
+
+3) ДАША - About
+   - .content - сжимается на ширину менее 1400px
