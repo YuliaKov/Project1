@@ -1,2 +1,568 @@
 @import '../vars';
 @import '../templates';
+
+* {
+  box-sizing: border-box;
+}
+
+.text {
+  font-family: $font_add;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.title2 {
+  font-family: $font_main;
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+.title3 {
+  font-family: $font_main;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.emphasized {
+  font-weight: 700;
+}
+
+.text2 {
+  font-family: $font_main;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 34px;
+  padding-top: 24px;
+}
+
+.header-cell {
+  border: 1px solid $color_nav_form;
+  padding: 20px;
+}
+
+.cell {
+  border: 1px solid $color_nav_form;
+  padding: 13px 20px;
+}
+
+/* Header: лого + меню + кнопки */
+
+.header-top {
+  @extend %header-top;
+}
+
+/* Header: заголовок сайта */
+
+.header {
+  width: 100vw;
+  height: 496px;
+  background-color: #000;
+  background-image: url('../../images/smm_img/smm-header-bg-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $color_first;
+
+  .header__main {
+    height: 400px;
+    max-width: 800px;
+    margin-left: 260px;
+
+    .header__title {
+      font-family: $font_main;
+      font-size: 68px;
+      font-weight: 900;
+      line-height: 79px;
+    }
+  }
+}
+
+/* Section 1 - Ведение соц.сетей */
+
+.section1 {
+  @extend %sectionPadding;
+  background-image: url('../../images/smm_img/smm-section-bgImg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .section1__grid {
+    @extend %sectionBlock;
+    display: grid;
+    grid-template-columns: 680px 1fr;
+    grid-template-rows: 1fr 1.5fr 2fr;
+    grid-gap: 40px;
+    color: $color_second;
+
+    .section1-grid__block1 {
+      grid-area: 1/1/5/2;
+      align-self: center;
+    }
+
+    .section1-grid__block4 {
+      display: grid;
+      grid-template-columns: 91px 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 10px;
+      justify-content: center;
+      align-items: center;
+      background-color: $background-color_add;
+      border: 1px solid $color_nav_form;
+      border-radius: 12px;
+      padding: 15px 30px;
+    }
+  }
+}
+
+/* Section 2 - Пример контент-плана на месяц */
+
+.section2 {
+  @extend %sectionPadding;
+  padding-bottom: 95px;
+  color: $color_third;
+}
+.section2__header {
+  margin: 0 auto;
+  max-width: 920px;
+  padding-bottom: 60px;
+  text-align: center;
+  color: $color_second;
+}
+
+.section2__border {
+  @extend %sectionBlock;
+  border: 1px solid $color_nav_form;
+  border-radius: 12px;
+
+  .section2__table {
+    border: hidden;
+    width: 100%;
+
+    .cell {
+      border: 1px solid $color_nav_form;
+    }
+
+    .custom-width1 {
+      width: 14.53vw;
+    }
+
+    .custom-width2 {
+      width: 33.75vw;
+    }
+
+    .even {
+      background-color: $background-color_first;
+    }
+
+    .row5-cell_space {
+      display: block;
+      height: 8px;
+    }
+    .row4__cell-link {
+      color: $color_form-button;
+    }
+  }
+}
+
+/* Круглые угла у таблиц */
+
+.round-tl {
+  border-top-left-radius: 12px;
+}
+
+.round-tr {
+  border-top-right-radius: 12px;
+}
+
+.round-bl {
+  border-bottom-left-radius: 12px;
+}
+
+.round-br {
+  border-bottom-right-radius: 12px;
+}
+
+/* Section 3 - Структура коммуникации */
+
+.section3 {
+  @extend %sectionPadding;
+  background-image: url('../../images/smm_img/smm-section-bgImg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #393a56;
+
+  .section3__header {
+    @extend %sectionBlock;
+    text-align: center;
+  }
+}
+
+/* Таблица по структуре коммуникации */
+
+.section3__border {
+  @extend %sectionBlock;
+  border: 1px solid $color_nav_form;
+  border-radius: 12px;
+  margin-top: 60px;
+
+  .section3__table {
+    border: hidden;
+    width: 100%;
+
+    .row1__cell {
+      width: 14.53vw;
+    }
+
+    .odd {
+      background-color: $color_first;
+    }
+  }
+}
+
+/* Стилизация иконок списка в таблице третьего section */
+
+.row3-cell__item {
+  background: url(../../images/smm_img/smm-list-icon.svg) no-repeat 0px 12px;
+  padding-left: 18px;
+  padding-bottom: 8px;
+}
+
+/* Section 4 - Таргетированная реклама */
+
+.section4 {
+  color: $color_second;
+  @extend %sectionPadding;
+
+  .section4__header {
+    text-align: center;
+  }
+
+  .section4__grid {
+    @extend %sectionBlock;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 799px;
+    grid-gap: 43px;
+
+    .section4-grid__block1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.85fr 0.75fr 1fr 2px 1fr;
+      grid-gap: 24px;
+
+      .block1__element {
+        width: 40px;
+        height: 2px;
+        background-color: $color_nav_form;
+      }
+    }
+
+    .section4-grid__block2 {
+      align-self: center;
+    }
+  }
+}
+
+/* Section 5 - Почему нежно использовать таргетированную рекламу в FB и Инстаграме */
+
+.section5 {
+  @extend %sectionPadding;
+  color: $color_first;
+  background-color: $color_third;
+
+  .section5__header {
+    @extend %sectionBlock;
+    text-align: center;
+  }
+
+  .section5__grid {
+    @extend %sectionBlock;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+
+    .section5-grid__block {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 2fr 2.5fr;
+      grid-gap: 28px;
+
+      .section5-grid__element {
+        max-width: 320px;
+        height: 2px;
+        border: 1px solid $color_border;
+      }
+    }
+  }
+}
+
+/* Section 6 - Настройки таргетинга в FB и Instagram */
+
+.section6 {
+  @extend %sectionPadding;
+  @extend %sectionBlock;
+  color: $color_second;
+
+  .section6__text {
+    padding-top: 24px;
+  }
+
+  .section6__block {
+    margin-top: 60px;
+
+    .section6-block__table {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 40px;
+    }
+  }
+}
+.section6-block__item {
+  background: url('../../images/smm_img/smm-checked-icon.svg') no-repeat 0px 3px;
+  padding-left: 44px;
+  padding-bottom: 20px;
+}
+
+.section6-block__item__downsized {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* Section 7 - Настройка рекламы по базе клиентов и похожей аудитории */
+
+.section7 {
+  color: $color_second;
+  @extend %sectionPadding;
+  @extend %sectionBlock;
+  padding-top: 0;
+
+  .section7__header {
+    .section7__text {
+      padding-top: 24px;
+    }
+  }
+
+  .section7__grid {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 3.5fr;
+    grid-gap: 40px;
+
+    .section7-block1__list {
+      padding-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
+
+      .section7-block1__item {
+        list-style: none;
+        background-image: url('../../images/smm_img/smm-checked-icon.svg');
+        background-repeat: no-repeat;
+        background-position: 0 5%;
+        padding-left: 44px;
+      }
+    }
+
+    .section7-grid__block3-text {
+      padding-top: 0;
+    }
+
+    .section7-grid__block4 {
+      padding: 40px;
+      background-color: $background-color_first;
+      border-radius: 12px;
+      border: 1px solid $color_nav_form;
+
+      .section7-grid__block4-text {
+        padding-top: 16px;
+      }
+    }
+  }
+}
+
+/* Section 8 - Цели рекламной кампании */
+
+.section8 {
+  @extend %sectionPadding;
+  color: $color_second;
+  background-image: url('../../images/smm_img/smm-section-bgImg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .section8__header {
+    text-align: center;
+
+    .section8__text {
+      margin: 0 auto;
+      max-width: 920px;
+      padding-top: 24px;
+    }
+  }
+
+  .section8__list {
+    @extend %sectionBlock;
+    margin-top: 60px;
+    border-radius: 12px;
+    border: 0.5px solid $color_nav_form;
+
+    .section8-list__block {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+      /*border: 0.5px solid $color_nav_form;*/
+      border-radius: 12px;
+
+      .section8-list__item {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 24px 1fr;
+        grid-gap: 16px;
+        align-self: center;
+        border: 0.5px solid $color_nav_form;
+      }
+
+      .section8-list__item .odd {
+        background-color: $color_first;
+      }
+      .odd {
+        background-color: $color_first;
+      }
+      .round-tl {
+        border-top-left-radius: 12px;
+      }
+
+      .round-tr {
+        border-top-right-radius: 12px;
+      }
+
+      .round-bl {
+        border-bottom-left-radius: 12px;
+      }
+
+      .round-br {
+        border-bottom-right-radius: 12px;
+      }
+
+      .item-merged1 {
+        grid-area: 4/1/8/2;
+        align-self: stretch;
+        border: 0.5px solid $color_nav_form;
+        border-top: none;
+      }
+
+      .item-merged2 {
+        grid-area: 4/3/8/4;
+        align-self: stretch;
+        border: 0.5px solid $color_nav_form;
+        border-bottom-right-radius: 12px;
+      }
+    }
+  }
+}
+
+/* Section 9 */
+
+.section9 {
+  @extend %sectionPadding;
+  @extend %sectionBlock;
+  color: $color_second;
+
+  .section9__block {
+    margin-top: 40px;
+    border-top: 1px solid $color_nav_form;
+
+    .section9-block__item {
+      padding: 20px 0;
+      display: grid;
+      grid-template: 1fr / 24px 1fr;
+      grid-gap: 20px;
+      border-bottom: 1px solid $color_nav_form;
+
+      .section9-block__item-text1 {
+        padding: 12px 0 8px 0;
+      }
+
+      .section9-block__item-title2 {
+        padding-bottom: 4px;
+      }
+    }
+
+    .section9-block__item2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 1fr);
+
+      .section9-block__item2-block {
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: 24px 1fr;
+        grid-gap: 20px;
+        align-self: center;
+        border-bottom: 1px solid $color_nav_form;
+      }
+    }
+  }
+}
+
+/* Section 10 - Стоимость услуг */
+
+.section10 {
+  @extend %sectionPadding;
+  background-image: url('../../images/smm_img/smm-section-bgImg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .section10__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .section10__border {
+    @extend %sectionBlock;
+    border: 1px solid $color_nav_form;
+    border-radius: 12px;
+
+    .section10__table {
+      border: hidden;
+      width: 100%;
+    }
+
+    .odd {
+      background-color: $color_first;
+    }
+
+    .row1__cell {
+      width: 11.47vw;
+    }
+  }
+}
+
+.section10__block {
+  @extend %sectionBlock;
+  margin-top: 61px;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid $color_nav_form;
+  background-color: $background-color_first;
+}
+
+/* Section 11 - Клиенты, которые нам доверяют */
+
+.content-clients {
+  @extend %content-clients;
+}
+
+/* Footer */
+
+.footer {
+  @extend %footer;
+}

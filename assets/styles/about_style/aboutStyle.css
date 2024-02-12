@@ -342,6 +342,7 @@
   font-weight: 400;
 }
 
+/* Вынести в _template для удобства */
 * {
   box-sizing: border-box;
 }
