@@ -152,6 +152,80 @@
   }
 }
 
+.content-projects {
+  background-image: url(../../images/Header_footer_img/bg-img-net.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-projects__wrapper {
+  @extend %wrapper_position;
+}
+
+.content-projects__subtitle {
+  @include subtitle($color_second);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.content-projects__text {
+  @include text($font_main, $color_second);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects-slider__item {
+  box-sizing: border-box;
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid $color_nav_form;
+  margin-right: 40px;
+}
+
+// .projects-slider__item:nth-child(4n) {
+//   margin-right: 0;
+// }
+
+/* Стиль для стрелок */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: calc(100% + 37px); /* Расположение стрелок под слайдером */
+  z-index: 1;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev:before {
+  content: url(../../images/main_img/prev.png);
+}
+
+.slick-next:before {
+  content: url(../../images/main_img/next.png);
+}
+
+/* Стиль для точек */
+.slick-dots {
+  position: absolute;
+  bottom: -47px; /* Расположение точек под слайдером */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.slick-dots li button:before {
+  font-size: 35px; /* Измените размер точек */
+  color: $color_form-button; /* Измените цвет точек */
+}
+
+.slick-dots li.slick-active button:before {
+  color: $color_form-button; /* Измените цвет точек */
+}
+
 .content-clients {
   @extend %content-clients;
 }

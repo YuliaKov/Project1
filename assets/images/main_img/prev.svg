@@ -1,0 +1,12 @@
+<svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<rect id="Frame 803" width="40.000000" height="40.000000" transform="matrix(-1 0 0 1 40 0)" fill="#FFFFFF" fill-opacity="0"/>
+	<g opacity="0.500000">
+		<circle id="Ellipse 16" r="19.000000" transform="matrix(-1 1 0 0 20 20)" stroke="#376FFF" stroke-opacity="1.000000" stroke-width="2.000000"/>
+	</g>
+	<rect id="24 / arrows / chevron-right" width="24.000000" height="24.000000" transform="matrix(-1 0 0 1 31 8)" fill="#FFFFFF" fill-opacity="0"/>
+	<path id="icon" d="M16.4141 20.0001L23.707 12.7072L22.293 11.293L13.5859 20.0001L22.293 28.7072L23.707 27.293L16.4141 20.0001Z" fill="#376FFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>

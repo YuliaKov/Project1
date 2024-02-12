@@ -161,7 +161,7 @@
   cursor: pointer;
 }
 
-.content-advertising__wrapper, .content-principles__wrapper, .footer .footer__wrapper, .content-clients .content-clients__wrapper {
+.content-projects__wrapper, .content-advertising__wrapper, .content-principles__wrapper, .footer .footer__wrapper, .content-clients .content-clients__wrapper {
   max-width: 1400px;
   margin: 0 auto;
   padding: 80px 0;
@@ -501,4 +501,79 @@
   content: url(../../images/main_img/arrow_wh.svg);
   max-width: 12px;
   margin-left: 20px;
+}
+
+.content-projects {
+  background-image: url(../../images/Header_footer_img/bg-img-net.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-projects__subtitle {
+  font-family: "Inter", sans-serif;
+  color: rgb(36, 42, 86);
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.content-projects__text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgb(36, 42, 86);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects-slider__item {
+  box-sizing: border-box;
+  width: 320px;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid rgb(193, 211, 222);
+  margin-right: 40px;
+}
+
+/* Стиль для стрелок */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: calc(100% + 37px); /* Расположение стрелок под слайдером */
+  z-index: 1;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev:before {
+  content: url(../../images/main_img/prev.png);
+}
+
+.slick-next:before {
+  content: url(../../images/main_img/next.png);
+}
+
+/* Стиль для точек */
+.slick-dots {
+  position: absolute;
+  bottom: -47px; /* Расположение точек под слайдером */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.slick-dots li button:before {
+  font-size: 35px; /* Измените размер точек */
+  color: rgb(55, 111, 255); /* Измените цвет точек */
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgb(55, 111, 255); /* Измените цвет точек */
 }/*# sourceMappingURL=mainStyle.css.map */
