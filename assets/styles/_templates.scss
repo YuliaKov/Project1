@@ -374,6 +374,13 @@
   font-weight: 400;
 }
 
+@mixin footer-top-normal($size, $weight, $lineheight) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineheight;
+  font-family: $font_main;
+}
+
 /* Вынести в _template для удобства */
 
 %sectionPadding {
