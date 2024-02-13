@@ -1,5 +1,5 @@
-@import '../vars';
-@import '../templates';
+@import "../vars";
+@import "../templates";
 * {
   box-sizing: border-box;
 }
@@ -49,6 +49,8 @@
   flex-direction: column;
   min-height: 688px;
   justify-content: space-around;
+  @media screen {
+  }
   .content__title {
     color: rgb(36, 42, 86);
     font-family: $font_main;
