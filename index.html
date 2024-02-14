@@ -21,15 +21,23 @@
       <header class="header">
         <div class="header-top">
           <img
-            class="header-logo"
+            class="header-logo header-logo__white"
             src="./assets/images/Header_footer_img/logo_header.svg"
             alt=""
           />
+          <img
+            class="header-logo header-logo__dark"
+            src="./assets/images/Header_footer_img/logo_dark.svg"
+            alt=""
+          />
+
           <div class="header-wrapper">
             <nav class="header-nav">
               <ul class="header-nav__items">
                 <li class="header-nav__item">
-                  <a class="header-nav__link" href="index.html">Главная</a>
+                  <a class="header-nav__link active-page" href="index.html"
+                    >Главная</a
+                  >
                 </li>
                 <li class="header-nav__item">
                   <a class="header-nav__link" href="about.html">О нас</a>
@@ -55,61 +63,70 @@
                 Свяжитесь с нами
               </button>
               <button class="header-top__button header-top__lang">LV</button>
+              <div class="header-top__burger">
+                <img
+                  class="header-top__burger-img"
+                  src="./assets/images/Header_footer_img/icons _ menu.png"
+                  alt="burger-menu"
+                />
+              </div>
             </div>
           </div>
         </div>
         <div class="header-content-wrapper">
-          <div class="header-content">
-            <p class="header-subtitle">
-              Мы помогаем малому бизнесу стартовать и меняться
-            </p>
-            <p class="header-title">Digital агентство ORA</p>
-            <p class="header-text">
-              Объединяем ваш отраслевой опыт и нашу digital-экспертизу для
-              достижения результатов
-            </p>
-          </div>
-          <div class="form">
-            <form action="#" method="post">
-              <p class="form-title">Свяжитесь с нами</p>
-              <input
-                class="form-item"
-                id="input-name"
-                type="text"
-                placeholder="Имя"
-              />
-              <input
-                class="form-item"
-                id="input-email"
-                type="email"
-                placeholder="Email"
-              />
-              <input
-                class="form-item"
-                id="input-tel"
-                type="tel"
-                placeholder="+7 999 999 99 99"
-              />
-              <textarea
-                class="form-message"
-                name=""
-                id=""
-                placeholder="Ваше сообщение"
-              ></textarea>
+          <div class="header-content__inner">
+            <div class="header-content">
+              <p class="header-subtitle">
+                Мы помогаем малому бизнесу стартовать и меняться
+              </p>
+              <p class="header-title">Digital агентство ORA</p>
+              <p class="header-text">
+                Объединяем ваш отраслевой опыт и нашу digital-экспертизу для
+                достижения результатов
+              </p>
+            </div>
+            <div class="form">
+              <form action="#" method="post">
+                <p class="form-title">Свяжитесь с нами</p>
+                <input
+                  class="form-item"
+                  id="input-name"
+                  type="text"
+                  placeholder="Имя"
+                />
+                <input
+                  class="form-item"
+                  id="input-email"
+                  type="email"
+                  placeholder="Email"
+                />
+                <input
+                  class="form-item"
+                  id="input-tel"
+                  type="tel"
+                  placeholder="+7 999 999 99 99"
+                />
+                <textarea
+                  class="form-message"
+                  name=""
+                  id=""
+                  placeholder="Ваше сообщение"
+                ></textarea>
 
-              <div class="form-items">
-                <button id="" class="form-button">Отправить</button>
-                <div class="form-checkbox">
-                  <input class="checkbox-item" type="checkbox" />
-                  <p class="checkbox-text">
-                    Я прочитал и принимаю условия
-                    <a class="checkbox-link" href="#">
-                      пользовательского соглашения</a
-                    >
-                  </p>
+                <div class="form-items">
+                  <button id="" class="form-button">Отправить</button>
+                  <div class="form-checkbox">
+                    <input class="checkbox-item" type="checkbox" />
+                    <p class="checkbox-text">
+                      Я прочитал и принимаю условия
+                      <a class="checkbox-link" href="#">
+                        пользовательского соглашения</a
+                      >
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </header>

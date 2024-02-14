@@ -11,6 +11,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .header-logo__dark {
+    display: none;
+  }
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+    padding: 16px 40px;
+    .header-logo__white {
+      display: none;
+    }
+    .header-logo__dark {
+      display: inline-flex;
+    }
+  }
   .header-wrapper {
     display: flex;
     .header-nav {
@@ -24,16 +37,27 @@
           font-family: $font_main;
           font-size: 16px;
           font-weight: 500;
+          line-height: 200%;
           color: $color_nav_form;
           text-decoration: none;
         }
         .header-nav__link:hover {
           color: $color_first;
         }
+        .active-page {
+          padding-bottom: 35px;
+          color: $color_first;
+          border-bottom: 4px solid $color_first;
+        }
+      }
+      @media (max-width: 1024px) {
+        display: none;
       }
     }
     .header-top__buttons {
+      display: flex;
       margin-left: 60px;
+      // gap: 60px;
       .header-top__connect {
         margin-right: 24px;
       }
@@ -49,6 +73,33 @@
       .header-top__button:hover {
         border: 1px solid $color_first;
         color: $color_first;
+      }
+
+      .header-top__burger {
+        display: none;
+      }
+      @media (max-width: 1024px) {
+        margin-left: 0;
+        gap: 24px;
+        .header-top__connect {
+          margin-right: 0;
+        }
+        .header-top__burger {
+          display: inline-flex;
+          .header-top__burger-img {
+            align-self: center;
+            width: 24px;
+            height: 24px;
+          }
+        }
+        .header-top__button {
+          color: $color-border;
+          border: 1px solid $background-color_third;
+        }
+        .header-top__button:hover {
+          border: 1px solid $background-color_third;
+          color: $background-color_third;
+        }
       }
     }
   }
@@ -91,6 +142,9 @@
   border-radius: 12px;
   background-color: transparent;
   margin-bottom: 20px;
+  @media (max-width: 1024px) {
+    margin-bottom: 12px;
+  }
 }
 
 %form {
@@ -98,9 +152,17 @@
   padding: 60px;
   background-color: $background-color_third;
   border-radius: 12px;
+  @media (max-width: 1024px) {
+    width: 462px;
+    height: 652px;
+  }
   .form-title {
     @include subtitle($color_first);
     margin-bottom: 40px;
+    @media (max-width: 1024px) {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
   }
   .form-item {
     @extend %form-input;
@@ -110,6 +172,9 @@
     padding-left: 32px;
     &::placeholder {
       color: $color_nav_form;
+    }
+    @media (max-width: 1024px) {
+      width: 342px;
     }
   }
   .form-message {
@@ -122,11 +187,18 @@
     &::placeholder {
       color: $color_nav_form;
     }
+    @media (max-width: 1024px) {
+      width: 342px;
+    }
   }
   .form-items {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: 20px;
+    }
 
     .form-button {
       @extend %btn;
@@ -142,11 +214,20 @@
         content: url(../../images/Header_footer_img/arrow.svg);
         margin-left: 22px;
       }
+      @media (max-width: 1024px) {
+        flex-basis: 60px;
+        margin-right: 0;
+        height: 60px;
+        padding: 18px 109px;
+      }
     }
     .form-checkbox {
       flex-basis: 332px;
       display: flex;
       align-items: center;
+      @media (max-width: 1024px) {
+        flex-basis: 48px;
+      }
       .checkbox-item {
         @extend %form-input;
 
