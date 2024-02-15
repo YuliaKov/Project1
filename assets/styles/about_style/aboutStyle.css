@@ -338,8 +338,9 @@
 /*шаблон для верхней полосы футера обычный текст*/
 .text-smalfooter {
   font-family: "Inter", sans-serif;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 400;
+  line-height: 28px;
 }
 
 /* Вынести в _template для удобства */
@@ -361,6 +362,16 @@
   background-size: cover;
   /*Название страницы и ее описание*/
 }
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 416px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header {
+    height: 260px;
+  }
+}
 .header .header-title {
   margin-left: 14%;
   padding-top: 118.5px;
@@ -372,6 +383,13 @@
     max-width: 54%;
   }
 }
+@media screen and (max-width: 320px) {
+  .header .header-title {
+    margin-left: 5%;
+    max-width: 100%;
+    padding-top: 0;
+  }
+}
 .header .header-title .header-title__title {
   font-family: "Inter", sans-serif;
   color: rgb(255, 255, 255);
@@ -381,12 +399,24 @@
   margin: 0;
   padding-bottom: 28px;
 }
+@media screen and (max-width: 320px) {
+  .header .header-title .header-title__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
 .header .header-title .header-title__description {
   font-family: "Roboto", sans-serif;
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
+}
+@media screen and (max-width: 320px) {
+  .header .header-title .header-title__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 /*Основная статья*/
@@ -412,6 +442,12 @@
     gap: 20px;
   }
 }
+@media screen and (max-width: 320px) {
+  .content {
+    padding: 40px 5%;
+    gap: 15px;
+  }
+}
 .content .content__title {
   color: rgb(36, 42, 86);
   font-family: "Inter", sans-serif;
@@ -419,11 +455,36 @@
   font-weight: 700;
   line-height: 130%;
 }
+@media screen and (max-width: 320px) {
+  .content .content__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+}
 .content .content__list {
   color: rgb(57, 58, 86);
 }
+@media screen and (max-width: 320px) {
+  .content .content__list {
+    margin-left: 15px;
+  }
+}
 .content .content__list ul {
   list-style: inside;
+}
+@media screen and (max-width: 320px) {
+  .content .content__list ul {
+    list-style: disc;
+  }
+}
+@media screen and (max-width: 320px) {
+  .content .content__list {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
 }
 .content .content__important {
   color: rgb(57, 58, 86);
@@ -431,10 +492,26 @@
   border: 1px solid rgb(193, 211, 222);
   border-radius: 12px;
   background: rgb(251, 247, 241);
-  padding: 30px;
+  padding: 15px;
+}
+@media screen and (max-width: 320px) {
+  .content .content__important {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
 }
 .content .content__remark {
   color: rgb(57, 58, 86);
+}
+@media screen and (max-width: 320px) {
+  .content .content__remark {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
 }
 
 .benefits {
@@ -453,6 +530,7 @@
   .benefits {
     display: flex;
     flex-direction: column;
+    padding: 40px 5%;
   }
 }
 .benefits .benefits__picture {
@@ -479,6 +557,13 @@
   border-bottom: 1px solid #c1d3de;
   padding: 40px 0;
 }
+@media screen and (max-width: 320px) {
+  .benefits .betefits__list .betefits__title {
+    font-size: 28px;
+    line-height: 36px;
+    padding: 24px 0;
+  }
+}
 
 .benefits__collapsible {
   border-bottom: 1px solid #c1d3de;
@@ -491,6 +576,12 @@
   font-weight: 700;
   line-height: 28px;
 }
+@media screen and (max-width: 320px) {
+  .benefits__collapsible .collapse-button__title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 .benefits__collapsible input {
   display: none;
 }
@@ -498,6 +589,11 @@
   display: flex;
   align-items: center;
   padding: 20px 0;
+}
+@media screen and (max-width: 320px) {
+  .benefits__collapsible .benefits__information {
+    padding: 12px 0;
+  }
 }
 .benefits__collapsible .collapse-summary .collapse-button {
   width: 22px;
@@ -513,6 +609,12 @@
   display: none;
   padding-left: 32px;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 320px) {
+  .benefits__collapsible .collapse-details {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .benefits__collapsible input:checked ~ .collapse-details {
   display: block;
@@ -597,6 +699,23 @@
   }
 }
 
+.text-smalfooter1 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 130%;
+  font-family: "Inter", sans-serif;
+  color: rgb(255, 255, 255);
+  padding-top: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .text-smalfooter1 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: "Inter", sans-serif;
+  }
+}
+
 .text-smalfooter {
   color: rgb(255, 255, 255);
   padding-top: 20px;
@@ -621,6 +740,7 @@
 .text-bigfoofer1 {
   font-size: 38px;
   font-weight: 900;
+  line-height: 40px;
   font-family: "Inter", sans-serif;
   color: rgb(255, 255, 255);
 }
@@ -628,6 +748,7 @@
   .text-bigfoofer1 {
     font-size: 28px;
     font-weight: 900;
+    line-height: 36px;
     font-family: "Inter", sans-serif;
   }
 }
@@ -635,6 +756,7 @@
 .text-bigfoofer {
   font-size: 68px;
   font-weight: 700;
+  line-height: 130%;
   font-family: "Inter", sans-serif;
   color: rgb(255, 255, 255);
 }
@@ -642,6 +764,7 @@
   .text-bigfoofer {
     font-size: 48px;
     font-weight: 700;
+    line-height: 130%;
     font-family: "Inter", sans-serif;
   }
 }/*# sourceMappingURL=aboutStyle.css.map */
