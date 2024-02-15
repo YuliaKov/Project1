@@ -18,6 +18,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media screen and (max-width: 1024px) {
+    height: 416px;
+  }
+  @media screen and (max-width: 320px) {
+    height: 260px;
+  }
   /*Название страницы и ее описание*/
   .header-title {
     margin-left: 14%;
@@ -27,6 +33,11 @@
       margin-left: 4%;
       max-width: 54%;
     }
+    @media screen and (max-width: 320px) {
+      margin-left: 5%;
+      max-width: 100%;
+      padding-top: 0;
+    }
     .header-title__title {
       font-family: $font_main;
       color: rgb(255, 255, 255);
@@ -35,6 +46,10 @@
       line-height: 79px;
       margin: 0;
       padding-bottom: 28px;
+      @media screen and (max-width: 320px) {
+        font-size: 32px;
+        line-height: 40px;
+      }
     }
     .header-title__description {
       font-family: $font_add;
@@ -42,6 +57,10 @@
       font-size: 20px;
       font-weight: 400;
       line-height: 28px;
+      @media screen and (max-width: 320px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
   }
 }
@@ -63,18 +82,39 @@
     padding: 40px 4%;
     gap: 20px;
   }
+  @media screen and (max-width: 320px) {
+    padding: 40px 5%;
+    gap: 15px;
+  }
   .content__title {
     color: rgb(36, 42, 86);
     font-family: $font_main;
     font-size: 26px;
     font-weight: 700;
     line-height: 130%;
+    @media screen and (max-width: 320px) {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+    }
   }
   .content__list {
     @extend %normal-text;
     color: $background-color_second;
+    @media screen and (max-width: 320px) {
+      margin-left: 15px;
+    }
     ul {
       list-style: inside;
+      @media screen and (max-width: 320px) {
+        list-style: disc;
+      }
+    }
+    @media screen and (max-width: 320px) {
+      font-family: $font_main;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
     }
   }
   .content__important {
@@ -84,11 +124,23 @@
     border: 1px solid rgb(193, 211, 222);
     border-radius: 12px;
     background: rgb(251, 247, 241);
-    padding: 30px;
+    padding: 15px;
+    @media screen and (max-width: 320px) {
+      font-family: $font_main;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
   }
   .content__remark {
     @extend %normal-text;
     color: $background-color_second;
+    @media screen and (max-width: 320px) {
+      font-family: $font_main;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
   }
 }
 .benefits {
@@ -102,6 +154,7 @@
   @media screen and (max-width: 320px) {
     display: flex;
     flex-direction: column;
+    padding: 40px 5%;
   }
   .benefits__picture {
     max-width: 670px;
@@ -125,6 +178,11 @@
       line-height: 40px;
       border-bottom: 1px solid #c1d3de;
       padding: 40px 0;
+      @media screen and (max-width: 320px) {
+        font-size: 28px;
+        line-height: 36px;
+        padding: 24px 0;
+      }
     }
   }
 }
@@ -137,6 +195,10 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
+    @media screen and (max-width: 320px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
   input {
     display: none;
@@ -145,6 +207,9 @@
     display: flex;
     align-items: center;
     padding: 20px 0;
+    @media screen and (max-width: 320px) {
+      padding: 12px 0;
+    }
   }
   .collapse-summary {
     .collapse-button {
@@ -165,6 +230,10 @@
     padding-left: 32px;
     padding-bottom: 20px;
     @extend %normal-text;
+    @media screen and (max-width: 320px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
   input:checked ~ .collapse-details {
     display: block;
@@ -245,6 +314,14 @@
     }
   }
 }
+.text-smalfooter1 {
+  @include footer-top-normal(26px, 400, 130%);
+  color: $color_first;
+  padding-top: 20px;
+  @media screen and (max-width: 1024px) {
+    @include footer-top-normal(18px, 400, 26px);
+  }
+}
 .text-smalfooter {
   @extend %footer-top-normal;
   color: $color_first;
@@ -257,17 +334,17 @@
   }
 }
 .text-bigfoofer1 {
-  @include footer-top-bold(38px, 900);
+  @include footer-top-bold(38px, 900, 40px);
   color: $color_first;
   @media screen and (max-width: 1024px) {
-    @include footer-top-bold(28px, 900);
+    @include footer-top-bold(28px, 900, 36px);
   }
 }
 .text-bigfoofer {
-  @include footer-top-bold(68px, 700);
+  @include footer-top-bold(68px, 700, 130%);
   color: $color_first;
   @media screen and (max-width: 768px) {
-    @include footer-top-bold(48px, 700);
+    @include footer-top-bold(48px, 700, 130%);
   }
 }
 

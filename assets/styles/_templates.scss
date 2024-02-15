@@ -443,16 +443,18 @@
 }
 
 /*mixin для верхней полосы футера жирный текст*/
-@mixin footer-top-bold($size, $weight) {
+@mixin footer-top-bold($size, $weight, $lineheight) {
   font-size: $size;
   font-weight: $weight;
+  line-height: $lineheight;
   font-family: $font_main;
 }
 /*шаблон для верхней полосы футера обычный текст*/
 %footer-top-normal {
   font-family: $font_main;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 400;
+  line-height: 28px;
 }
 
 @mixin footer-top-normal($size, $weight, $lineheight) {
