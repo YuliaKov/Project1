@@ -45,19 +45,21 @@
   margin: 80px auto;
   display: flex;
   align-items: center;
+  gap: 40px;
   @media (max-width: 1024px) {
     max-width: 1024px;
     margin: 0 auto;
     padding: 40px 40px 0 40px;
     gap: 20px;
   }
+  @media (max-width: 768px) {
+    max-width: 768px;
+    padding: 40px;
+  }
 }
 
 .header-content {
-  max-width: 679px;
-  @media (max-width: 1024px) {
-    max-width: 462px;
-  }
+  flex-basis: 50%;
 }
 
 .header-subtitle {
@@ -100,6 +102,9 @@
   @media (max-width: 1024px) {
     max-width: 462px;
     max-height: 424px;
+  }
+  @media (max-width: 768px) {
+    max-width: 334px;
   }
 }
 
@@ -155,6 +160,9 @@
     column-gap: 20px;
     row-gap: 12px;
   }
+  @media (max-width: 768px) {
+    margin-top: 32px;
+  }
 }
 
 .content-advertising__logo-google {
@@ -182,6 +190,9 @@
   margin-bottom: 24px;
   @media (max-width: 1024px) {
     margin-bottom: 0px;
+  }
+  @media (max-width: 768px) {
+    font-size: 18px;
   }
 }
 
@@ -222,12 +233,18 @@
   @include subtitle($color_second);
   text-align: center;
   margin-bottom: 24px;
+  @media (max-width: 768px) {
+    margin-bottom: 12px;
+  }
 }
 
 .content-projects__text {
   @include text($font_main, $color_second);
   text-align: center;
   margin-bottom: 40px;
+  @media (max-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .projects-slider__item {
@@ -242,6 +259,10 @@
     width: 220px;
     height: 220px;
     margin-right: 20px;
+  }
+  @media (max-width: 768px) {
+    width: 334px;
+    height: 334px;
   }
 }
 

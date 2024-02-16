@@ -120,14 +120,14 @@
 }
 
 .footer .footer__wrapper .footer-content .footer-form {
-  width: 680px;
+  flex-basis: 50%;
   padding: 60px;
   background-color: rgb(55, 111, 255);
   border-radius: 12px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .footer .footer__wrapper .footer-content .footer-form {
-    width: 462px;
+    padding: 40px;
   }
 }
 .footer .footer__wrapper .footer-content .footer-form .form-title {
@@ -148,6 +148,12 @@
   .footer .footer__wrapper .footer-content .footer-form .form-title {
     font-size: 28px;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__wrapper .footer-content .footer-form .form-title {
+    font-size: 28px;
+    margin-bottom: 16px;
   }
 }
 .footer .footer__wrapper .footer-content .footer-form .form-item {
@@ -171,6 +177,11 @@
     width: 342px;
   }
 }
+@media (max-width: 768px) {
+  .footer .footer__wrapper .footer-content .footer-form .form-item {
+    width: 254px;
+  }
+}
 .footer .footer__wrapper .footer-content .footer-form .form-message {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -191,6 +202,11 @@
 @media (max-width: 1024px) {
   .footer .footer__wrapper .footer-content .footer-form .form-message {
     width: 342px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__wrapper .footer-content .footer-form .form-message {
+    width: 254px;
   }
 }
 .footer .footer__wrapper .footer-content .footer-form .form-items {
@@ -226,8 +242,12 @@
   .footer .footer__wrapper .footer-content .footer-form .form-items .form-button {
     flex-basis: 60px;
     margin-right: 0;
-    height: 60px;
     padding: 18px 109px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__wrapper .footer-content .footer-form .form-items .form-button {
+    padding: 18px 65px;
   }
 }
 .footer .footer__wrapper .footer-content .footer-form .form-items .form-checkbox {
@@ -270,6 +290,12 @@
     padding: 60px 40px;
   }
 }
+@media (max-width: 768px) {
+  .footer .footer__wrapper, .content-clients .content-clients__wrapper {
+    max-width: 768px;
+    padding: 40px;
+  }
+}
 
 .content-clients .content-clients__wrapper .content-clients__subtitle {
   font-family: "Inter", sans-serif;
@@ -291,17 +317,33 @@
     margin-bottom: 40px;
   }
 }
+@media (max-width: 768px) {
+  .content-clients .content-clients__wrapper .content-clients__subtitle {
+    margin-bottom: 32px;
+  }
+}
 .content-clients .content-clients__wrapper .content-clients__items {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, auto);
+  grid-auto-rows: auto;
   place-items: center;
   margin-bottom: 80px;
 }
 @media (max-width: 1024px) {
   .content-clients .content-clients__wrapper .content-clients__items {
     margin-bottom: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .content-clients .content-clients__wrapper .content-clients__items {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 32px;
+    gap: 10px;
+  }
+  .content-clients .content-clients__wrapper .content-clients__items .content-clients_item__position {
+    grid-column: 2/3;
   }
 }
 .content-clients .content-clients__wrapper .content-clients__items .content-clients_item {
@@ -330,6 +372,19 @@
     max-height: 55px;
   }
 }
+@media (max-width: 768px) {
+  .content-clients .content-clients__wrapper .content-clients__items .content-clients_item {
+    width: 164px;
+    height: 68px;
+  }
+  .content-clients .content-clients__wrapper .content-clients__items .content-clients_item .content-clients_img {
+    max-width: 160px;
+    max-height: 64px;
+  }
+  .content-clients .content-clients__wrapper .content-clients__items .content-clients_item .content-clients_img__size {
+    max-height: 50px;
+  }
+}
 .content-clients .content-clients__wrapper .content-call {
   background-color: rgb(55, 111, 255);
   border-radius: 12px;
@@ -343,6 +398,12 @@
   .content-clients .content-clients__wrapper .content-call {
     padding: 60px;
     gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .content-clients .content-clients__wrapper .content-call {
+    padding: 40px;
+    gap: 21px;
   }
 }
 .content-clients .content-clients__wrapper .content-call .content-call__description {
@@ -393,6 +454,12 @@
     line-height: 48px;
   }
 }
+@media (max-width: 768px) {
+  .content-clients .content-clients__wrapper .content-call .content-call__tel {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
 
 .footer {
   background-image: url(../../images/Header_footer_img/bg-img-net.png);
@@ -403,6 +470,7 @@
   display: grid;
   gap: 40px;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
 @media (max-width: 1024px) {
   .footer .footer__wrapper .footer-content {
@@ -421,8 +489,24 @@
          column-gap: 20px;
   }
 }
+@media (max-width: 768px) {
+  .footer .footer__wrapper .footer-content .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: space-between;
+  }
+}
 .footer .footer__wrapper .footer-content .footer-contacts .footer-logo {
   grid-column: 1/3;
+}
+@media (max-width: 768px) {
+  .footer .footer__wrapper .footer-content .footer-contacts .footer-logo {
+    max-width: 213px;
+  }
+  .footer .footer__wrapper .footer-content .footer-contacts .footer-logo .footer-logo__img {
+    max-width: 100%;
+  }
 }
 .footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__tel {
   display: flex;
@@ -446,6 +530,12 @@
 }
 .footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__tel-second {
   align-self: self-end;
+}
+@media (max-width: 768px) {
+  .footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__tel-second {
+    align-self: flex-start;
+    margin-top: -22px;
+  }
 }
 .footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__text {
   color: rgb(139, 155, 171);
@@ -507,6 +597,12 @@
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 768px) {
+  .footer .footer__wrapper .footer-content .footer-contacts .footer-contacts__map {
+    width: 100%;
+    height: 215px;
+  }
+}
 .footer .footer__wrapper .footer-content .footer-form .footer-form__title {
   font-family: "Inter", sans-serif;
   color: rgb(255, 255, 255);
@@ -551,6 +647,11 @@
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+@media (max-width: 1024px) {
+  .footer .watermark {
+    margin-top: 24px;
+  }
 }
 
 .wrapper-container-cost .container-cost .container-cost__tables .container-cost__tables-services .text--bgr-white,

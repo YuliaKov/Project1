@@ -114,6 +114,12 @@
   font-weight: 900;
   line-height: 79px;
 }
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
 
 .footer .footer__wrapper .footer-content .footer-form .form-items .form-checkbox .checkbox-item, .footer .footer__wrapper .footer-content .footer-form .form-message, .footer .footer__wrapper .footer-content .footer-form .form-item {
   border: 2px solid rgb(193, 211, 222);
@@ -128,14 +134,14 @@
 }
 
 .footer .footer__wrapper .footer-content .footer-form {
-  width: 680px;
+  flex-basis: 50%;
   padding: 60px;
   background-color: rgb(55, 111, 255);
   border-radius: 12px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .footer .footer__wrapper .footer-content .footer-form {
-    width: 462px;
+    padding: 40px;
   }
 }
 .footer .footer__wrapper .footer-content .footer-form .form-title {
@@ -156,6 +162,12 @@
   .footer .footer__wrapper .footer-content .footer-form .form-title {
     font-size: 28px;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__wrapper .footer-content .footer-form .form-title {
+    font-size: 28px;
+    margin-bottom: 16px;
   }
 }
 .footer .footer__wrapper .footer-content .footer-form .form-item {
@@ -179,6 +191,11 @@
     width: 342px;
   }
 }
+@media (max-width: 768px) {
+  .footer .footer__wrapper .footer-content .footer-form .form-item {
+    width: 254px;
+  }
+}
 .footer .footer__wrapper .footer-content .footer-form .form-message {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -199,6 +216,11 @@
 @media (max-width: 1024px) {
   .footer .footer__wrapper .footer-content .footer-form .form-message {
     width: 342px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__wrapper .footer-content .footer-form .form-message {
+    width: 254px;
   }
 }
 .footer .footer__wrapper .footer-content .footer-form .form-items {
@@ -234,8 +256,12 @@
   .footer .footer__wrapper .footer-content .footer-form .form-items .form-button {
     flex-basis: 60px;
     margin-right: 0;
-    height: 60px;
     padding: 18px 109px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__wrapper .footer-content .footer-form .form-items .form-button {
+    padding: 18px 65px;
   }
 }
 .footer .footer__wrapper .footer-content .footer-form .form-items .form-checkbox {
@@ -276,6 +302,12 @@
   .footer .footer__wrapper {
     max-width: 1024px;
     padding: 60px 40px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer__wrapper {
+    max-width: 768px;
+    padding: 40px;
   }
 }
 
