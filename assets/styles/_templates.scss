@@ -119,6 +119,10 @@
   font-size: 38px;
   font-weight: 900;
   line-height: 40px;
+  @media (max-width: 1024px) {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 @mixin text($font-family, $color) {
@@ -127,6 +131,10 @@
   font-weight: 400;
   line-height: 28px;
   color: $color;
+  @media (max-width: 1024px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @mixin form-text($font-weight, $color) {
@@ -154,7 +162,6 @@
   border-radius: 12px;
   @media (max-width: 1024px) {
     width: 462px;
-    height: 652px;
   }
   .form-title {
     @include subtitle($color_first);
@@ -212,7 +219,7 @@
       padding: 18px 42px;
       &::after {
         content: url(../../images/Header_footer_img/arrow.svg);
-        margin-left: 22px;
+        margin-left: 19px;
       }
       @media (max-width: 1024px) {
         flex-basis: 60px;
@@ -252,6 +259,10 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 80px 0;
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+    padding: 60px 40px;
+  }
 }
 
 %content-clients {
@@ -261,6 +272,9 @@
       @include subtitle($color_second);
       text-align: center;
       margin-bottom: 60px;
+      @media (max-width: 1024px) {
+        margin-bottom: 40px;
+      }
     }
     .content-clients__items {
       display: grid;
@@ -269,6 +283,9 @@
       grid-template-rows: repeat(2, auto);
       place-items: center;
       margin-bottom: 80px;
+      @media (max-width: 1024px) {
+        margin-bottom: 60px;
+      }
       .content-clients_item {
         width: 264px;
         height: 111px;
@@ -281,6 +298,17 @@
           max-width: 210px;
           max-height: 105px;
         }
+        @media (max-width: 1024px) {
+          width: 173px;
+          height: 72px;
+          .content-clients_img {
+            max-width: 207px;
+            max-height: 68px;
+          }
+          .content-clients_img__size {
+            max-height: 55px;
+          }
+        }
       }
     }
     .content-call {
@@ -288,15 +316,21 @@
       border-radius: 12px;
       padding: 60px 109px 52px 60px;
       display: flex;
-      // justify-content: space-between;
       align-items: center;
+      justify-content: flex-start;
       gap: 42px;
+      @media (max-width: 1024px) {
+        padding: 60px;
+        gap: 50px;
+      }
       .content-call__description {
-        flex-basis: 40%;
+        flex-basis: 50%;
         .content-call__subtitle {
           @include subtitle($color_first);
-          width: 618px;
           margin-bottom: 40px;
+          @media (max-width: 1024px) {
+            margin-bottom: 24px;
+          }
         }
 
         .content-call__text {
@@ -304,6 +338,10 @@
           color: $color_first;
           font-size: 26px;
           font-weight: 400;
+          @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 26px;
+          }
         }
       }
       .content-call__tel {
@@ -313,6 +351,10 @@
         line-height: 79px;
         color: $color_first;
         text-decoration: underline;
+        @media (max-width: 1024px) {
+          font-size: 40px;
+          line-height: 48px;
+        }
       }
     }
   }
@@ -324,16 +366,21 @@
   background-size: cover;
   .footer__wrapper {
     @extend %wrapper_position;
-    // padding: 80px auto 124px;
     .footer-content {
       display: grid;
       gap: 40px;
       grid-template-columns: 1fr 1fr;
+      @media (max-width: 1024px) {
+        gap: 20px;
+      }
       .footer-contacts {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, auto);
         gap: 40px;
+        @media (max-width: 1024px) {
+          column-gap: 20px;
+        }
         .footer-logo {
           grid-column: 1/3;
         }
@@ -350,6 +397,10 @@
           font-weight: 600;
           line-height: 130%;
           text-decoration: underline;
+          @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 26px;
+          }
         }
         .footer-contacts__tel-second {
           align-self: self-end;
@@ -360,6 +411,10 @@
           font-family: $font_main;
           font-size: 20px;
           font-weight: 600;
+          @media (max-width: 1024px) {
+            font-size: 16px;
+            line-height: 24px;
+          }
         }
         .footer-contacts__email {
           display: flex;
@@ -375,6 +430,10 @@
           font-weight: 600;
           line-height: 28px;
           text-decoration: underline;
+          @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 26px;
+          }
         }
 
         .footer-contacts__adress {
@@ -389,6 +448,10 @@
           font-size: 20px;
           font-weight: 600;
           line-height: 28px;
+          @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 26px;
+          }
         }
 
         .footer-contacts__map {
@@ -406,11 +469,17 @@
         .footer-form__title {
           @include subtitle($color_first);
           margin-bottom: 24px;
+          @media (max-width: 1024px) {
+            margin-bottom: 16px;
+          }
         }
 
         .form__subtitle {
           @include text($font_main, $color_first);
           margin-bottom: 40px;
+          @media (max-width: 1024px) {
+            margin-bottom: 20px;
+          }
         }
       }
     }

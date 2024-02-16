@@ -1,5 +1,5 @@
-@import '../vars';
-@import '../templates';
+@import "../vars";
+@import "../templates";
 
 * {
   box-sizing: border-box;
@@ -87,16 +87,33 @@
 .content-principles__wrapper {
   @extend %wrapper_position;
   display: flex;
+  align-items: center;
+  gap: 40px;
+  @media (max-width: 1024px) {
+    gap: 20px;
+  }
 }
 
 .content-principles__img {
   max-width: 680px;
-  margin-right: 39px;
+
+  @media (max-width: 1024px) {
+    max-width: 462px;
+    max-height: 424px;
+  }
+}
+
+.content-principles__text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @media (max-width: 1024px) {
+    gap: 20px;
+  }
 }
 
 .content-principles__subtitle {
   @include subtitle($color_second);
-  margin-bottom: 40px;
 }
 
 .content-principles__text-main {
@@ -105,11 +122,13 @@
 
 .content-principles__text-add {
   padding: 30px;
-  margin: 40px 0;
   background-color: $background-color_add;
   border: 1px solid $color_nav_form;
   border-radius: 12px;
   @include text($font_main, $color_second);
+  @media (max-width: 1024px) {
+    padding: 16px;
+  }
 }
 .content-advertising {
   background-color: $color_third;
@@ -132,6 +151,10 @@
   column-gap: 40px;
   row-gap: 24px;
   justify-content: center;
+  @media (max-width: 1024px) {
+    column-gap: 20px;
+    row-gap: 12px;
+  }
 }
 
 .content-advertising__logo-google {
@@ -142,6 +165,9 @@
   border-top: 1px solid $color-border;
   display: inline-block;
   padding-top: 40px;
+  @media (max-width: 1024px) {
+    padding-top: 26px;
+  }
 }
 
 .content-advertising__logo-fb {
@@ -154,11 +180,17 @@
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 24px;
+  @media (max-width: 1024px) {
+    margin-bottom: 0px;
+  }
 }
 
 .content-advertising__text {
   @include text($font_main, $color_first);
   margin-bottom: 8px;
+  @media (max-width: 1024px) {
+    margin-bottom: 12px;
+  }
 }
 
 .content-advertising__button {
@@ -206,11 +238,12 @@
   border-radius: 12px;
   border: 2px solid $color_nav_form;
   margin-right: 40px;
+  @media (max-width: 1024px) {
+    width: 220px;
+    height: 220px;
+    margin-right: 20px;
+  }
 }
-
-// .projects-slider__item:nth-child(4n) {
-//   margin-right: 0;
-// }
 
 /* Стиль для стрелок */
 .slick-prev,

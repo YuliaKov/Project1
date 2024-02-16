@@ -136,7 +136,6 @@
 @media (max-width: 1024px) {
   .footer .footer__wrapper .footer-content .footer-form {
     width: 462px;
-    height: 652px;
   }
 }
 .footer .footer__wrapper .footer-content .footer-form .form-title {
@@ -146,6 +145,12 @@
   font-weight: 900;
   line-height: 40px;
   margin-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  .footer .footer__wrapper .footer-content .footer-form .form-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 @media (max-width: 1024px) {
   .footer .footer__wrapper .footer-content .footer-form .form-title {
@@ -223,7 +228,7 @@
 }
 .footer .footer__wrapper .footer-content .footer-form .form-items .form-button::after {
   content: url(../../images/Header_footer_img/arrow.svg);
-  margin-left: 22px;
+  margin-left: 19px;
 }
 @media (max-width: 1024px) {
   .footer .footer__wrapper .footer-content .footer-form .form-items .form-button {
@@ -266,6 +271,12 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 80px 0;
+}
+@media (max-width: 1024px) {
+  .footer .footer__wrapper {
+    max-width: 1024px;
+    padding: 60px 40px;
+  }
 }
 
 /*шаблон для всех обычныйх текстов*/
@@ -387,6 +398,12 @@
   line-height: 40px;
   margin-bottom: 24px;
 }
+@media (max-width: 1024px) {
+  .footer .footer__wrapper .footer-content .footer-form .footer-form__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
 .footer .footer__wrapper .footer-content .footer-form .form__subtitle {
   font-family: "Inter", sans-serif;
   font-size: 20px;
@@ -394,6 +411,12 @@
   line-height: 28px;
   color: rgb(255, 255, 255);
   margin-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  .footer .footer__wrapper .footer-content .footer-form .form__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .footer .watermark {
   margin-top: 40px;
