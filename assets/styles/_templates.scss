@@ -24,6 +24,9 @@
       display: inline-flex;
     }
   }
+  @media (max-width: 431px) {
+    padding: 14px 16px;
+  }
   .header-wrapper {
     display: flex;
     .header-nav {
@@ -68,6 +71,9 @@
         background-color: transparent;
         border: 1px solid $color_nav_form;
         @extend %btn;
+        @media (max-width: 431px) {
+          display: none;
+        }
       }
 
       .header-top__button:hover {
@@ -115,6 +121,10 @@
     font-size: 48px;
     line-height: 56px;
   }
+  @media (max-width: 431px) {
+    font-size: 10vw;
+    line-height: 40px;
+  }
 }
 
 @mixin subtitle($color) {
@@ -126,6 +136,10 @@
   @media (max-width: 1024px) {
     font-size: 28px;
     line-height: 36px;
+  }
+  @media (max-width: 431px) {
+    font-size: 7.5vw;
+    line-height: 10vw;
   }
 }
 
@@ -157,6 +171,9 @@
   @media (max-width: 1024px) {
     margin-bottom: 12px;
   }
+  @media (max-width: 431px) {
+    margin-bottom: 9px;
+  }
 }
 
 %form {
@@ -167,17 +184,22 @@
   @media (max-width: 768px) {
     padding: 40px;
   }
+  @media (max-width: 431px) {
+    flex-basis: 100vw;
+    padding: 40px 5%;
+    border-radius: 0;
+  }
 
   .form-title {
     @include subtitle($color_first);
     margin-bottom: 40px;
     @media (max-width: 1024px) {
-      font-size: 28px;
       margin-bottom: 20px;
     }
     @media (max-width: 768px) {
-      font-size: 28px;
       margin-bottom: 16px;
+    }
+    @media (max-width: 431px) {
     }
   }
   .form-item {
@@ -194,6 +216,9 @@
     }
     @media (max-width: 768px) {
       width: 254px;
+    }
+    @media (max-width: 431px) {
+      width: 100%;
     }
   }
   .form-message {
@@ -212,6 +237,9 @@
     @media (max-width: 768px) {
       width: 254px;
     }
+    @media (max-width: 431px) {
+      width: 100%;
+    }
   }
   .form-items {
     display: flex;
@@ -220,6 +248,9 @@
     @media (max-width: 1024px) {
       flex-direction: column;
       gap: 20px;
+    }
+    @media (max-width: 431px) {
+      gap: 10px;
     }
 
     .form-button {
@@ -243,6 +274,9 @@
       }
       @media (max-width: 768px) {
         padding: 18px 65px;
+      }
+      @media (max-width: 431px) {
+        width: 100%;
       }
     }
     .form-checkbox {
@@ -283,6 +317,10 @@
     max-width: 768px;
     padding: 40px;
   }
+  @media (max-width: 431px) {
+    max-width: 100vw;
+    padding: 40px 5%;
+  }
 }
 
 %content-clients {
@@ -316,6 +354,12 @@
         gap: 10px;
         .content-clients_item__position {
           grid-column: 2/3;
+        }
+      }
+      @media (max-width: 431px) {
+        grid-template-columns: 1fr 1fr;
+        .content-clients_item__position {
+          grid-column: 1/2;
         }
       }
       .content-clients_item {
@@ -352,6 +396,17 @@
             max-height: 50px;
           }
         }
+        @media (max-width: 431px) {
+          width: 43.43vw;
+          height: 22.19vw;
+          .content-clients_img {
+            max-width: 95%;
+            max-height: 95%;
+          }
+          .content-clients_img__size {
+            max-height: 95%;
+          }
+        }
       }
     }
     .content-call {
@@ -370,6 +425,11 @@
         padding: 40px;
         gap: 21px;
       }
+      @media (max-width: 431px) {
+        flex-direction: column;
+        gap: 24px;
+        padding: 12.5% 6.25%;
+      }
       .content-call__description {
         flex-basis: 50%;
         .content-call__subtitle {
@@ -377,6 +437,9 @@
           margin-bottom: 40px;
           @media (max-width: 1024px) {
             margin-bottom: 24px;
+          }
+          @media (max-width: 431px) {
+            font-size: 8.75vw;
           }
         }
 
@@ -388,6 +451,9 @@
           @media (max-width: 1024px) {
             font-size: 18px;
             line-height: 26px;
+          }
+          @media (max-width: 431px) {
+            font-size: 5vw;
           }
         }
       }
@@ -405,6 +471,10 @@
         @media (max-width: 768px) {
           font-size: 32px;
           line-height: 40px;
+        }
+        @media (max-width: 431px) {
+          align-self: self-start;
+          font-size: 8.75vw;
         }
       }
     }
@@ -425,6 +495,9 @@
       @media (max-width: 1024px) {
         gap: 20px;
       }
+      @media (max-width: 431px) {
+        grid-template-columns: 1fr;
+      }
       .footer-contacts {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -438,6 +511,9 @@
           flex-direction: column;
           gap: 32px;
           justify-content: space-between;
+        }
+        @media (max-width: 431px) {
+          grid-row: 2/3;
         }
         .footer-logo {
           grid-column: 1/3;
@@ -538,11 +614,21 @@
       }
       .footer-form {
         @extend %form;
+        @media (max-width: 431px) {
+          border-radius: 12px;
+          padding: 40px 6.25vw;
+          .form-item {
+            height: 48px;
+          }
+        }
         .footer-form__title {
           @include subtitle($color_first);
           margin-bottom: 24px;
           @media (max-width: 1024px) {
             margin-bottom: 16px;
+          }
+          @media (max-width: 431px) {
+            font-size: 8.75vw;
           }
         }
 
@@ -551,6 +637,14 @@
           margin-bottom: 40px;
           @media (max-width: 1024px) {
             margin-bottom: 20px;
+          }
+        }
+        .form-items {
+          .form-button {
+            @media (max-width: 431px) {
+              height: 48px;
+              padding: 12px 19vw;
+            }
           }
         }
       }
