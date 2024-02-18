@@ -22,10 +22,16 @@
       <header class="header">
         <div class="header-top">
           <img
-            class="header-logo"
+            class="header-logo header-logo__white"
             src="./assets/images/Header_footer_img/logo_header.svg"
             alt=""
           />
+          <img
+            class="header-logo header-logo__dark"
+            src="./assets/images/Header_footer_img/logo_dark.svg"
+            alt=""
+          />
+
           <div class="header-wrapper">
             <nav class="header-nav">
               <ul class="header-nav__items">
@@ -47,7 +53,9 @@
                   <a class="header-nav__link" href="seo.html">SEO</a>
                 </li>
                 <li class="header-nav__item">
-                  <a class="header-nav__link" href="contacts.html">Контакты</a>
+                  <a class="header-nav__link active-page" href="contacts.html"
+                    >Контакты</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -57,6 +65,9 @@
               </button>
               <button class="header-top__button header-top__lang">LV</button>
             </div>
+          </div>
+          <div class="burger">
+            <span></span>
           </div>
         </div>
         <div class="title-wrapper">
@@ -68,7 +79,14 @@
         <div class="footer__wrapper">
           <div class="footer-content">
             <div class="footer-contacts">
-                            <div class="footer-contacts__tel footer-contacts__tel-first">
+              <div class="footer-logo">
+                <img
+                  class="footer-logo__img"
+                  src="./assets/images/Header_footer_img/logo_footer.svg"
+                  alt=""
+                />
+              </div>
+              <div class="footer-contacts__tel footer-contacts__tel-first">
                 <p class="footer-contacts__text">Телефон</p>
                 <p class="footer-contacts__tel-num">+001 987-654-3210</p>
               </div>
@@ -90,36 +108,36 @@
             <div class="footer-form">
               <form action="#" method="post">
                 <p class="footer-form__title">Есть вопросы?</p>
-                <p class="form__subtitle">
-                  Свяжитесь с нами</p>
-                  <input
-                    class="form-item"
-                    id="input-name"
-                    type="text"
-                    placeholder="Имя"
-                  />
-                  <input
-                    class="form-item"
-                    id="input-email"
-                    type="email"
-                    placeholder="Email"
-                  />
-                  <input
-                    class="form-item"
-                    id="input-tel"
-                    type="tel"
-                    placeholder="+7 999 999 99 99"
-                  />
-                  <textarea
-                    class="form-message"
-                    name=""
-                    id=""
-                    placeholder="Ваше сообщение"
-                  ></textarea>
-                </p>
+                <p class="form__subtitle">Свяжитесь с нами</p>
+                <input
+                  class="form-item"
+                  id="footer_input-name"
+                  type="text"
+                  placeholder="Имя"
+                />
+                <input
+                  class="form-item"
+                  id="footer_input-email"
+                  type="email"
+                  placeholder="Email"
+                />
+                <input
+                  class="form-item"
+                  id="footer_input-tel"
+                  type="tel"
+                  placeholder="+7 999 999 99 99"
+                />
+                <textarea
+                  class="form-message"
+                  name="form-message"
+                  id="footer_your-message"
+                  placeholder="Ваше сообщение"
+                ></textarea>
 
                 <div class="form-items">
-                  <button id="" class="form-button">Отправить</button>
+                  <button id="footer_send-button" class="form-button">
+                    Отправить
+                  </button>
                   <div class="form-checkbox">
                     <input class="checkbox-item" type="checkbox" />
                     <p class="checkbox-text">
@@ -137,5 +155,8 @@
         </div>
       </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/main_js/main.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
-@import '../vars';
-@import '../templates';
+@import "../vars";
+@import "../templates";
 
 * {
   box-sizing: border-box;
@@ -19,6 +19,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (max-width: 768px) {
+    height: 340px;
+  }
+  @media (max-width: 431px) {
+    height: 320px;
+  }
 }
 
 .header-top {
@@ -28,6 +34,18 @@
 .title-wrapper {
   max-width: 1400px;
   margin: 121px auto;
+  @media (max-width: 1024px) {
+    max-width: 100%;
+    display: flex;
+    padding-left: 40px;
+  }
+
+  @media (max-width: 768px) {
+    margin: 80px auto;
+  }
+  @media (max-width: 431px) {
+    padding-left: 5vw;
+  }
 }
 
 .header-title {
@@ -36,6 +54,9 @@
 
 .header-title__contacts {
   max-width: 440px;
+  @media (max-width: 1024px) {
+    max-width: 560px;
+  }
 }
 
 .footer {
@@ -44,18 +65,34 @@
   background-size: cover;
   .footer__wrapper {
     @extend %wrapper_position;
-    // padding: 80px auto 124px;
     .footer-content {
       display: grid;
       gap: 40px;
       grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      @media (max-width: 1024px) {
+        gap: 20px;
+      }
+      @media (max-width: 431px) {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
       .footer-contacts {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, auto);
         gap: 40px;
-        .footer-logo {
-          grid-column: 1/3;
+        @media (max-width: 1024px) {
+          column-gap: 20px;
+        }
+        @media (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          justify-content: space-between;
+        }
+        @media (max-width: 431px) {
+          grid-row: 2/3;
         }
         .footer-contacts__tel {
           display: flex;
@@ -70,9 +107,17 @@
           font-weight: 600;
           line-height: 130%;
           text-decoration: underline;
+          @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 26px;
+          }
         }
         .footer-contacts__tel-second {
           align-self: self-end;
+          @media (max-width: 768px) {
+            align-self: flex-start;
+            margin-top: -22px;
+          }
         }
 
         .footer-contacts__text {
@@ -80,6 +125,10 @@
           font-family: $font_main;
           font-size: 20px;
           font-weight: 600;
+          @media (max-width: 1024px) {
+            font-size: 16px;
+            line-height: 24px;
+          }
         }
         .footer-contacts__email {
           display: flex;
@@ -95,6 +144,10 @@
           font-weight: 600;
           line-height: 28px;
           text-decoration: underline;
+          @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 26px;
+          }
         }
 
         .footer-contacts__adress {
@@ -109,6 +162,10 @@
           font-size: 20px;
           font-weight: 600;
           line-height: 28px;
+          @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 26px;
+          }
         }
 
         .footer-contacts__map {
@@ -120,18 +177,29 @@
           background-image: url(../../images/Header_footer_img/map.jpg);
           background-position: center;
           background-size: cover;
+          @media (max-width: 768px) {
+            width: 100%;
+            height: 307px;
+          }
         }
       }
       .footer-form {
         @extend %form;
+        border-radius: 12px;
         .footer-form__title {
           @include subtitle($color_first);
           margin-bottom: 24px;
+          @media (max-width: 431px) {
+            margin-bottom: 16px;
+          }
         }
 
         .form__subtitle {
           @include text($font_main, $color_first);
           margin-bottom: 40px;
+          @media (max-width: 431px) {
+            margin-bottom: 20px;
+          }
         }
       }
     }
