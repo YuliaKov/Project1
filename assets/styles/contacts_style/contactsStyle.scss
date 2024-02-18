@@ -19,6 +19,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (max-width: 768px) {
+    height: 340px;
+  }
+  @media (max-width: 431px) {
+    height: 320px;
+  }
 }
 
 .header-top {
@@ -30,9 +36,12 @@
   margin: 121px auto;
   @media (max-width: 1024px) {
     max-width: 100%;
-
+    display: flex;
     padding-left: 40px;
-    padding-top: 30px;
+  }
+
+  @media (max-width: 768px) {
+    margin: 80px auto;
   }
   @media (max-width: 431px) {
     padding-left: 5vw;
@@ -180,11 +189,17 @@
         .footer-form__title {
           @include subtitle($color_first);
           margin-bottom: 24px;
+          @media (max-width: 431px) {
+            margin-bottom: 16px;
+          }
         }
 
         .form__subtitle {
           @include text($font_main, $color_first);
           margin-bottom: 40px;
+          @media (max-width: 431px) {
+            margin-bottom: 20px;
+          }
         }
       }
     }
