@@ -934,12 +934,17 @@
 }
 @media screen and (max-width: 1024px) {
   .header {
-    height: 416px;
+    height: 496px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    height: 340px;
   }
 }
 @media screen and (max-width: 320px) {
   .header {
-    height: 260px;
+    height: 320px;
   }
 }
 .header .header-title {
@@ -955,19 +960,21 @@
 @media screen and (max-width: 1024px) {
   .header .header-title {
     margin-left: 4%;
-    padding-top: 0;
+    padding-top: 140px;
   }
 }
 @media screen and (max-width: 768px) {
   .header .header-title {
-    margin-left: 4%;
+    margin-left: 5%;
     max-width: 70%;
+    padding-top: 76px;
   }
 }
 @media screen and (max-width: 320px) {
   .header .header-title {
     margin-left: 5%;
     max-width: 100%;
+    padding-top: 40px;
   }
 }
 .header .header-title .header-title__title {
