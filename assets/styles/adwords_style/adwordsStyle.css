@@ -24,6 +24,7 @@
   .header-top {
     display: flex;
     width: 100%;
+    background-color: #fff;
     padding: 16px 40px;
   }
   .header-top .header-logo__white {
@@ -135,11 +136,6 @@
   background-color: transparent;
   border: 1px solid rgb(193, 211, 222);
 }
-@media (max-width: 431px) {
-  .header-top .header-wrapper .header-top__buttons .header-top__button {
-    display: none;
-  }
-}
 .header-top .header-wrapper .header-top__buttons .header-top__button:hover {
   border: 1px solid rgb(255, 255, 255);
   color: rgb(255, 255, 255);
@@ -154,6 +150,7 @@
     margin-right: 0;
   }
   .header-top .header-wrapper .header-top__buttons .header-top__button {
+    width: 288px;
     color: rgb(139, 155, 171);
     border: 1px solid rgb(55, 111, 255);
   }
