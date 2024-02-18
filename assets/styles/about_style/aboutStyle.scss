@@ -89,14 +89,17 @@
   justify-content: space-around;
   gap: 40px;
   @media screen and (max-width: 1024px) {
+    min-height: 544px;
     padding: 60px 4%;
     gap: 20px;
   }
   @media screen and (max-width: 768px) {
+    min-height: 578px;
     padding: 40px 4%;
     gap: 20px;
   }
   @media screen and (max-width: 320px) {
+    min-height: 1052px;
     padding: 40px 5%;
     gap: 15px;
   }
@@ -106,7 +109,7 @@
     font-size: 26px;
     font-weight: 700;
     line-height: 130%;
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 1024px) {
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -115,11 +118,9 @@
   .content__list {
     @extend %normal-text;
     color: $background-color_second;
-    @media screen and (max-width: 320px) {
-      margin-left: 15px;
-    }
     ul {
-      list-style: inside;
+      margin-left: 16px;
+      list-style: unset;
       @media screen and (max-width: 320px) {
         list-style: disc;
       }
@@ -127,7 +128,7 @@
         color: #376fff;
       }
     }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 1024px) {
       font-family: $font_main;
       font-size: 16px;
       font-weight: 400;
@@ -143,6 +144,9 @@
     background: rgb(251, 247, 241);
     padding: 15px;
     @media screen and (max-width: 320px) {
+      padding: 20px;
+    }
+    @media screen and (max-width: 1024px) {
       font-family: $font_main;
       font-size: 16px;
       font-weight: 400;
@@ -152,7 +156,7 @@
   .content__remark {
     @extend %normal-text;
     color: $background-color_second;
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 1024px) {
       font-family: $font_main;
       font-size: 16px;
       font-weight: 400;
@@ -195,10 +199,14 @@
       line-height: 40px;
       border-bottom: 1px solid #c1d3de;
       padding: 40px 0;
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: 1024px) {
         font-size: 28px;
         line-height: 36px;
         padding: 24px 0;
+      }
+      @media screen and (max-width: 320px) {
+        padding: 20px 0;
+        padding-bottom: 32px;
       }
     }
   }
@@ -212,7 +220,7 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 1024px) {
       font-size: 16px;
       line-height: 24px;
     }
@@ -224,6 +232,9 @@
     display: flex;
     align-items: center;
     padding: 20px 0;
+    @media screen and (max-width: 768px) {
+      padding: 16px 0;
+    }
     @media screen and (max-width: 320px) {
       padding: 12px 0;
     }
@@ -247,7 +258,7 @@
     padding-left: 32px;
     padding-bottom: 20px;
     @extend %normal-text;
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 1024px) {
       font-size: 16px;
       line-height: 24px;
     }
@@ -267,11 +278,11 @@
     padding: 0 4%;
   }
   @media screen and (max-width: 320px) {
-    padding: 40px 4%;
+    padding: 40px 5%;
   }
   .aside-top {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 0.9fr 1fr 1fr;
     column-gap: 20px;
     .aside-top__title {
       @media screen and (max-width: 1024px) {
@@ -337,6 +348,9 @@
   padding-top: 20px;
   @media screen and (max-width: 1024px) {
     @include footer-top-normal(18px, 400, 26px);
+  }
+  @media screen and (max-width: 320px) {
+    padding-top: 24px;
   }
 }
 .text-smalfooter {
