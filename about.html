@@ -19,15 +19,15 @@
       <header class="header">
         <div class="header-top">
           <img
-            class="header-logo"
+            class="header-logo header-logo__white"
             src="./assets/images/Header_footer_img/logo_header.svg"
             alt=""
           />
           <img
-    class="header-logo header-logo__dark"
-    src="./assets/images/Header_footer_img/logo_dark.svg"
-    alt=""
-  />
+            class="header-logo header-logo__dark"
+            src="./assets/images/Header_footer_img/logo_dark.svg"
+            alt=""
+          />
           <div class="header-wrapper">
             <nav class="header-nav">
               <ul class="header-nav__items">
@@ -35,10 +35,14 @@
                   <a class="header-nav__link" href="index.html">Главная</a>
                 </li>
                 <li class="header-nav__item">
-                  <a class="header-nav__link active-page" href="about.html">О нас</a>
+                  <a class="header-nav__link active-page" href="about.html"
+                    >О нас</a
+                  >
                 </li>
                 <li class="header-nav__item">
-                  <a class="header-nav__link" href="adwords.html">Google Adwords</a>
+                  <a class="header-nav__link" href="adwords.html"
+                    >Google Adwords</a
+                  >
                 </li>
                 <li class="header-nav__item">
                   <a class="header-nav__link" href="smm.html">SMM</a>
@@ -58,16 +62,19 @@
               <button class="header-top__button header-top__lang">LV</button>
             </div>
           </div>
+          <div class="burger">
+            <span></span>
+          </div>
         </div>
-      <div class="container-title">
-        <div class="header-title">
-          <h1 class="header-title__title">О нас</h1>
-          <p class="header-title__description">
-            Ora – маркетинговое агентство, специализирующееся на работе с малым
-            бизнесом.
-          </p>
-       </div>
-      </div>
+        <div class="container-title">
+          <div class="header-title">
+            <h1 class="header-title__title">О нас</h1>
+            <p class="header-title__description">
+              Ora – маркетинговое агентство, специализирующееся на работе с
+              малым бизнесом.
+            </p>
+          </div>
+        </div>
       </header>
       <main>
         <atricle>
@@ -81,9 +88,11 @@
               Мы предлагаем клиентам:
               <ul>
                 <li>Работы по полному обслуживанию бизнеса (full service);</li>
-                <li>Работы по реализации отдельных проектов в рамках бизнеса.
+                <li>
+                  Работы по реализации отдельных проектов в рамках бизнеса.
                 </li>
-                <li>В своей работе мы ценим порядочность и честность, так как эти
+                <li>
+                  В своей работе мы ценим порядочность и честность, так как эти
                   составляющие позволяют нам меняться и совершенствоваться
                   вместе с клиентами. Мы ценим это и в наших клиентах.
                 </li>
@@ -236,7 +245,7 @@
           </div>
         </section>
       </main>
-      
+
       <aside>
         <div class="aside-top-wrapper">
           <div class="aside-top">
@@ -271,8 +280,7 @@
         </div>
       </aside>
 
-
-     <div class="content-clients">
+      <div class="content-clients">
         <div class="content-clients__wrapper">
           <p class="content-clients__subtitle">
             Клиенты, которые нам доверяют​
@@ -367,60 +375,63 @@
             <div class="footer-contacts">
               <div class="footer-logo">
                 <img
-              class="footer-logo__img"
-              src="./assets/images/Header_footer_img/logo_footer.svg"
-              alt=""
-              />
-            </div>
+                  class="footer-logo__img"
+                  src="./assets/images/Header_footer_img/logo_footer.svg"
+                  alt=""
+                />
+              </div>
               <div class="footer-contacts__tel footer-contacts__tel-first">
                 <p class="footer-contacts__text">Телефон</p>
                 <p class="footer-contacts__tel-num">+001 987-654-3210</p>
               </div>
-              <div class="footer-contacts__tel-num footer-contacts__tel-second">+001 987-654-3210</div>
+              <div class="footer-contacts__tel-num footer-contacts__tel-second">
+                +001 987-654-3210
+              </div>
               <div class="footer-contacts__email">
                 <p class="footer-contacts__text">Email</p>
                 <p class="footer-contacts__email-adress">info@example.com</p>
               </div>
               <div class="footer-contacts__adress">
                 <p class="footer-contacts__text">Адрес</p>
-                <p class="footer-contacts__adress-text">123/B, Route 66, Downtown, Washington, DC 20004, US​</p>
+                <p class="footer-contacts__adress-text">
+                  123/B, Route 66, Downtown, Washington, DC 20004, US​
+                </p>
               </div>
-              <div class="footer-contacts__map">
-              </div>
+              <div class="footer-contacts__map"></div>
             </div>
             <div class="footer-form">
               <form action="#" method="post">
                 <p class="footer-form__title">Есть вопросы?</p>
-                <p class="form__subtitle">
-                  Свяжитесь с нами</p>
-                  <input
-                    class="form-item"
-                    id="input-name"
-                    type="text"
-                    placeholder="Имя"
-                  />
-                  <input
-                    class="form-item"
-                    id="input-email"
-                    type="email"
-                    placeholder="Email"
-                  />
-                  <input
-                    class="form-item"
-                    id="input-tel"
-                    type="tel"
-                    placeholder="+7 999 999 99 99"
-                  />
-                  <textarea
-                    class="form-message"
-                    name=""
-                    id=""
-                    placeholder="Ваше сообщение"
-                  ></textarea>
-                </p>
+                <p class="form__subtitle">Свяжитесь с нами</p>
+                <input
+                  class="form-item"
+                  id="footer_input-name"
+                  type="text"
+                  placeholder="Имя"
+                />
+                <input
+                  class="form-item"
+                  id="footer_input-email"
+                  type="email"
+                  placeholder="Email"
+                />
+                <input
+                  class="form-item"
+                  id="footer_input-tel"
+                  type="tel"
+                  placeholder="+7 999 999 99 99"
+                />
+                <textarea
+                  class="form-message"
+                  name="form-message"
+                  id="footer_your-message"
+                  placeholder="Ваше сообщение"
+                ></textarea>
 
                 <div class="form-items">
-                  <button id="" class="form-button">Отправить</button>
+                  <button id="footer_send-button" class="form-button">
+                    Отправить
+                  </button>
                   <div class="form-checkbox">
                     <input class="checkbox-item" type="checkbox" />
                     <p class="checkbox-text">
@@ -435,7 +446,7 @@
             </div>
           </div>
           <p class="watermark">SIA OL © Visas tiesības aizsargātas 2021</p>
-        </div>    
+        </div>
       </footer>
     </div>
     <script src="./assets/js/main_js/main.js"></script>
