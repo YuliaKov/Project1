@@ -1,6 +1,24 @@
 @import '../vars';
 @import '../templates';
 
+/* Вынести в _template для удобства */
+
+%sectionPadding {
+  /*padding: 80px 13.5vw;*/
+  padding: 80px 0;
+}
+
+%sectionBlock {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+%headerBgImg {
+  background-image: url('../../images/smm_img/smm-header-bg-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -31,12 +49,28 @@
   font-weight: 700;
 }
 
+.space {
+  display: block;
+  height: 8px;
+}
+
+.cell-link {
+  color: $color_form-button;
+}
+
 .text2 {
   font-family: $font_main;
   font-size: 26px;
   font-weight: 400;
   line-height: 34px;
   padding-top: 24px;
+}
+
+.text3 {
+  font-family: $font_add;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
 }
 
 .header-cell {
@@ -49,10 +83,15 @@
   padding: 13px 20px;
 }
 
-/* Header: лого + меню + кнопки */
+.even {
+  background-color: $background-color_first;
+}
 
-.header-top {
-  @extend %header-top;
+.section2__grid,
+.section3__grid,
+.section8__grid,
+.section10__grid {
+  display: none;
 }
 
 /* Header: заголовок сайта */
@@ -60,22 +99,30 @@
 .header {
   width: 100vw;
   height: 496px;
-  background-color: #000;
-  background-image: url('../../images/smm_img/smm-header-bg-img.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   color: $color_first;
+  @extend %headerBgImg;
+
+  /* Header: лого + меню + кнопки */
+
+  .header-top {
+    @extend %header-top;
+  }
 
   .header__main {
-    height: 400px;
+    height: 416px;
     max-width: 800px;
     margin-left: 260px;
 
     .header__title {
+      margin: 0;
       font-family: $font_main;
       font-size: 68px;
       font-weight: 900;
       line-height: 79px;
+    }
+
+    .header__text {
+      padding-top: 28px;
     }
   }
 }
@@ -92,13 +139,19 @@
     @extend %sectionBlock;
     display: grid;
     grid-template-columns: 680px 1fr;
-    grid-template-rows: 1fr 1.5fr 2fr;
+    grid-template-rows: repeat(3, auto);
     grid-gap: 40px;
     color: $color_second;
 
     .section1-grid__block1 {
       grid-area: 1/1/5/2;
       align-self: center;
+
+      .section1-grid__block1-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     .section1-grid__block4 {
@@ -111,7 +164,7 @@
       background-color: $background-color_add;
       border: 1px solid $color_nav_form;
       border-radius: 12px;
-      padding: 15px 30px;
+      padding: 30px;
     }
   }
 }
@@ -151,18 +204,6 @@
     .custom-width2 {
       width: 33.75vw;
     }
-
-    .even {
-      background-color: $background-color_first;
-    }
-
-    .row5-cell_space {
-      display: block;
-      height: 8px;
-    }
-    .row4__cell-link {
-      color: $color_form-button;
-    }
   }
 }
 
@@ -196,6 +237,10 @@
   .section3__header {
     @extend %sectionBlock;
     text-align: center;
+
+    .section3-header__text {
+      padding-top: 24px;
+    }
   }
 }
 
@@ -212,12 +257,16 @@
     width: 100%;
 
     .row1__cell {
-      width: 14.53vw;
+      width: 20%;
     }
 
     .odd {
       background-color: $color_first;
     }
+  }
+
+  .section3__grid {
+    display: none;
   }
 }
 
@@ -287,7 +336,7 @@
     .section5-grid__block {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 2fr 2.5fr;
+      grid-template-rows: 2px repeat(2, auto);
       grid-gap: 28px;
 
       .section5-grid__element {
@@ -296,6 +345,10 @@
         border: 1px solid $color_border;
       }
     }
+  }
+
+  .section5__menu {
+    display: none;
   }
 }
 
@@ -350,7 +403,7 @@
     padding-top: 60px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr 1fr 3.5fr;
+    grid-template-rows: repeat(4, auto);
     grid-gap: 40px;
 
     .section7-block1__list {
@@ -413,8 +466,7 @@
     .section8-list__block {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(7, 1fr);
-      /*border: 0.5px solid $color_nav_form;*/
+      grid-template-rows: repeat(7, auto);
       border-radius: 12px;
 
       .section8-list__item {
@@ -467,6 +519,7 @@
 
 /* Section 9 */
 
+/*
 .section9 {
   @extend %sectionPadding;
   @extend %sectionBlock;
@@ -507,6 +560,70 @@
       }
     }
   }
+} */
+
+.section9 {
+  @extend %sectionPadding;
+  @extend %sectionBlock;
+  color: $color_second;
+
+  .section9__block {
+    margin-top: 40px;
+    border-top: 1px solid $color_nav_form;
+
+    .section9-block__item {
+      padding: 20px 0;
+      border-bottom: 1px solid $color_nav_form;
+
+      .section9-block__item-text1 {
+        padding: 12px 0 8px 0;
+      }
+
+      .section9-block__item-title2 {
+        padding-bottom: 4px;
+      }
+
+      .section9-block__input {
+        display: none;
+      }
+
+      .section9-block__label {
+        display: grid;
+        grid-template: auto / 24px 1fr;
+        grid-gap: 20px;
+        align-items: center;
+      }
+
+      .section9-block__label {
+        .section9_block__label-item {
+          width: 22px;
+          height: 22px;
+          background-size: contain;
+          background-image: url(../../images/smm_img/smm-plus-icon.png);
+          display: inline-block;
+        }
+      }
+
+      .section9-block__input:checked ~ .section9-block__label {
+        .section9_block__label-item {
+          background-image: url(../../images/smm_img/smm-minus-icon.png);
+        }
+      }
+
+      .section9-block__content {
+        display: none;
+      }
+
+      .section9-block__input:checked ~ .section9-block__content {
+        display: block;
+        padding: 12px 40px 0 44px;
+      }
+
+      .section9-block__content-title {
+        padding: 8px 0 4px 0;
+      }
+    }
+  }
 }
 
 /* Section 10 - Стоимость услуг */
@@ -537,7 +654,7 @@
     }
 
     .row1__cell {
-      width: 11.47vw;
+      width: calc(100% / 3);
     }
   }
 }
@@ -546,13 +663,21 @@
   @extend %sectionBlock;
   margin-top: 61px;
   display: grid;
-  grid-template-columns: 40px 1fr;
-  grid-gap: 20px;
+  grid-template: repeat(3, auto) / 36.67px 1fr;
+  gap: 9px 20px;
   align-items: center;
   padding: 40px;
   border-radius: 12px;
   border: 1px solid $color_nav_form;
   background-color: $background-color_first;
+
+  .section10__img {
+    grid-area: 1/1/4/2;
+  }
+
+  .section10__grid {
+    display: none;
+  }
 }
 
 /* Section 11 - Клиенты, которые нам доверяют */
@@ -565,4 +690,1183 @@
 
 .footer {
   @extend %footer;
+}
+
+/* Разметка для экрана от 1024px до 1399px */
+
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  %sectionPadding-1024 {
+    padding: 60px 40px;
+  }
+
+  %sectionBlock-1024 {
+    margin: 0 auto;
+    max-width: 1399px;
+  }
+
+  .title2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .title3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .text2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .header-cell {
+    border: 1px solid $color_nav_form;
+    padding: 20px 10px;
+  }
+
+  .cell {
+    border: 1px solid $color_nav_form;
+    padding: 12px 10px;
+  }
+
+  .checked-item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* Header */
+
+  .header {
+    height: 496px;
+    background-image: none;
+
+    .header__main {
+      margin-left: 40px;
+      max-width: 560px;
+      padding: 91.5px 0 147.5px 0;
+      background-image: url('../../images/smm_img/smm-header-bg-img.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .header__title {
+        margin-bottom: 28px;
+        font-size: 3rem;
+        line-height: 3.69rem;
+      }
+
+      .header__text {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  /* Section 1 - Ведение соцсетей 
+  - Картинку не получится равнять сверху, поскольку пэддинги сверху и снизу у .section1 различаются, а сама картинка расположена ровно по центру. Можно переверстать весь блок, но насколько это целесообразно из-за 1,5px
+  */
+
+  .section1 {
+    padding: 59.62px 40px 60.38px 40px;
+
+    .section1__grid {
+      @extend %sectionBlock-1024;
+      display: grid;
+      grid-template-columns: 462px 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 24px;
+      font-size: 20px;
+      line-height: 28px;
+
+      .section1-grid__block3-text,
+      .section1-grid__block4-text {
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      .section1-grid__block4 {
+        grid-template-columns: 91px 1fr;
+        grid-gap: 12px;
+        padding: 16px;
+
+        .section1-grid__block4-img {
+          padding-top: 12.62px;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+
+  /* Section 2 - Пример контент-плана на месяц 
+  - Содержание дальних столбцов немного отличается
+  - 3 столб, 2 строка: нет переноса */
+
+  .section2 {
+    @extend %sectionBlock-1024;
+    padding: 60px 40px 40px 41px;
+
+    .section2__header {
+      max-width: 100vw;
+      padding-bottom: 40px;
+    }
+
+    .custom-width1 {
+      min-width: 168px;
+    }
+
+    .custom-width2 {
+      min-width: 446px;
+    }
+
+    .section2__grid {
+      display: none;
+    }
+  }
+
+  /* Section 3 - Структура коммуникации 
+  Текст распределяется в клетках по-другому */
+
+  .section3 {
+    padding: 40px 44px 61px 41px;
+
+    .section3-header__text {
+      font-weight: 400;
+    }
+
+    .section3__border {
+      margin-top: 40px;
+    }
+
+    .section3__grid {
+      display: none;
+    }
+  }
+
+  /* Section 4 - Таргетированная реклама 
+  Расстояния между 2 и 3 абзацами отличаются*/
+
+  .section4 {
+    @extend %sectionPadding-1024;
+
+    .section4__grid {
+      margin-top: 40px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20.58px;
+
+      .section4-grid__block2-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  /* Section 5 - Почему нужно использовать... */
+  .section5 {
+    padding: 40px 40px 60px 40px;
+
+    .section5__grid {
+      margin-top: 40px;
+      grid-gap: 20px;
+
+      .section5-grid__block {
+        grid-gap: 20px;
+      }
+    }
+
+    .section5__menu {
+      display: none;
+    }
+  }
+
+  /* Section 6 - Настройки таргетинга... 
+  Расстояние между строками в первом столбце списков неправильное(???)
+  Затык с размером шрифта в столбцах */
+  .section6 {
+    padding: 60px 40px 40px 40px;
+
+    .section6__header {
+      padding-right: 35px;
+    }
+
+    .section6__block {
+      margin-top: 32px;
+
+      .section6-block__table {
+        margin-top: 16px;
+        grid-gap: 21px;
+
+        .section6-block__list {
+          .section6-block__item {
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          .section6-block__item__downsized {
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  /* Section 7 - Настройки рекламы... */
+
+  .section7 {
+    padding: 0 40px 40px 40px;
+
+    .section7__grid {
+      padding-top: 32px;
+      /*grid-template-rows: 2.81fr 1.38fr 1fr 3.9fr;*/
+      grid-gap: 20px;
+
+      .section7-block1__list {
+        grid-gap: 20px;
+      }
+
+      .section7-grid__block4 {
+        padding: 20px;
+      }
+    }
+  }
+
+  /* Section 8 - Цели рекламной кампании */
+
+  .section8 {
+    @extend %sectionPadding-1024;
+
+    .section8__header {
+      .section8__text {
+        min-width: 920px;
+        padding-top: 12px;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .section8__list {
+      margin-top: 40px;
+    }
+  }
+
+  /* Section 9 - После определения аудитории */
+
+  .section9 {
+    @extend %sectionPadding-1024;
+
+    .section9__text {
+      padding-top: 0;
+    }
+
+    .section9__block {
+      .section9-block__item {
+        padding: 16px 0;
+      }
+
+      .section9-block__item2 {
+        .section9-block__item2-block {
+          padding: 16px 0;
+        }
+      }
+    }
+  }
+
+  /* Section 10 - Стоимость услуг */
+
+  .section10 {
+    padding: 60px 42px 60px 41px;
+
+    .section10__title {
+      margin-bottom: 40px;
+    }
+
+    .section10__border {
+      .header-cell,
+      .cell {
+        padding: 20px;
+      }
+    }
+
+    .section10__block {
+      margin-top: 40px;
+      padding: 20px;
+      gap: 9px 13.67px;
+    }
+
+    .section10__grid {
+      display: none;
+    }
+  }
+
+  /* Наши клиенты + header */
+}
+
+/* Разметка для экрана от 768px до 1023px */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  %sectionPadding-768 {
+    padding: 40px;
+  }
+
+  %sectionBlock-768 {
+    margin: 0 auto;
+    max-width: 1023px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .text2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .title2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .title3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .header-cell {
+    border: 1px solid $color_nav_form;
+    padding: 20px 10px;
+  }
+
+  .row3-cell__item {
+    background-position: 0 6px;
+  }
+
+  /* Header */
+
+  .header {
+    height: 340px;
+    margin: 0;
+
+    .header__main {
+      height: 260px;
+      max-width: 560px;
+      margin: 0 0 0 40px;
+      padding: 20px 0;
+      background-image: url('../../images/smm_img/smm-header-bg-img.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .header__title {
+        margin: 0 0 28px 0;
+        font-size: 48px;
+        line-height: 56px;
+      }
+    }
+  }
+
+  /* Section 1 - Ведение соцсетей */
+
+  .section1 {
+    padding: 39.62px 40px 40.38px 40px;
+
+    .section1__grid {
+      @extend %sectionBlock-768;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 1.34fr 1.87fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 24px;
+
+      .section1-grid__block4 {
+        grid-template-columns: 75.12px 1fr;
+        grid-gap: 12px;
+        padding: 16px;
+
+        .section1-grid__block4-img {
+          padding-top: 6.76px;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+
+  /* Section 2 - Пример контент-плана на месяц 
+  - Разобраться с бордерами */
+
+  .section2 {
+    @extend %sectionPadding-768;
+
+    .section2__header {
+      padding-bottom: 32px;
+
+      .section2-header__text {
+        padding-top: 16px;
+      }
+    }
+
+    .section2__border {
+      display: none;
+    }
+
+    .section2__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      border-radius: 12px;
+      border: 0.5px solid $color_nav_form;
+
+      .section2-grid__row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        border: 0.5px solid $color_nav_form;
+
+        .section2-grid__row-cell {
+          padding: 9.5px 0 10.5px 15px;
+        }
+
+        .section2-grid__row-cell:last-child {
+          padding: 0 20px 20px 15px;
+          min-height: 32px;
+          grid-area: 2/1/3/5;
+        }
+
+        .round-t {
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+        }
+
+        .round-b {
+          border-bottom-left-radius: 12px;
+          border-bottom-right-radius: 12px;
+        }
+      }
+    }
+  }
+
+  /* Section 3 - Структура коммуникации */
+
+  .section3 {
+    padding: 40px 42px 39px 40px;
+
+    .section3-header__text {
+      padding-top: 16px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .section3__border {
+      @extend %sectionBlock-768;
+      margin-top: 32px;
+
+      .section3__table {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    .section3__grid {
+      display: none;
+    }
+  }
+
+  /* Section 4 - Таргетированная реклама */
+
+  .section4 {
+    @extend %sectionPadding-768;
+    padding-bottom: 0;
+
+    .section4__grid {
+      height: 374px;
+      margin-top: 32px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+
+      .section4-grid__block1 {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-right: 16px;
+        padding-bottom: 4em;
+      }
+
+      .section4-grid__block2 {
+        align-self: baseline;
+        padding-top: 4rem;
+
+        .section4-grid__block2-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  /* Section 5 - Почему нужно использовать...
+   - разобраться с шириной столбцов в гриде */
+
+  .section5 {
+    @extend %sectionPadding-768;
+    padding-bottom: 60px;
+
+    .section5__grid {
+      margin-top: 32px;
+      grid-gap: 20px;
+
+      .section5-grid__block {
+        grid-gap: 20px;
+      }
+    }
+
+    .section5__menu {
+      display: none;
+    }
+  }
+
+  /* Section 6 - Настройки таргетинга... 
+  - маленький доп.текст не совпадает с макетом */
+
+  .section6 {
+    @extend %sectionPadding-768;
+
+    .section6__text {
+      padding-top: 16px;
+      padding-right: 15px;
+    }
+
+    .section6__block {
+      margin-top: 32px;
+
+      .section6-block__table {
+        margin-top: 16px;
+        grid-gap: 20px;
+
+        .section6-block__item__downsized {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+
+  /* Section 7 - Настройки рекламы... */
+
+  .section7 {
+    @extend %sectionPadding-768;
+    padding-top: 0;
+
+    .section7__text {
+      padding-top: 24px;
+    }
+
+    .section7__grid {
+      padding-top: 32px;
+      grid-gap: 20px;
+
+      .section7-block1__list {
+        padding-top: 24px;
+        grid-gap: 20px;
+
+        .section7-block1__item {
+          background-position: 0 1px;
+        }
+      }
+
+      .section7-grid__block4 {
+        padding: 20px;
+
+        .section7-grid__block4-text {
+          padding-top: 8px;
+        }
+      }
+    }
+  }
+
+  /* Section 8 - Цели рекламной кампании */
+
+  .section8 {
+    @extend %sectionPadding-768;
+
+    .section8__text {
+      padding-top: 16px;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+    }
+
+    .section8__list {
+      margin-top: 32px;
+
+      .section8-list__block {
+        font-size: 12px;
+        line-height: 16px;
+
+        .section8-list__item {
+          padding: 14px 20px;
+          grid-gap: 16px;
+          align-self: auto;
+          align-items: center;
+        }
+
+        .emphasized {
+          padding: 18px 20px;
+        }
+
+        .item-merged2 {
+          align-content: baseline;
+        }
+      }
+    }
+  }
+
+  /* Section 9 - После определения аудитории */
+
+  .section9 {
+    @extend %sectionPadding-768;
+
+    .section9__text {
+      padding-top: 0;
+    }
+
+    .section9__block {
+      margin-top: 32px;
+
+      .section9-block__item {
+        padding: 16px 0;
+      }
+
+      .section9-block__item2-block {
+        padding: 16px 0 !important;
+      }
+    }
+  }
+
+  /* Section 10 - Стоимость услуг */
+
+  .section10 {
+    @extend %sectionPadding-768;
+
+    .section10__title {
+      margin-bottom: 32px;
+    }
+
+    .section10__table {
+      font-size: 12px;
+      line-height: 16px;
+
+      .header-cell {
+        padding: 18px 20px;
+      }
+
+      .row3__cell {
+        padding: 20px;
+      }
+    }
+
+    .section10__block {
+      margin-top: 33px;
+      padding: 20px;
+      grid-gap: 9px 13.67px;
+
+      .section10__img {
+        width: 36.67px;
+        height: auto;
+      }
+    }
+
+    .section10__grid {
+      display: none;
+    }
+  }
+
+  /* Наши клиенты + header */
+}
+
+/* Разметка для экрана от 320px до 767px */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .title2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .title3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .text2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .section2__grid,
+  .section3__grid {
+    display: block;
+  }
+
+  /* Header */
+
+  .header {
+    height: 376px;
+    margin: 0;
+
+    .header__main {
+      height: 316px;
+      max-width: 90%;
+      margin: 0;
+      padding: 12.66% 5%;
+      background-image: url('../../images/smm_img/smm-header-bg-img.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .header__title {
+        margin: 0 0 28px 0;
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+
+  /* Section 1 - Ведение соцсетей */
+
+  .section1 {
+    padding: 40px 16px 39.82px 16px;
+
+    .section1__grid {
+      grid-template: repeat(4, auto) / 1fr;
+      grid-gap: 20px;
+
+      .section1-grid__block1 {
+        grid-area: 1/1/2/2;
+      }
+
+      .section1-grid__block4 {
+        padding: 16px;
+        grid-template: 86.14px auto / 1fr;
+        grid-gap: 8px;
+      }
+    }
+  }
+
+  /* Section 2 - Пример контент-плана на месяц */
+
+  .section2 {
+    padding: 40px 0 41px 0;
+
+    .section2__header {
+      padding: 0 15px 32px 15px;
+
+      .section2-header__text {
+        padding-top: 16px;
+      }
+    }
+
+    .section2__border {
+      display: none;
+    }
+
+    .section2__grid {
+      border: 0.5px solid $color_nav_form;
+
+      .section2-grid__row {
+        display: grid;
+        grid-template: repeat(3, auto) / repeat(2, 1fr);
+        border: 0.5px solid $color_nav_form;
+
+        .section2-grid__row-cell {
+          padding: 9.5px 0 10.5px 15px;
+        }
+
+        .emphasized {
+          line-height: 22px;
+        }
+
+        .section2-grid__row-cell:last-child {
+          padding: 10px 15px;
+          grid-area: 3/1/4/3;
+        }
+      }
+    }
+  }
+
+  /* Section 3 - Структура коммуникации */
+
+  .section3 {
+    padding: 40px 0;
+    color: rgb(36, 42, 86);
+
+    .section3-header__text {
+      font-size: 18px;
+      line-height: 26px;
+      padding: 16px 16px 0 16px !important;
+    }
+
+    .section3__border {
+      display: none;
+    }
+
+    .section3__grid {
+      margin-top: 32px;
+      font-size: 12px;
+      line-height: 16px;
+      border: 0.5px solid $color_nav_form;
+      border-radius: 12px;
+
+      .section3-grid__item {
+        padding: 10px 15px;
+        display: grid;
+        grid-template: repeat(3, auto) / 1fr;
+        grid-gap: 8px;
+        border: 0.5px solid $color_nav_form;
+
+        .section3-grid__list-item {
+          background: url(../../images/smm_img/smm-list-icon.svg) no-repeat 0px
+            6px;
+          padding-left: 12px;
+          padding-bottom: 4px;
+        }
+      }
+
+      .odd {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .even {
+        background-color: rgba(237, 244, 250, 0.5);
+      }
+
+      .round-t {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+
+      .round-b {
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+    }
+  }
+
+  /* Section 4 - Таргетированная реклама */
+
+  .section4 {
+    padding: 40px 15px;
+    max-width: 767px;
+
+    .section4__grid {
+      margin-top: 32px;
+      grid-template: repeat(2, auto) / 1fr;
+      grid-gap: 4px;
+
+      .section4-grid__block1 {
+        grid-template: repeat(6, auto) / 1fr;
+        grid-gap: 16px;
+      }
+
+      .section4-grid__block2-img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  /* Section 5 - Почему нужно использовать... */
+
+  .section5 {
+    padding: 40px 16px;
+
+    .section5__grid {
+      display: grid;
+      grid-template: 1fr / repeat(4, 100%);
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+
+      .section5-grid__block {
+        display: grid;
+        /*flex-shrink: 0;*/
+        grid-template: 2px repeat(2, auto) / 1fr;
+        grid-row-gap: 20px;
+        width: calc(100vw - 32px);
+        height: 172px;
+        scroll-snap-align: start;
+        scroll-behavior: smooth;
+      }
+    }
+
+    .section5__menu {
+      margin-top: 20px;
+      display: grid;
+      grid-template: 1fr / 40px 1fr 40px;
+      align-items: center;
+      justify-items: center;
+
+      .section5-menu__button-left {
+        background-image: url('../../images/smm_img/smm-button-left.svg');
+      }
+
+      .section-menu__nav {
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        grid-gap: 10px;
+      }
+
+      .section5-menu__button-right {
+        background-image: url('../../images/smm_img/smm-button-right.svg');
+      }
+
+      .button {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        background-color: #393a56;
+        border: none;
+      }
+
+      .button-left__img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  /* Section 6 - Настройки таргетинга... */
+
+  .section6 {
+    padding: 40px 16px;
+
+    .section6__text {
+      padding-top: 16px;
+    }
+
+    .section6__block {
+      margin-top: 24px;
+
+      .section6-block__table {
+        margin-top: 16px;
+        display: grid;
+        grid-template: repeat(4, auto) / 1fr;
+        grid-gap: 0;
+
+        .section6-block__item {
+          padding-bottom: 4px;
+          padding-left: 30px;
+        }
+
+        .section6-block__item__downsized {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+
+  /* Section 7 - Настройки рекламы... */
+
+  .section7 {
+    padding: 0 16px 40px 16px;
+
+    .section7__text {
+      padding-top: 16px;
+    }
+
+    .section7__grid {
+      padding-top: 24px;
+      grid-template: repeat(4, auto) / 1fr;
+      grid-gap: 24px;
+
+      .section7-block1__list {
+        padding-top: 16px;
+        grid-template: repeat(3, auto) / 1fr;
+        grid-gap: 4px;
+
+        .section7-block1__item {
+          padding-left: 30px;
+        }
+      }
+
+      .section7-grid__block4 {
+        padding: 20px;
+
+        .section7-grid__block4-text {
+          padding-top: 8px;
+        }
+      }
+    }
+  }
+
+  /* Section 8 - Цели рекламной кампании */
+
+  .section8 {
+    padding: 40px 16px;
+
+    .section8__text {
+      padding-top: 16px !important;
+    }
+
+    .section8__list {
+      display: none;
+    }
+
+    .section8__grid {
+      margin-top: 32px;
+      display: grid;
+      grid-template: repeat(3, auto) / 1fr;
+      border: 0.5px solid $color_nav_form;
+      border-radius: 12px;
+
+      .section8-grid__item {
+        padding: 12px 20px;
+        border: 0.5px solid rgb(193, 211, 222);
+        display: grid;
+        grid-template: 1fr / 24px auto;
+        grid-gap: 16px;
+        align-items: center;
+      }
+    }
+
+    .odd {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .even {
+      background-color: rgba(237, 244, 250, 0.5);
+    }
+
+    .emphasized {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    .even > .emphasized {
+      background-color: rgba(237, 244, 250, 1);
+    }
+
+    .round-t {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    .round-b {
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+  }
+
+  /* Section 9 - После определения аудитории */
+
+  .section9 {
+    padding: 40px 16px;
+
+    .section9__text {
+      padding-top: 0;
+    }
+
+    .section9__block {
+      margin-top: 32px;
+
+      .section9-block__item {
+        padding: 12px 0;
+        grid-gap: 8px;
+
+        .section9-block__item-text1 {
+          padding: 8px 0 4px 0;
+        }
+
+        .section9-block__item-title2 {
+          padding: 0;
+        }
+      }
+
+      .section9-block__item2-block {
+        padding: 12px 0 !important;
+        grid-gap: 8px !important;
+      }
+    }
+  }
+
+  /* Section 10 - Стоимость услуг */
+
+  .section10 {
+    padding: 40px 16px;
+    color: #393a56;
+
+    .section10__title {
+      margin-bottom: 32px;
+    }
+
+    .section10__border {
+      display: none;
+    }
+
+    .section10__grid {
+      display: grid;
+      grid-template: repeat(3, auto) / 1fr;
+      font-family: $font_add;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 16px;
+      border-radius: 12px;
+      border: 0.5px solid $color_nav_form;
+
+      .section10-grid__item {
+        padding: 20px;
+        display: grid;
+        grid-template: repeat(3, auto) / 1fr;
+        grid-gap: 8px;
+        border: 0.5px solid $color_nav_form;
+
+        .item-list__row {
+          background: url(../../images/smm_img/smm-list-icon.svg) no-repeat 0px
+            6px;
+          padding-left: 11px;
+          padding-bottom: 4px;
+        }
+      }
+    }
+
+    .odd {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .even {
+      background-color: rgba(237, 244, 250, 0.5);
+    }
+
+    .round-t {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    .round-b {
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+
+    .section10__block {
+      margin-top: 34px;
+      padding: 20px;
+      grid-template: 24px repeat(3, auto) / 1fr;
+      grid-row-gap: 10px;
+      align-items: flex-start;
+
+      .section10__img {
+        height: 24px;
+        width: 24px;
+        object-fit: contain;
+        grid-area: 1/1/2/2;
+      }
+    }
+  }
+
+  /* Наши клиенты + header */
 }
