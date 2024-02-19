@@ -117,9 +117,6 @@
         background-color: transparent;
         border: 1px solid $color_nav_form;
         @extend %btn;
-        // @media (max-width: 431px) {
-        //   display: none;
-        // }
       }
 
       .header-top__button:hover {
@@ -167,7 +164,7 @@
 
 .burger::before,
 .burger::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 3px;
   width: 100%;

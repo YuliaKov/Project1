@@ -2,7 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      shrink-to-fit="no"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,6 +16,10 @@
     <link rel="stylesheet" href="./assets/styles/reset.css" />
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link
+      href="./assets/styles/zbootstrap-5.3.2-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="./assets/styles/adwords_style/adwordsStyle.css"
     />
@@ -20,13 +28,19 @@
   <body>
     <div class="container-all">
       <header class="header">
-        <!---Блок верхней навигации от тимлид--->
+        <!--Блок верхней навигации от тимлид-->
         <div class="header-top">
           <img
-            class="header-logo"
+            class="header-logo header-logo__white"
             src="./assets/images/Header_footer_img/logo_header.svg"
             alt=""
           />
+          <img
+            class="header-logo header-logo__dark"
+            src="./assets/images/Header_footer_img/logo_dark.svg"
+            alt=""
+          />
+
           <div class="header-wrapper">
             <nav class="header-nav">
               <ul class="header-nav__items">
@@ -37,7 +51,7 @@
                   <a class="header-nav__link" href="about.html">О нас</a>
                 </li>
                 <li class="header-nav__item">
-                  <a class="header-nav__link" href="adwords.html"
+                  <a class="header-nav__link active-page" href="adwords.html"
                     >Google Adwords</a
                   >
                 </li>
@@ -52,7 +66,6 @@
                 </li>
               </ul>
             </nav>
-
             <div class="header-top__buttons">
               <button class="header-top__button header-top__connect">
                 Свяжитесь с нами
@@ -60,73 +73,80 @@
               <button class="header-top__button header-top__lang">LV</button>
             </div>
           </div>
+          <div class="burger">
+            <span></span>
+          </div>
         </div>
-        <!---END----Блок верхней навигации-->
-
-        <div class="header__content">
-          <h1 class="header__content-title">Реклама в Google Ads</h1>
-          <p class="header__content-description">
-            Новые клиенты узнают о вашем бизнесе
-          </p>
+        <!--END Блок верхней навигации от тимлид-->
+        <div class="container-header-content">
+          <div class="header__content">
+            <div class="header__content-title">
+              <h1 class="header__content-title-h1">
+                Реклама <br />
+                в Google Ads
+              </h1>
+            </div>
+            <p class="header__content-description">
+              Новые клиенты узнают о вашем бизнесе
+            </p>
+          </div>
         </div>
       </header>
 
       <main class="main">
-        <!-- Контейнер номер 1-->
-        <div class="container-info">
-          <div class="container-info__img">
-            <img
-              class="img-macbook2"
-              src="./assets/images/adwords_img/macbook2.png"
-              alt="два ноутбука"
-            />
-          </div>
+        <div class="container-info-wrapper">
+          <div class="container-info">
+            <div class="container-info__img">
+              <img
+                class="img-macbook2"
+                src="./assets/images/adwords_img/macbook2.png"
+                alt="два ноутбука"
+              />
+            </div>
+            <div class="container-info__content" id="belle_scroll">
+              <p class="container-info__content-question">
+                Вы хотите улучшить результаты своих рекламных кампаний,
+                сократить стоимость привлечения потенциального клиента и/или
+                повысить возврат инвестиций (ROI) от рекламы в системе Google?
+              </p>
 
-          <div class="container-info__content">
-            <p class="container-info__content-question">
-              Вы хотите улучшить результаты своих рекламных кампаний, сократить
-              стоимость привлечения потенциального клиента и/или повысить
-              возврат инвестиций (ROI) от рекламы в системе Google?
-            </p>
-
-            <!-- бежевый контейнер Нота Бене-->
-            <div class="container-info__content-note">
-              <div class="container-note">
-                <div class="container-info__content-note-img">
-                  <img
-                    class="container-info__content-note-img-logo"
-                    src="./assets/images/adwords_img/logo_GoogleAd.png"
-                    alt="логотип Google Ad"
-                  />
-                </div>
-                <div class="container-info__content-note-text">
-                  <p class="container-info__content-note-text-tx">
-                    Вы, определенно, попали в правильное место!
-                  </p>
-                  <p class="container-info__content-note-text-tx">
-                    Специализация нашей команды – реклама в Google.
-                  </p>
+              <!-- бежевый контейнер Нота Бене-->
+              <div class="container-info__content-note">
+                <div class="container-note">
+                  <div class="container-info__content-note-img">
+                    <img
+                      class="container-info__content-note-img-logo"
+                      src="./assets/images/adwords_img/logo_GoogleAd.png"
+                      alt="логотип Google Ad"
+                    />
+                  </div>
+                  <div class="container-info__content-note-text">
+                    <p class="container-info__content-note-text-tx">
+                      Вы, определенно, попали в правильное место!
+                    </p>
+                    <p class="container-info__content-note-text-tx">
+                      Специализация нашей команды – реклама в Google.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- END бежевый контейнер Нота Бене-->
+              <!-- END бежевый контейнер Нота Бене-->
 
-            <p class="container-info__content-description">
-              Наше агентство занимается разработкой и внедрением стратегий
-              таргетированной, контекстной и поисковой рекламы в Google. Мы
-              помогаем малому бизнесу в Латвии наладить бесперебойный поток
-              коммерческих сообщений до целевой аудитории. <br />
-            </p>
-            <p class="container-info__content-description">
-              Для этого мы используем весь инструментарий Google рекламы,
-              сопровождая пользователя от формирования потребности до
-              осуществления целевых действий.
-            </p>
+              <p class="container-info__content-description">
+                Наше агентство занимается разработкой и внедрением стратегий
+                таргетированной, контекстной и поисковой рекламы в Google. Мы
+                помогаем малому бизнесу в Латвии наладить бесперебойный поток
+                коммерческих сообщений до целевой аудитории. <br />
+              </p>
+              <p class="container-info__content-description">
+                Для этого мы используем весь инструментарий Google рекламы,
+                сопровождая пользователя от формирования потребности до
+                осуществления целевых действий.
+              </p>
+            </div>
           </div>
         </div>
-        <!--- END Контейнер номер 1 --->
-
-        <!---  Контейнер номер 2- Кому показываем рекламу --->
+        <!--END Контейнер номер 1 -->
         <section class="container-viewers">
           <h2 class="container-viewers__title">
             Кому мы показываем рекламу в Google?​
@@ -155,8 +175,6 @@
                 Тем, кто ищет в поиске Google ваш продукт или услугу
               </p>
             </div>
-            <!--2-->
-
             <div class="container-viewer__items">
               <img
                 class="container-viewer__items-img img-hand"
@@ -167,8 +185,6 @@
                 Тем, кто уже был на вашем сайте
               </p>
             </div>
-            <!--3-->
-
             <div class="container-viewer__items">
               <img
                 class="container-viewer__items-img"
@@ -179,44 +195,198 @@
                 Тем, кто ищет в поиске Google решение своей проблемы
               </p>
             </div>
-            <!--4-->
           </div>
         </section>
-        <!---  END Контейнер номер 2- Кому показываем рекламу --->
+        <!--  END Контейнер номер 2- Кому показываем рекламу -->
 
-        <!---  Контейнер номер 3- Стоимость --->
         <div class="wrapper-container-cost">
           <div class="container-cost">
             <h3 class="container-cost__title">Стоимость услуг</h3>
-
             <div class="container-cost__tables">
               <!--столбец 1 услуги-->
               <div class="container-cost__tables-services">
-                <div class="container-cost__tables-services-wrapper">
-                  <p class="text-top"></p>
-                  <p class="text--bgr-blue">Стоимость / мес.</p>
-                  <p class="text--bgr-white">Количество запросов</p>
-                  <p class="text--bgr-blue">Количество объявлений</p>
-                  <p class="text--bgr-white">Количество кампаний</p>
-                  <p class="text--bgr-blue">Реклама в поиске</p>
-                  <p class="text--bgr-white">Реклама в КМС</p>
-                  <p class="text--bgr-blue">Ретаргетинг</p>
-                  <p class="text--bgr-white">Настройка аналитики</p>
-                  <p class="text--bgr-blue">Google my business аккаунт</p>
-                  <p class="text--bgr-white">Баннерная реклама</p>
-                  <p class="text--bgr-blue">Видеореклама (Youtube)</p>
-                  <p class="container-cost__tables-btn"></p>
-                </div>
+                <p class="text-top"></p>
+                <p class="text--bgr higher">Стоимость / мес.</p>
+                <p class="text--bgr">Количество запросов</p>
+                <p class="text--bgr higher">Количество объявлений</p>
+                <p class="text--bgr">Количество кампаний</p>
+                <p class="text--bgr">Реклама в поиске</p>
+                <p class="text--bgr">Реклама в КМС</p>
+                <p class="text--bgr">Ретаргетинг</p>
+                <p class="text--bgr">Настройка аналитики</p>
+                <p class="text--bgr higher">Google my business аккаунт</p>
+                <p class="text--bgr">Баннерная реклама</p>
+                <p class="text--bgr">Видеореклама (Youtube)</p>
+                <p class="container-cost__tables-btn"></p>
               </div>
 
               <!--столбец 2 малый бизнес-->
               <div class="container-cost__tables-small-business">
-                <img
-                        class="text-top-img-bag"
-                        src="./assets/images/adwords_img/tab_bag.png"
-                        alt="портфель"
-                      />
-                <div class="container-cost__tables-business-wrapper">
+                <div class="text-top">
+                  <div class="text-top-box">
+                    <p class="text-top--bold1">Малый бизнес</p>
+                    <p class="text-top--regular">Бюджет рекламной кампании</p>
+                    <p class="text-top--bold">до 1000 евро</p>
+                  </div>
+
+                  <img
+                    class="text-top-img-bag"
+                    src="./assets/images/adwords_img/tab_bag.png"
+                    alt="портфель"
+                  />
+                </div>
+                <p class="text--bgr higher">до 100 евро</p>
+                <p class="text--bgr">до 100 запросов</p>
+                <p class="text--bgr higher">до 100 объявлений</p>
+                <p class="text--bgr">до 10 кампаний</p>
+                <p class="text--bgr">
+                  <img
+                    class="text--bgr-check"
+                    src="./assets/images/adwords_img/icon_check.png"
+                    alt="галочка"
+                  />
+                </p>
+                <p class="text--bgr">
+                  <img
+                    class="text--bgr-check"
+                    src="./assets/images/adwords_img/icon_check.png"
+                    alt="галочка"
+                  />
+                </p>
+                <p class="text--bgr">
+                  <img
+                    class="text--bgr-check"
+                    src="./assets/images/adwords_img/icon_check.png"
+                    alt="галочка"
+                  />
+                </p>
+                <p class="text--bgr">
+                  <img
+                    class="text--bgr-check"
+                    src="./assets/images/adwords_img/icon_check.png"
+                    alt="галочка"
+                  />
+                </p>
+                <p class="text--bgr higher">
+                  <img
+                    class="text--bgr-check"
+                    src="./assets/images/adwords_img/icon_check.png"
+                    alt="галочка"
+                  />
+                </p>
+                <p class="text--bgr">
+                  <img
+                    class="text--bgr-check"
+                    src="./assets/images/adwords_img/Icon_cross.png"
+                    alt="крестик"
+                  />
+                </p>
+                <p class="text--bgr">
+                  <img
+                    class="text--bgr-check"
+                    src="./assets/images/adwords_img/Icon_cross.png"
+                    alt="крестик"
+                  />
+                </p>
+                <p class="container-cost__tables-btn">
+                  <button class="tables-btn-order">
+                    Заказать
+                    <img
+                      class="container-cost__tables-btn-vector"
+                      src="./assets/images/adwords_img/Vector.png"
+                      alt="вектор"
+                    />
+                  </button>
+                </p>
+              </div>
+
+              <!--столбец Средний бизнес-->
+
+              <div class="container-cost__tables-medium-business">
+                <div class="text-top">
+                  <div class="text-top-box">
+                    <p class="text-top--bold1">Средний бизнес</p>
+                    <p class="text-top--regular">Бюджет рекламной кампании</p>
+                    <p class="text-top--bold">от 1000 евро</p>
+                  </div>
+
+                  <img
+                    class="text-top-img-bag"
+                    src="./assets/images/adwords_img/tab_bags.png"
+                    alt="портфель"
+                  />
+                </div>
+                <p class="text--bgr higher">10-25% бюджета кампании</p>
+                <p class="text--bgr">до 1000 запросов</p>
+                <p class="text--bgr higher">до 1000 объявлений</p>
+                <p class="text--bgr">до 25 кампаний</p>
+                <p class="text--bgr">
+                  <img
+                    class="text--bgr-check"
+                    src="./assets/images/adwords_img/icon_check.png"
+                    alt="галочка"
+                  />
+                </p>
+                <p class="text--bgr">
+                  <img
+                    class="text--bgr-check"
+                    src="./assets/images/adwords_img/icon_check.png"
+                    alt="галочка"
+                  />
+                </p>
+                <p class="text--bgr">
+                  <img
+                    class="text--bgr-check"
+                    src="./assets/images/adwords_img/icon_check.png"
+                    alt="галочка"
+                  />
+                </p>
+                <p class="text--bgr">
+                  <img
+                    class="text--bgr-check"
+                    src="./assets/images/adwords_img/icon_check.png"
+                    alt="галочка"
+                  />
+                </p>
+                <p class="text--bgr higher">
+                  <img
+                    class="text--bgr-check"
+                    src="./assets/images/adwords_img/icon_check.png"
+                    alt="галочка"
+                  />
+                </p>
+                <p class="text--bgr">
+                  <img
+                    class="text--bgr-check"
+                    src="./assets/images/adwords_img/icon_check.png"
+                    alt="галочка"
+                  />
+                </p>
+                <p class="text--bgr">
+                  <img
+                    class="text--bgr-check"
+                    src="./assets/images/adwords_img/icon_check.png"
+                    alt="галочка"
+                  />
+                </p>
+                <p class="container-cost__tables-btn">
+                  <button class="tables-btn-order">
+                    Заказать
+                    <img
+                      class="container-cost__tables-btn-vector"
+                      src="./assets/images/adwords_img/Vector.png"
+                      alt="вектор"
+                    />
+                  </button>
+                </p>
+              </div>
+              <!--END столбец Средний бизнес коммент под дивом-->
+            </div>
+
+            <!-- вставка таблица для мобилки -->
+            <div class="container-cost__tables-mob">
+              <div class="tables_small-mob">
+                <div class="container-cost__tables-services">
                   <div class="text-top">
                     <div class="text-top-box">
                       <p class="text-top--bold1">Малый бизнес</p>
@@ -224,48 +394,82 @@
                       <p class="text-top--bold">до 1000 евро</p>
                     </div>
                   </div>
-                  <p class="text--bgr-blue">до 100 евро</p>
-                  <p class="text--bgr-white">до 100 запросов</p>
-                  <p class="text--bgr-blue">до 100 объявлений</p>
-                  <p class="text--bgr-white">до 10 кампаний</p>
-                  <p class="text--bgr-blue">
+                  <p class="text--bgr higher">Стоимость / мес.</p>
+                  <p class="text--bgr">Количество запросов</p>
+                  <p class="text--bgr higher">Количество объявлений</p>
+                  <p class="text--bgr">Количество кампаний</p>
+                  <p class="text--bgr">Реклама в поиске</p>
+                  <p class="text--bgr">Реклама в КМС</p>
+                  <p class="text--bgr">Ретаргетинг</p>
+                  <p class="text--bgr">Настройка аналитики</p>
+                  <p class="text--bgr higher">Google my business аккаунт</p>
+                  <p class="text--bgr">Баннерная реклама</p>
+                  <p class="text--bgr">Видеореклама (Youtube)</p>
+                  <p class="container-cost__tables-btn"></p>
+                </div>
+
+                <div class="container-cost__tables-small-business">
+                  <div class="text-top">
+                    <div class="text-top-box">
+                      <p class="text-top--bold1">Малый бизнес</p>
+                      <p class="text-top--regular">Бюджет рекламной кампании</p>
+                      <p class="text-top--bold">до 1000 евро</p>
+                    </div>
                     <img
+                      class="text-top-img-bag small"
+                      src="./assets/images/adwords_img/tab_bag.png"
+                      alt="портфель"
+                    />
+                  </div>
+                  <p class="text--bgr higher">до 100 евро</p>
+                  <p class="text--bgr">до 100 запросов</p>
+                  <p class="text--bgr higher">до 100 объявлений</p>
+                  <p class="text--bgr">до 10 кампаний</p>
+                  <p class="text--bgr">
+                    <img
+                      class="text--bgr-check"
                       src="./assets/images/adwords_img/icon_check.png"
                       alt="галочка"
                     />
                   </p>
-                  <p class="text--bgr-white">
+                  <p class="text--bgr">
                     <img
+                      class="text--bgr-check"
                       src="./assets/images/adwords_img/icon_check.png"
                       alt="галочка"
                     />
                   </p>
-                  <p class="text--bgr-blue">
+                  <p class="text--bgr">
                     <img
+                      class="text--bgr-check"
                       src="./assets/images/adwords_img/icon_check.png"
                       alt="галочка"
                     />
                   </p>
-                  <p class="text--bgr-white">
+                  <p class="text--bgr">
                     <img
+                      class="text--bgr-check"
                       src="./assets/images/adwords_img/icon_check.png"
                       alt="галочка"
                     />
                   </p>
-                  <p class="text--bgr-blue">
+                  <p class="text--bgr higher">
                     <img
+                      class="text--bgr-check"
                       src="./assets/images/adwords_img/icon_check.png"
                       alt="галочка"
                     />
                   </p>
-                  <p class="text--bgr-white">
+                  <p class="text--bgr">
                     <img
+                      class="text--bgr-check"
                       src="./assets/images/adwords_img/Icon_cross.png"
                       alt="крестик"
                     />
                   </p>
-                  <p class="text--bgr-blue">
+                  <p class="text--bgr">
                     <img
+                      class="text--bgr-check"
                       src="./assets/images/adwords_img/Icon_cross.png"
                       alt="крестик"
                     />
@@ -283,13 +487,8 @@
                 </div>
               </div>
 
-              <!--столбец Средний бизнес-->
-              <div class="container-cost__tables-medium-business">
-                <img class="text-top-img-bags"
-                        src="./assets/images/adwords_img/tab_bags.png"
-                        alt="портфель"
-                      />
-                <div class="container-cost__tables-business-wrapper">
+              <div class="tables_medium-mob">
+                <div class="container-cost__tables-services">
                   <div class="text-top">
                     <div class="text-top-box">
                       <p class="text-top--bold1">Средний бизнес</p>
@@ -297,52 +496,88 @@
                       <p class="text-top--bold">от 1000 евро</p>
                     </div>
                   </div>
-                  <p class="text--bgr-blue">10-25% бюджета кампании</p>
-                  <p class="text--bgr-white">до 1000 запросов</p>
-                  <p class="text--bgr-blue">до 1000 объявлений</p>
-                  <p class="text--bgr-white">до 25 кампаний</p>
-                  <p class="text--bgr-blue">
+                  <p class="text--bgr higher">Стоимость / мес.</p>
+                  <p class="text--bgr">Количество запросов</p>
+                  <p class="text--bgr higher">Количество объявлений</p>
+                  <p class="text--bgr">Количество кампаний</p>
+                  <p class="text--bgr">Реклама в поиске</p>
+                  <p class="text--bgr">Реклама в КМС</p>
+                  <p class="text--bgr">Ретаргетинг</p>
+                  <p class="text--bgr">Настройка аналитики</p>
+                  <p class="text--bgr higher">Google my business аккаунт</p>
+                  <p class="text--bgr">Баннерная реклама</p>
+                  <p class="text--bgr">Видеореклама (Youtube)</p>
+                  <p class="container-cost__tables-btn"></p>
+                </div>
+
+                <div class="container-cost__tables-medium-business">
+                  <div class="text-top">
+                    <div class="text-top-box">
+                      <p class="text-top--bold1">Средний бизнес</p>
+                      <p class="text-top--regular">Бюджет рекламной кампании</p>
+                      <p class="text-top--bold">от 1000 евро</p>
+                    </div>
                     <img
+                      class="text-top-img-bag medium"
+                      src="./assets/images/adwords_img/tab_bags.png"
+                      alt="портфель"
+                    />
+                  </div>
+
+                  <p class="text--bgr higher">10-25% бюджета</p>
+                  <p class="text--bgr">до 1000 запросов</p>
+                  <p class="text--bgr higher">до 1000 объявлений</p>
+                  <p class="text--bgr">до 25 кампаний</p>
+                  <p class="text--bgr">
+                    <img
+                      class="text--bgr-check"
                       src="./assets/images/adwords_img/icon_check.png"
                       alt="галочка"
                     />
                   </p>
-                  <p class="text--bgr-white">
+                  <p class="text--bgr">
                     <img
+                      class="text--bgr-check"
                       src="./assets/images/adwords_img/icon_check.png"
                       alt="галочка"
                     />
                   </p>
-                  <p class="text--bgr-blue">
+                  <p class="text--bgr">
                     <img
+                      class="text--bgr-check"
                       src="./assets/images/adwords_img/icon_check.png"
                       alt="галочка"
                     />
                   </p>
-                  <p class="text--bgr-white">
+                  <p class="text--bgr">
                     <img
+                      class="text--bgr-check"
                       src="./assets/images/adwords_img/icon_check.png"
                       alt="галочка"
                     />
                   </p>
-                  <p class="text--bgr-blue">
+                  <p class="text--bgr higher">
                     <img
+                      class="text--bgr-check"
                       src="./assets/images/adwords_img/icon_check.png"
                       alt="галочка"
                     />
                   </p>
-                  <p class="text--bgr-white">
+                  <p class="text--bgr">
                     <img
+                      class="text--bgr-check"
                       src="./assets/images/adwords_img/icon_check.png"
                       alt="галочка"
                     />
                   </p>
-                  <p class="text--bgr-blue">
+                  <p class="text--bgr">
                     <img
+                      class="text--bgr-check"
                       src="./assets/images/adwords_img/icon_check.png"
                       alt="галочка"
                     />
                   </p>
+
                   <p class="container-cost__tables-btn">
                     <button class="tables-btn-order">
                       Заказать
@@ -355,55 +590,60 @@
                   </p>
                 </div>
               </div>
-              <!--END столбец Средний бизнес коммент род дивом-->
             </div>
-          </div>
-
-          <div class="container-cost_bottom">
-            <div class="container-cost_bottom-wrapper">
-              <div class="container-cost_bottom-imgbox">
-                <img
-                  class="container-cost_bottom-img"
-                  src="./assets/images/adwords_img/icon_i.png"
-                  alt="инфо"
-                />
-              </div>
-
-              <div class="container-cost_bottom-texts">
-                <p class="container-cost_bottom-text">
-                  Минимальный бюджет на рекламу составляет от 100 евро/месяц.
-                </p>
+            <!-- end для моб -->
+            <div class="container-cost_bottom">
+              <div class="container-cost_bottom-wrapper">
+                <div class="container-cost_bottom-imgbox">
+                  <img
+                    class="container-cost_bottom-img"
+                    src="./assets/images/adwords_img/icon_i.png"
+                    alt="инфо"
+                  />
+                </div>
+                <div class="container-cost_bottom-texts">
+                  <p class="container-cost_bottom-text">
+                    Минимальный бюджет на рекламу составляет от 100 евро/месяц.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!--END контейнер с таблицами -Стоимость-->
-
-        <!--контейнер Что такое реклама в Google-->
+        <!--END таблицы-->
+        <!--Что такое реклама в Google-->
         <div class="wrapper">
           <h4 class="container-types__title">Что такое реклама в Google?</h4>
-
           <div class="container-types">
             <section class="container-types__ads">
+              <!-- добавляю развернуть -->
               <div class="container-types__ads-textbox">
-                <p class="container-types__ads-title">Поисковая реклама</p>
-                <p class="container-types__sads-text">
-                  Данные объявления показываются потенциальным клиентам по
-                  введенным ключевым запросам в поисковой строке Google, которые
-                  рекламодатель добавил в рекламную кампанию.
-                </p>
-                <p class="container-types__sads-text">
-                  Рассчитана на людей с уже определенной потребностью или
-                  проблемой — по сути, это своего рода ответ на запрос
-                  пользователя в поисковой строке в виде текстового сообщения.
-                </p>
-                <p class="container-types__sads-text">
-                  Данный вид рекламы является основополагающим для получения
-                  «горячего» трафика (захода людей на сайт) со сформированным
-                  спросом и готовых к покупке.
-                </p>
+                <input
+                  type="checkbox"
+                  class="read-more-checker"
+                  id="read-more-checker"
+                />
+                <div class="limited l-200">
+                  <p class="container-types__ads-title">Поисковая реклама</p>
+                  <p class="container-types__sads-text">
+                    Данные объявления показываются потенциальным клиентам по
+                    введенным ключевым запросам в поисковой строке Google,
+                    которые рекламодатель добавил в рекламную кампанию.
+                  </p>
+                  <p class="container-types__sads-text">
+                    Рассчитана на людей с уже определенной потребностью или
+                    проблемой — по сути, это своего рода ответ на запрос
+                    пользователя в поисковой строке в виде текстового сообщения.
+                  </p>
+                  <p class="container-types__sads-text">
+                    Данный вид рекламы является основополагающим для получения
+                    «горячего» трафика (захода людей на сайт) со сформированным
+                    спросом и готовых к покупке.
+                  </p>
+                  <div class="bottom"></div>
+                </div>
+                <label for="read-more-checker" class="read-more-button"></label>
               </div>
-
               <div class="container-types__ads-imgbox">
                 <img
                   class="container-types__ads-img"
@@ -412,7 +652,6 @@
                 />
               </div>
             </section>
-
             <section class="container-types__ads">
               <div class="container-types__ads-imgbox">
                 <img
@@ -422,42 +661,66 @@
                 />
               </div>
               <div class="container-types__ads-textbox">
-                <p class="container-types__ads-title">Баннерная реклама</p>
-                <p class="container-types__sads-text">
-                  Позволяет увеличить охват аудитории. Показывается на различных
-                  информационных сайтах-партнерах Google и выглядит как
-                  статический или динамический баннер с коммерческим
-                  предложением.
-                </p>
-                <p class="container-types__sads-text">
-                  Показы объявлений можно настроить очень гибко: по
-                  социально-демографическим, возрастным, поведенческим
-                  характеристикам, по интересам пользователей и другим
-                  критериям.
-                </p>
-                <p class="container-types__sads-text">
-                  Данная реклама максимально эффективна, когда необходимо
-                  охватить максимально большую аудиторию людей для увеличения
-                  узнаваемости бренда, компании, отдельной линейки и т.д..
-                </p>
+                <input
+                  type="checkbox"
+                  class="read-more-checker"
+                  id="read-more-checker1"
+                />
+                <div class="limited l-200">
+                  <p class="container-types__ads-title">Баннерная реклама</p>
+                  <p class="container-types__sads-text">
+                    Позволяет увеличить охват аудитории. Показывается на
+                    различных информационных сайтах-партнерах Google и выглядит
+                    как статический или динамический баннер с коммерческим
+                    предложением.
+                  </p>
+                  <p class="container-types__sads-text">
+                    Показы объявлений можно настроить очень гибко: по
+                    социально-демографическим, возрастным, поведенческим
+                    характеристикам, по интересам пользователей и другим
+                    критериям.
+                  </p>
+                  <p class="container-types__sads-text">
+                    Данная реклама максимально эффективна, когда необходимо
+                    охватить максимально большую аудиторию людей для увеличения
+                    узнаваемости бренда, компании, отдельной линейки и т.д..
+                  </p>
+                  <div class="bottom"></div>
+                </div>
+                <label
+                  for="read-more-checker1"
+                  class="read-more-button"
+                ></label>
               </div>
             </section>
-
             <section class="container-types__ads">
               <div class="container-types__ads-textbox">
-                <p class="container-types__ads-title">Видеореклама</p>
-                <p class="container-types__sads-text">
-                  Видеореклама формирует в глазах человека образ бренда,
-                  вовлекает в рекламный посыл при сравнительно недорогой
-                  стоимости контакта с ЦА. Инструмент отлично работает на
-                  узнаваемость продукта и возникновение потребности у
-                  потенциального потребителя.
-                </p>
-                <p class="container-types__sads-text">
-                  Инструмент отлично работает на узнаваемость продукта и
-                  возникновение потребности у потенциального потребителя.
-                </p>
+                <input
+                  type="checkbox"
+                  class="read-more-checker"
+                  id="read-more-checker2"
+                />
+                <div class="limited l-200">
+                  <p class="container-types__ads-title">Видеореклама</p>
+                  <p class="container-types__sads-text">
+                    Видеореклама формирует в глазах человека образ бренда,
+                    вовлекает в рекламный посыл при сравнительно недорогой
+                    стоимости контакта с ЦА. Инструмент отлично работает на
+                    узнаваемость продукта и возникновение потребности у
+                    потенциального потребителя.
+                  </p>
+                  <p class="container-types__sads-text">
+                    Инструмент отлично работает на узнаваемость продукта и
+                    возникновение потребности у потенциального потребителя.
+                  </p>
+                  <div class="bottom"></div>
+                </div>
+                <label
+                  for="read-more-checker2"
+                  class="read-more-button"
+                ></label>
               </div>
+
               <div class="container-types__ads-imgbox">
                 <img
                   class="container-types__ads-img"
@@ -466,7 +729,6 @@
                 />
               </div>
             </section>
-
             <section class="container-types__ads">
               <div class="container-types__ads-imgbox">
                 <img
@@ -476,115 +738,271 @@
                 />
               </div>
               <div class="container-types__ads-textbox">
-                <p class="container-types__ads-title">
-                  Ремаркетинг и ретаргетинг
-                </p>
-                <p class="container-types__sads-text">
-                  Большинству людей, которые заходят на ваш сайт, как правило,
-                  необходимо больше одного визита, чтобы совершить целевое
-                  действие (например: сделать покупку).
-                </p>
-                <p class="container-types__sads-text">
-                  Процент посетителей, которые совершают целевое действие при
-                  первом визите на сайт, зависит от вида бизнеса, но в среднем
-                  не превышает 30%. Что в таком случае делать с остальными
-                  посетителями, которые просто закрыли ваш сайт? Как их вернуть
-                  на сайт и конвертировать в клиентов? Для этого и нужен
-                  ремаркетинг.
-                </p>
-                <p class="container-types__sads-text">
-                  Ремаркетинг используется для возвращения пользователей,
-                  которые просматривали ваш сайт или взаимодействовали с вашей
-                  рекламой, но не совершили покупку, а также для стимулирования
-                  повторных продаж.
-                </p>
-                <p class="container-types__sads-text">
-                  Такие пользователи, обычно, более лояльны и вероятность
-                  совершения целевого действия выше.
-                </p>
+                <input
+                  type="checkbox"
+                  class="read-more-checker"
+                  id="read-more-checker3"
+                />
+                <div class="limited l-200">
+                  <p class="container-types__ads-title">
+                    Ремаркетинг и ретаргетинг
+                  </p>
+                  <p class="container-types__sads-text">
+                    Большинству людей, которые заходят на ваш сайт, как правило,
+                    необходимо больше одного визита, чтобы совершить целевое
+                    действие (например: сделать покупку).
+                  </p>
+                  <p class="container-types__sads-text">
+                    Процент посетителей, которые совершают целевое действие при
+                    первом визите на сайт, зависит от вида бизнеса, но в среднем
+                    не превышает 30%. Что в таком случае делать с остальными
+                    посетителями, которые просто закрыли ваш сайт? Как их
+                    вернуть на сайт и конвертировать в клиентов? Для этого и
+                    нужен ремаркетинг.
+                  </p>
+                  <p class="container-types__sads-text">
+                    Ремаркетинг используется для возвращения пользователей,
+                    которые просматривали ваш сайт или взаимодействовали с вашей
+                    рекламой, но не совершили покупку, а также для
+                    стимулирования повторных продаж.
+                  </p>
+                  <p class="container-types__sads-text">
+                    Такие пользователи, обычно, более лояльны и вероятность
+                    совершения целевого действия выше.
+                  </p>
+                  <div class="bottom"></div>
+                </div>
+                <label
+                  for="read-more-checker3"
+                  class="read-more-button"
+                ></label>
               </div>
             </section>
           </div>
         </div>
-        <!-- END контейнер виды рекламы-->
-
-        <!--Контейнер что мы предлагаем-->
+        <!-- END виды рекламы-->
+        <!--что мы предлагаем-->
         <section class="container-offer">
-          <h5 class="container-offer__title">Что мы предлагаем?</h5>
+          <div class="container-offer-wrapper">
+            <h5 class="container-offer__title">Что мы предлагаем?</h5>
+            <div class="container-offer__box">
+              <!--обертка для всех блоков сверху-->
+              <!-- Будстрап -->
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="btn-my active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    class="btn-my"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    class="btn-my"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="3"
+                    class="btn-my"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="container-offer__box-items d-block w-100">
+                      <div class="container-offer__box-img">
+                        <img
+                          src="./assets/images/adwords_img/icon_loupe_end.png"
+                          alt="лупа с углом"
+                        />
+                      </div>
+                      <div class="container-offer__box-content">
+                        <p class="container-offer__box-title">
+                          Поисковые кампании
+                        </p>
+                        <p class="container-offer__box-text">
+                          Текстовые рекламные объявления будут показываться
+                          только тем пользователям, которые ищут вашу компанию
+                          или продукт по ключевым словам в поисковых системах и
+                          готовы к покупке.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-          <div class="container-offer__box">
-            <!--обертка для всех блоков-->
-            <div class="container-offer__box-items">
-              <div class="container-offer__box-img">
-                <img
-                  src="./assets/images/adwords_img/icon_loupe_end.png"
-                  alt="лупа с углом"
-                />
+                  <div class="carousel-item">
+                    <div class="container-offer__box-items d-block w-100">
+                      <div class="container-offer__box-img">
+                        <img
+                          src="./assets/images/adwords_img/percent.png"
+                          alt="лупа с формой"
+                        />
+                      </div>
+                      <div class="container-offer__box-content">
+                        <p class="container-offer__box-title">Кампании в КМС</p>
+                        <p class="container-offer__box-text">
+                          Данный вид рекламы позволяет показывать текстовую и
+                          графическую рекламу на сайтах-партнерах Google, а
+                          также в Gmail, YouTube.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container-offer__box-items d-block w-100">
+                      <div class="container-offer__box-img">
+                        <img
+                          src="./assets/images/adwords_img/icon_loupe_end.png"
+                          alt="лупа с углом"
+                        />
+                      </div>
+                      <div class="container-offer__box-content">
+                        <p class="container-offer__box-title">Ремаркетинг</p>
+                        <p class="container-offer__box-text">
+                          Ремаркетинг позволяет показывать рекламу тем людям,
+                          которые уже посещали ваш сайт или пользовались вашим
+                          приложением.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container-offer__box-items d-block w-100">
+                      <div class="container-offer__box-img">
+                        <img
+                          src="./assets/images/adwords_img/icon_loupe_end.png"
+                          alt="лупа с углом"
+                        />
+                      </div>
+                      <div class="container-offer__box-content">
+                        <p class="container-offer__box-title">
+                          Видеореклама в YouTube
+                        </p>
+                        <p class="container-offer__box-text">
+                          Ваши видеообъявления будут транслироваться в рекламных
+                          блоках YouTube, когда люди смотрят видео на самой
+                          платформе Youtube или на других сайтах, где встроен
+                          видеоплеер.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon" aria-hidden="true"
+                    ><img src="./assets/images/adwords_img/prev.png" alt=""
+                  /></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon" aria-hidden="true"
+                    ><img src="./assets/images/adwords_img/next.png" alt=""
+                  /></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <div class="container-offer__box-content">
-                <p class="container-offer__box-title">Поисковые кампании</p>
-                <p class="container-offer__box-text">
-                  Текстовые рекламные объявления будут показываться только тем
-                  пользователям, которые ищут вашу компанию или продукт по
-                  ключевым словам в поисковых системах и готовы к покупке.
-                </p>
+              <!-- енд  будстрап -->
+              <div class="container-offer__box-items">
+                <div class="container-offer__box-img">
+                  <img
+                    src="./assets/images/adwords_img/icon_loupe_end.png"
+                    alt="лупа с углом"
+                  />
+                </div>
+                <div class="container-offer__box-content">
+                  <p class="container-offer__box-title">Поисковые кампании</p>
+                  <p class="container-offer__box-text">
+                    Текстовые рекламные объявления будут показываться только тем
+                    пользователям, которые ищут вашу компанию или продукт по
+                    ключевым словам в поисковых системах и готовы к покупке.
+                  </p>
+                </div>
+              </div>
+
+              <div class="container-offer__box-items">
+                <div class="container-offer__box-img">
+                  <img
+                    src="./assets/images/adwords_img/percent.png"
+                    alt="лупа с формой"
+                  />
+                </div>
+                <div class="container-offer__box-content">
+                  <p class="container-offer__box-title">Кампании в КМС</p>
+                  <p class="container-offer__box-text">
+                    Данный вид рекламы позволяет показывать текстовую и
+                    графическую рекламу на сайтах-партнерах Google, а также в
+                    Gmail, YouTube.
+                  </p>
+                </div>
+              </div>
+
+              <div class="container-offer__box-items">
+                <div class="container-offer__box-img">
+                  <img
+                    src="./assets/images/adwords_img/t-shirt.png"
+                    alt="футболка"
+                  />
+                </div>
+                <div class="container-offer__box-content">
+                  <p class="container-offer__box-title">Ремаркетинг</p>
+                  <p class="container-offer__box-text">
+                    Ремаркетинг позволяет показывать рекламу тем людям, которые
+                    уже посещали ваш сайт или пользовались вашим приложением.
+                  </p>
+                </div>
+              </div>
+
+              <div class="container-offer__box-items">
+                <div class="container-offer__box-img">
+                  <img
+                    src="./assets/images/adwords_img/youtube.png"
+                    alt="лого ютуб"
+                  />
+                </div>
+                <div class="container-offer__box-content">
+                  <p class="container-offer__box-title">
+                    Видеореклама в YouTube
+                  </p>
+                  <p class="container-offer__box-text">
+                    Ваши видеообъявления будут транслироваться в рекламных
+                    блоках YouTube, когда люди смотрят видео на самой платформе
+                    Youtube или на других сайтах, где встроен видеоплеер.
+                  </p>
+                </div>
               </div>
             </div>
-
-            <div class="container-offer__box-items">
-              <div class="container-offer__box-img">
-                <img
-                  src="./assets/images/adwords_img/percent.png"
-                  alt="лупа с углом"
-                />
-              </div>
-              <div class="container-offer__box-content">
-                <p class="container-offer__box-title">Кампании в КМС</p>
-                <p class="container-offer__box-text">
-                  Данный вид рекламы позволяет показывать текстовую и
-                  графическую рекламу на сайтах-партнерах Google, а также в
-                  Gmail, YouTube.
-                </p>
-              </div>
-            </div>
-
-            <div class="container-offer__box-items">
-              <div class="container-offer__box-img">
-                <img
-                  src="./assets/images/adwords_img/t-shirt.png"
-                  alt="футболка"
-                />
-              </div>
-              <div class="container-offer__box-content">
-                <p class="container-offer__box-title">Ремаркетинг</p>
-                <p class="container-offer__box-text">
-                  Ремаркетинг позволяет показывать рекламу тем людям, которые
-                  уже посещали ваш сайт или пользовались вашим приложением.
-                </p>
-              </div>
-            </div>
-
-            <div class="container-offer__box-items">
-              <div class="container-offer__box-img">
-                <img
-                  src="./assets/images/adwords_img/youtube.png"
-                  alt="лого ютуб"
-                />
-              </div>
-              <div class="container-offer__box-content">
-                <p class="container-offer__box-title">Видеореклама в YouTube</p>
-                <p class="container-offer__box-text">
-                  Ваши видеообъявления будут транслироваться в рекламных блоках
-                  YouTube, когда люди смотрят видео на самой платформе Youtube
-                  или на других сайтах, где встроен видеоплеер.
-                </p>
-              </div>
-            </div>
+            <!--end Виды рекламы-->
           </div>
-          <!--конец обертки для всех блоков контейнера Виды рекламы-->
         </section>
 
-        <!--"ЭТАПЫ"-->
+        <!--6-->
         <div class="container-stages">
           <div class="container-st">
             <div class="container-stages_title">Этапы работы</div>
@@ -605,6 +1023,7 @@
                   аудиторию (ЦА).
                 </div>
               </div>
+
               <!--этап 2-->
               <div class="container-stages__item">
                 <div class="container-stages__item-check">
@@ -693,20 +1112,202 @@
               <!--end этапы-->
             </div>
             <!--div "container-stages__items"-->
+
+            <div id="carousel_2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carousel_2"
+                  data-bs-slide-to="0"
+                  class="active btn-my"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel_2"
+                  data-bs-slide-to="1"
+                  class="btn-my"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel_2"
+                  data-bs-slide-to="2"
+                  class="btn-my"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel_2"
+                  data-bs-slide-to="3"
+                  class="btn-my"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel_2"
+                  data-bs-slide-to="4"
+                  class="btn-my"
+                  aria-label="Slide 5"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel_2"
+                  data-bs-slide-to="5"
+                  class="btn-my"
+                  aria-label="Slide 6"
+                ></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-wrapper-box d-block w-300">
+                    <div class="container-stages__item-check">
+                      <img
+                        class="chek"
+                        src="./assets/images/adwords_img/checkmark.png"
+                        alt="чекмарк"
+                      />
+                    </div>
+                    <div class="container-stages__item-title">
+                      Изучаем проект
+                    </div>
+                    <div class="container-stages__item-text">
+                      Мы знакомимся с вашим бизнесом, изучаем специфику ниши и
+                      анализируем активность конкурентов и определяем целевую
+                      аудиторию (ЦА).
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="carousel-wrapper-box d-block w-100">
+                    <div class="container-stages__item-check">
+                      <img
+                        class="chek"
+                        src="./assets/images/adwords_img/checkmark.png"
+                        alt="чекмарк"
+                      />
+                    </div>
+                    <div class="container-stages__item-title">
+                      Разрабатываем медиаплан
+                    </div>
+                    <div class="container-stages__item-text">
+                      Выбираем инструменты, составляем медиаплан. Определяем с
+                      вами цели.
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-wrapper-box d-block w-100">
+                    <div class="container-stages__item-check">
+                      <img
+                        class="chek"
+                        src="./assets/images/adwords_img/checkmark.png"
+                        alt="чекмарк"
+                      />
+                    </div>
+                    <div class="container-stages__item-title">
+                      Создаем кампанию
+                    </div>
+                    <div class="container-stages__item-text">
+                      Мы создаем и настраиваем Google Analytics, создаем цели в
+                      GA, создаем аудитории. Составляем рекламные объявления,
+                      собираем релевантные коммерческие ключи и определяем
+                      список минус-слов. Запускаем рекламу.
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-wrapper-box d-block w-100">
+                    <div class="container-stages__item-check">
+                      <img
+                        class="chek"
+                        src="./assets/images/adwords_img/checkmark.png"
+                        alt="чекмарк"
+                      />
+                    </div>
+                    <div class="container-stages__item-title">Оптимизируем</div>
+                    <div class="container-stages__item-text">
+                      После запуска рекламы мы анализируем результаты и
+                      оптимизируем цели рекламной кампании (автоматическая
+                      оптимизация роботами).
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-wrapper-box d-block w-100">
+                    <div class="container-stages__item-check">
+                      <img
+                        class="chek"
+                        src="./assets/images/adwords_img/checkmark.png"
+                        alt="чекмарк"
+                      />
+                    </div>
+                    <div class="container-stages__item-title">Улучшаем</div>
+                    <div class="container-stages__item-text">
+                      Определяем и используем дополнительные инструменты и опции
+                      внутри системы, исправляем недочеты (если такие были),
+                      корректируем ставки (цена за клик, цена конверсии и т.д.).
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-wrapper-box d-block w-100">
+                    <div class="container-stages__item-check">
+                      <img
+                        class="chek"
+                        src="./assets/images/adwords_img/checkmark.png"
+                        alt="чекмарк"
+                      />
+                    </div>
+                    <div class="container-stages__item-title">
+                      Подготавливаем отчеты
+                    </div>
+                    <div class="container-stages__item-text">
+                      Подготавливаем и предоставляем детальную отчетность о
+                      проделанной работе и результатах запущенных кампаний в
+                      Google Adwords. Составляем перечень рекомендаций по
+                      дальнейшему ведению кампаний.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel_2"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"
+                  ><img src="./assets/images/adwords_img/prev.png" alt="до"
+                /></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel_2"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"
+                  ><img src="./assets/images/adwords_img/next.png" alt="некст"
+                /></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
-        <!--end БЛОК этапы>-->
 
-        <!--Блок РЕЗУЛЬТАТЫ-->
+        <!--7-->
         <div class="container-results">
           <div class="container-res">
             <div class="container-results__title">
               Что вы получаете в результате?
             </div>
-
             <div class="container-results__items">
               <!--обертка на все блоки-->
-
               <div class="container-results__item">
                 <div class="container-results__item-icon">
                   <img src="./assets/images/adwords_img/prize.png" alt="приз" />
@@ -769,160 +1370,162 @@
         </div>
         <!--end-первая главная обертка-нейминг РЕЗУЛЬТАТЫ -->
 
-
         <!-- начало вставка НАШИ клиенты -->
         <div class="content-clients">
-        <div class="content-clients__wrapper">
-          <p class="content-clients__subtitle">
-            Клиенты, которые нам доверяют​
-          </p>
-          <div class="content-clients__items">
-            <div class="content-clients_item">
-              <img
-                class="content-clients_img"
-                src="./assets/images/Header_footer_img/airtable.png"
-                alt=""
-              />
+          <div class="content-clients__wrapper">
+            <p class="content-clients__subtitle">
+              Клиенты, которые нам доверяют​
+            </p>
+            <div class="content-clients__items">
+              <div class="content-clients_item">
+                <img
+                  class="content-clients_img"
+                  src="./assets/images/Header_footer_img/airtable.png"
+                  alt=""
+                />
+              </div>
+              <div class="content-clients_item">
+                <img
+                  class="content-clients_img"
+                  src="./assets/images/Header_footer_img/crunchbase.png"
+                  alt=""
+                />
+              </div>
+              <div class="content-clients_item">
+                <img
+                  class="content-clients_img"
+                  src="./assets/images/Header_footer_img/hop_work.png"
+                  alt=""
+                />
+              </div>
+              <div class="content-clients_item">
+                <img
+                  class="content-clients_img"
+                  src="./assets/images/Header_footer_img/amazon.png"
+                  alt=""
+                />
+              </div>
+              <div class="content-clients_item">
+                <img
+                  class="content-clients_img"
+                  src="./assets/images/Header_footer_img/outreach.png"
+                  alt=""
+                />
+              </div>
+              <div class="content-clients_item">
+                <img
+                  class="content-clients_img content-clients_img__size"
+                  src="./assets/images/Header_footer_img/sales_force.png"
+                  alt=""
+                />
+              </div>
+              <div class="content-clients_item">
+                <img
+                  class="content-clients_img"
+                  src="./assets/images/Header_footer_img/content_square.png"
+                  alt=""
+                />
+              </div>
+              <div class="content-clients_item">
+                <img
+                  class="content-clients_img"
+                  src="./assets/images/Header_footer_img/hub_spot.png"
+                  alt=""
+                />
+              </div>
+              <div class="content-clients_item content-clients_item__position">
+                <img
+                  class="content-clients_img"
+                  src="./assets/images/Header_footer_img/zendesk.png"
+                  alt=""
+                />
+              </div>
+              <div class="content-clients_item">
+                <img
+                  class="content-clients_img"
+                  src="./assets/images/Header_footer_img/airbnb.png"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="content-clients_item">
-              <img
-                class="content-clients_img"
-                src="./assets/images/Header_footer_img/crunchbase.png"
-                alt=""
-              />
+            <div class="content-call">
+              <div class="content-call__description">
+                <p class="content-call__subtitle">
+                  Хотите чтобы мы поучаствовали в развитии Вашего проекта?
+                </p>
+                <p class="content-call__text">Просто позвоните нам!</p>
+              </div>
+              <p class="content-call__tel">+371 0000 0000</p>
             </div>
-            <div class="content-clients_item">
-              <img
-                class="content-clients_img"
-                src="./assets/images/Header_footer_img/hop_work.png"
-                alt=""
-              />
-            </div>
-            <div class="content-clients_item">
-              <img
-                class="content-clients_img"
-                src="./assets/images/Header_footer_img/amazon.png"
-                alt=""
-              />
-            </div>
-            <div class="content-clients_item">
-              <img
-                class="content-clients_img"
-                src="./assets/images/Header_footer_img/outreach.png"
-                alt=""
-              />
-            </div>
-            <div class="content-clients_item">
-              <img
-                class="content-clients_img"
-                src="./assets/images/Header_footer_img/sales_force.png"
-                alt=""
-              />
-            </div>
-            <div class="content-clients_item">
-              <img
-                class="content-clients_img"
-                src="./assets/images/Header_footer_img/content_square.png"
-                alt=""
-              />
-            </div>
-            <div class="content-clients_item">
-              <img
-                class="content-clients_img"
-                src="./assets/images/Header_footer_img/hub_spot.png"
-                alt=""
-              />
-            </div>
-            <div class="content-clients_item">
-              <img
-                class="content-clients_img"
-                src="./assets/images/Header_footer_img/zendesk.png"
-                alt=""
-              />
-            </div>
-            <div class="content-clients_item">
-              <img
-                class="content-clients_img"
-                src="./assets/images/Header_footer_img/airbnb.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="content-call">
-            <div class="content-call__description">
-              <p class="content-call__subtitle">
-                Хотите чтобы мы поучаствовали в развитии Вашего проекта?
-              </p>
-              <p class="content-call__text">Просто позвоните нам!</p>
-            </div>
-            <p class="content-call__tel">+371 0000 0000</p>
           </div>
         </div>
-      </div>
         <!-- end вставка наши клиенты -->
       </main>
 
-    <!-- добавляем футер от Юли начало -->
-    <footer class="footer">
+      <!-- футер от Юли начало -->
+      <footer class="footer">
         <div class="footer__wrapper">
           <div class="footer-content">
             <div class="footer-contacts">
               <div class="footer-logo">
                 <img
-              class="footer-logo__img"
-              src="./assets/images/Header_footer_img/logo_footer.svg"
-              alt=""
-              />
-            </div>
+                  class="footer-logo__img"
+                  src="./assets/images/Header_footer_img/logo_footer.svg"
+                  alt=""
+                />
+              </div>
               <div class="footer-contacts__tel footer-contacts__tel-first">
                 <p class="footer-contacts__text">Телефон</p>
                 <p class="footer-contacts__tel-num">+001 987-654-3210</p>
               </div>
-              <div class="footer-contacts__tel-num footer-contacts__tel-second">+001 987-654-3210</div>
+              <div class="footer-contacts__tel-num footer-contacts__tel-second">
+                +001 987-654-3210
+              </div>
               <div class="footer-contacts__email">
                 <p class="footer-contacts__text">Email</p>
                 <p class="footer-contacts__email-adress">info@example.com</p>
               </div>
               <div class="footer-contacts__adress">
                 <p class="footer-contacts__text">Адрес</p>
-                <p class="footer-contacts__adress-text">123/B, Route 66, Downtown, Washington, DC 20004, US​</p>
+                <p class="footer-contacts__adress-text">
+                  123/B, Route 66, Downtown, Washington, DC 20004, US​
+                </p>
               </div>
-              <div class="footer-contacts__map">
-              </div>
+              <div class="footer-contacts__map"></div>
             </div>
             <div class="footer-form">
               <form action="#" method="post">
                 <p class="footer-form__title">Есть вопросы?</p>
-                <p class="form__subtitle">
-                  Свяжитесь с нами</p>
-                  <input
-                    class="form-item"
-                    id="input-name"
-                    type="text"
-                    placeholder="Имя"
-                  />
-                  <input
-                    class="form-item"
-                    id="input-email"
-                    type="email"
-                    placeholder="Email"
-                  />
-                  <input
-                    class="form-item"
-                    id="input-tel"
-                    type="tel"
-                    placeholder="+7 999 999 99 99"
-                  />
-                  <textarea
-                    class="form-message"
-                    name=""
-                    id=""
-                    placeholder="Ваше сообщение"
-                  ></textarea>
-                </p>
+                <p class="form__subtitle">Свяжитесь с нами</p>
+                <input
+                  class="form-item"
+                  id="footer_input-name"
+                  type="text"
+                  placeholder="Имя"
+                />
+                <input
+                  class="form-item"
+                  id="footer_input-email"
+                  type="email"
+                  placeholder="Email"
+                />
+                <input
+                  class="form-item"
+                  id="footer_input-tel"
+                  type="tel"
+                  placeholder="+7 999 999 99 99"
+                />
+                <textarea
+                  class="form-message"
+                  name="form-message"
+                  id="footer_your-message"
+                  placeholder="Ваше сообщение"
+                ></textarea>
 
                 <div class="form-items">
-                  <button id="" class="form-button">Отправить</button>
+                  <button id="footer_send-button" class="form-button">
+                    Отправить
+                  </button>
                   <div class="form-checkbox">
                     <input class="checkbox-item" type="checkbox" />
                     <p class="checkbox-text">
@@ -938,10 +1541,14 @@
           </div>
           <p class="watermark">SIA OL © Visas tiesības aizsargātas 2021</p>
         </div>
-
       </footer>
 
-    <!-- добавляем футер от Юли end -->
+      <!-- добавляем футер от Юли end -->
     </div>
+    <script src="./assets/styles/zbootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+
+    <script src="./assets/js/main_js/main.js"></script>
   </body>
 </html>
