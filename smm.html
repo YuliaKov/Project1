@@ -5,26 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Digital Agency SMM</title>
     <link type="text/css" rel="stylesheet" href="./assets/styles/reset.css" />
-    <link type="text/css" rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/styles/normalize.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link type="text/css" rel="stylesheet" href="./assets/styles/smm_style/smmStyle.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/styles/smm_style/smmStyle.css"
+    />
   </head>
   <body>
     <header class="header">
-
       <!-- Header: лого + меню + кнопки -->
 
       <div class="header-top">
         <img
-          class="header-logo"
+          class="header-logo header-logo__white"
           src="./assets/images/Header_footer_img/logo_header.svg"
           alt=""
         />
+        <img
+          class="header-logo header-logo__dark"
+          src="./assets/images/Header_footer_img/logo_dark.svg"
+          alt=""
+        />
+
         <div class="header-wrapper">
           <nav class="header-nav">
             <ul class="header-nav__items">
@@ -35,10 +48,12 @@
                 <a class="header-nav__link" href="about.html">О нас</a>
               </li>
               <li class="header-nav__item">
-                <a class="header-nav__link" href="adwords.html">Google Adwords</a>
+                <a class="header-nav__link" href="adwords.html"
+                  >Google Adwords</a
+                >
               </li>
               <li class="header-nav__item">
-                <a class="header-nav__link" href="smm.html">SMM</a>
+                <a class="header-nav__link active-page" href="smm.html">SMM</a>
               </li>
               <li class="header-nav__item">
                 <a class="header-nav__link" href="seo.html">SEO</a>
@@ -55,6 +70,9 @@
             <button class="header-top__button header-top__lang">LV</button>
           </div>
         </div>
+        <div class="burger">
+          <span></span>
+        </div>
       </div>
 
       <!-- Заголовок сайта -->
@@ -69,814 +87,2052 @@
       </div>
     </header>
 
-    <!-- Первый section - Ведение соц.сетей-->
+    <main class="main">
+      <!-- Первый section - Ведение соц.сетей-->
 
-    <section class="section1">
-      <div class="section1__grid">
-        <div class="section1-grid__block1">
-          <img
-            class=""
-            src="./assets/images/smm_img/smm-section1-img.png"
-            alt="Ведение социальных сетей"
-          />
+      <section class="section1">
+        <div class="section1__grid">
+          <div class="section1-grid__block1">
+            <img
+              class="section1-grid__block1-img"
+              src="./assets/images/smm_img/smm-section1-img.png"
+              alt="Ведение социальных сетей"
+            />
+          </div>
+          <div class="section1-grid__block2">
+            <h2 class="section1-grid__block2-title title2">
+              Ведение социальных сетей. Что мы предлагаем?
+            </h2>
+          </div>
+          <div class="section1-grid__block3">
+            <p class="section1-grid__block3-text text">
+              Чтобы всё было прозрачно с самого начала Вашего сотрудничества с
+              нами, и Вы понимали какой объём работы будет выполнен для
+              достижения поставленных целей –
+              <span class="section1-grid_text_emphasized emphasized"
+                >мы составим понятный контент-план на месяц.</span
+              >
+            </p>
+          </div>
+          <div class="section1-grid__block4">
+            <img
+              class="section1-grid__block4-img"
+              src="./assets/images/smm_img/smm-fb+insta.png"
+              alt="FB + Instagram"
+            />
+            <p class="section1-grid__block3-text text">
+              С помощью данного инструмента, мы вместе разработаем
+              индивидуальную стратегию продвижения Вашей компании в социальных
+              сетях Facebook и Instagram.
+            </p>
+          </div>
         </div>
-        <div class="section1-grid__block2">
-          <h2 class="section1-grid__block2-title title2">
-            Ведение социальных сетей. Что мы предлагаем?
+      </section>
+
+      <!-- Второй section - Пример контент-плана на месяц -->
+
+      <section class="section2">
+        <div class="section2__header">
+          <h2 class="section2-header__title title2">
+            Пример контент-плана на месяц
           </h2>
-        </div>
-        <div class="section1-grid__block3">
-          <p class="section1-grid__block3-text text">
-            Чтобы всё было прозрачно с самого начала Вашего сотрудничества с
-            нами, и Вы понимали какой объём работы будет выполнен для достижения
-            поставленных целей –
-            <span class="section1-grid_text_emphasized emphasized"
-              >мы составим понятный контент-план на месяц.</span
-            >
+          <p class="section2-header__text text2">
+            Данный пример части контент-плана был разработан и реализован для
+            рижской кальянной Hookah Place Riga.
           </p>
         </div>
-        <div class="section1-grid__block4">
-          <img
-            class="section1-grid__block4-img"
-            src="./assets/images/smm_img/smm-fb+insta.png"
-            alt="FB + Instagram"
-          />
-          <p class="section1-grid__block3-text text">
-            С помощью данного инструмента, мы вместе разработаем индивидуальную
-            стратегию продвижения Вашей компании в социальных сетях Facebook и
-            Instagram.
-          </p>
+
+        <!-- Таблица "Пример контент-плана на месяц" -->
+        <div class="section2__border">
+          <table class="section2__table text">
+            <thead class="section2-table__header">
+              <tr class="section2-table__row1 row">
+                <!-- Шапка таблицы -->
+                <td class="row1__cell header-cell">
+                  <span class="row1__cell emphasized">День<br />недели</span>
+                </td>
+                <td class="row1__cell header-cell">
+                  <span class="row1__cell emphasized"
+                    >Место<br />размещения</span
+                  >
+                </td>
+                <td class="row1__cell header-cell custom-width1">
+                  <span class="row1__cell emphasized">Тип<br />сообщения</span>
+                </td>
+                <td class="row1__cell header-cell">
+                  <span class="row1__cell emphasized">Тип<br />контента</span>
+                </td>
+                <td class="row1__cell header-cell custom-width2">
+                  <span class="row1__cell emphasized"
+                    >Набросок<br />публикации</span
+                  >
+                </td>
+              </tr>
+            </thead>
+            <tbody class="section2-table__main">
+              <!-- 1-ая строчка -->
+              <tr class="section2-table__row2 even row">
+                <td class="row2__cell cell">01.08.2020</td>
+                <td class="row2__cell cell">Пост в ленте</td>
+                <td class="row2__cell cell">
+                  <span class="row2__cell emphasized">Продающий</span
+                  ><br />Информация о товарах, услугах
+                </td>
+                <td class="row2__cell cell">Фото</td>
+                <td class="row2__cell cell">
+                  Как не утонуть в выборе табака и кальянов в нашем шоу-руме? В
+                  Hookah Place Riga доброжелательные мастера кальянного ремесла
+                  не только подскажут, что выбрать, но и расскажут, как
+                  правильно приготовить кальян. Всегда ждем вас в гости.
+                </td>
+              </tr>
+              <!-- 2-ая строчка -->
+              <tr class="section2-table__row3 row">
+                <td class="row3__cell cell">02.08.2020</td>
+                <td class="row3__cell cell">Пост в ленте</td>
+                <td class="row3__cell cell">
+                  <span class="row3__cell emphasized">Репутационный</span><br />
+                  Репортаж из офиса
+                </td>
+                <td class="row3__cell cell">Видео</td>
+                <td class="row3__cell cell">
+                  Кальянщик будет курить и рассказывать.
+                </td>
+              </tr>
+              <!-- 3-ья строчка -->
+              <tr class="section2-table__row4 even row">
+                <td class="row4__cell cell">03.08.2020</td>
+                <td class="row4__cell cell">Пост в ленте</td>
+                <td class="row4__cell cell">
+                  <span class="row4__cell emphasized">Развлекательный</span
+                  ><br />Юмор
+                </td>
+                <td class="row4__cell cell">
+                  <a
+                    class="row4__cell-link cell-link"
+                    href="https://www.instagram.com/p/BlGYbbZly6p/"
+                    >Фото</a
+                  >
+                </td>
+                <td class="row4__cell cell">Когда кальян всегда под рукой.</td>
+              </tr>
+              <!-- 4-ая строчка -->
+              <tr class="section2-table__row5 row">
+                <td class="row5__cell cell">04.08.2020</td>
+                <td class="row5__cell cell">Пост в ленте</td>
+                <td class="row5__cell cell">
+                  <span class="row5__cell emphasized">Образовательный</span
+                  ><br />
+                  Советы, рекомендации
+                </td>
+                <td class="row5__cell cell">Фото</td>
+                <td class="row5__cell cell">
+                  Чаша для кальяна – самый важный и главный аксессуар. Именно в
+                  правильно подобранной чаше табак раскроется так, как задумал
+                  производитель. Да и курить на эстетически красивой чаше всегда
+                  приятно.<br />
+                  <span class="row5-cell_space space"></span>
+                  Наши мастера всегда подскажут и подберут чашу от лучших
+                  производителей, чтобы вы сполна насладились вкусами табака.
+                </td>
+              </tr>
+              <!-- 5-ая строчка -->
+              <tr class="section2-table__row6 even row">
+                <td class="row6__cell cell round-bl">06.08.2020</td>
+                <td class="row6__cell cell">Пост в ленте</td>
+                <td class="row6__cell cell">
+                  <span class="row6__cell emphasized">Репутационный</span
+                  ><br />Процесс производства
+                </td>
+                <td class="row6__cell cell">Видео</td>
+                <td class="row6__cell cell round-br">
+                  MIX дня (кальянный табак)
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </div>
-    </section>
 
-    <!-- Второй section - Пример контент-плана на месяц -->
+        <!-- Grid-таблица для планшета и мобильных устройств -->
 
-    <section class="section2">
-      <div class="section2__header">
-        <h2 class="section2-header__title title2">
-          Пример контент-плана на месяц
-        </h2>
-        <p class="section2-header__text text2">
-          Данный пример части контент-плана был разработан и реализован для
-          рижской кальянной Hookah Place Riga.
-        </p>
-      </div>
+        <div class="section2__grid text3">
+          <!-- Первый ряд -->
 
-      <!-- Таблица "Пример контент-плана на месяц" -->
-      <div class="section2__border">
-        <table class="section2__table text">
-          <thead class="section2-table__header">
-            <tr class="section2-table__row1 row">
-              <!-- Шапка таблицы -->
-              <td class="row1__cell header-cell">
-                <span class="row1__cell emphasized">День<br />недели</span>
-              </td>
-              <td class="row1__cell header-cell">
-                <span class="row1__cell emphasized">Место<br />размещения</span>
-              </td>
-              <td class="row1__cell header-cell custom-width1">
-                <span class="row1__cell emphasized">Тип<br />сообщения</span>
-              </td>
-              <td class="row1__cell header-cell">
-                <span class="row1__cell emphasized">Тип<br />контента</span>
-              </td>
-              <td class="row1__cell header-cell custom-width2">
-                <span class="row1__cell emphasized"
-                  >Набросок<br />публикации</span
-                >
-              </td>
-            </tr>
-          </thead>
-          <tbody class="section2-table__main">
-            <!-- 1-ая строчка -->
-            <tr class="section2-table__row2 even row">
-              <td class="row2__cell cell">01.08.2020</td>
-              <td class="row2__cell cell">Пост в ленте</td>
-              <td class="row2__cell cell">
-                <span class="row2__cell emphasized">Продающий</span
+          <div class="section2-grid__row round-t">
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >День недели</span
+                ><br />01.08.2020
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Место размещения</span
+                ><br />Пост в ленте
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Тип сообщения<br />Продающий</span
                 ><br />Информация о товарах, услугах
-              </td>
-              <td class="row2__cell cell">Фото</td>
-              <td class="row2__cell cell">
-                Как не утонуть в выборе табака и кальянов в нашем шоу-руме? В
-                Hookah Place Riga доброжелательные мастера кальянного ремесла не
-                только подскажут, что выбрать, но и расскажут, как правильно
-                приготовить кальян. Всегда ждем вас в гости.
-              </td>
-            </tr>
-            <!-- 2-ая строчка -->
-            <tr class="section2-table__row3 row">
-              <td class="row3__cell cell">02.08.2020</td>
-              <td class="row3__cell cell">Пост в ленте</td>
-              <td class="row3__cell cell">
-                <span class="row3__cell emphasized">Репутационный</span><br />
-                Репортаж из офиса
-              </td>
-              <td class="row3__cell cell">Видео</td>
-              <td class="row3__cell cell">
-                Кальянщик будет курить и рассказывать.
-              </td>
-            </tr>
-            <!-- 3-ья строчка -->
-            <tr class="section2-table__row4 even row">
-              <td class="row4__cell cell">03.08.2020</td>
-              <td class="row4__cell cell">Пост в ленте</td>
-              <td class="row4__cell cell">
-                <span class="row4__cell emphasized">Развлекательный</span
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Тип контента</span
+                ><br />Фото
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Набросок публикации</span
+                ><br />Как не утонуть в выборе табака и кальянов в нашем
+                шоу-руме? В Hookah Place Riga доброжелательные мастера
+                кальянного ремесла не только подскажут, что выбрать, но и
+                расскажут, как правильно приготовить кальян. Всегда ждем вас в
+                гости.
+              </p>
+            </div>
+          </div>
+
+          <!-- Второй ряд -->
+
+          <div class="section2-grid__row even">
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >День недели</span
+                ><br />02.08.2020
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Место размещения</span
+                ><br />Пост в ленте
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Тип сообщения<br />Репутационный</span
+                ><br />Репортаж из офиса
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Тип контента</span
+                ><br />Видео
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Набросок публикации</span
+                ><br />Кальянщик будет курить и рассказывать.
+              </p>
+            </div>
+          </div>
+
+          <!-- Третий ряд -->
+
+          <div class="section2-grid__row">
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >День недели</span
+                ><br />03.08.2020
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Место размещения</span
+                ><br />Пост в ленте
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Тип сообщения<br />Развлекательный</span
                 ><br />Юмор
-              </td>
-              <td class="row4__cell cell">
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text_emphasized emphasized">
+                Тип контента
+              </p>
+              <p>
                 <a
-                  class="row4__cell-link"
+                  class="section2-grid__row-text_link cell-link"
                   href="https://www.instagram.com/p/BlGYbbZly6p/"
                   >Фото</a
                 >
-              </td>
-              <td class="row4__cell cell">Когда кальян всегда под рукой.</td>
-            </tr>
-            <!-- 4-ая строчка -->
-            <tr class="section2-table__row5 row">
-              <td class="row5__cell cell">04.08.2020</td>
-              <td class="row5__cell cell">Пост в ленте</td>
-              <td class="row5__cell cell">
-                <span class="row5__cell emphasized">Образовательный</span><br />
-                Советы, рекомендации
-              </td>
-              <td class="row5__cell cell">Фото</td>
-              <td class="row5__cell cell">
-                Чаша для кальяна – самый важный и главный аксессуар. Именно в
-                правильно подобранной чаше табак раскроется так, как задумал
-                производитель. Да и курить на эстетически красивой чаше всегда
-                приятно.<br />
-                <span class="row5-cell_space"></span>
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Набросок публикации</span
+                ><br />Когда кальян всегда под рукой.
+              </p>
+            </div>
+          </div>
+
+          <!-- Четвёртый ряд -->
+
+          <div class="section2-grid__row even">
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >День недели</span
+                ><br />04.08.2020
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Место размещения</span
+                ><br />Пост в ленте
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Тип сообщения<br />Образовательный</span
+                ><br />Советы, рекомендации
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Тип контента</span
+                ><br />Фото
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Набросок публикации</span
+                ><br />Чаша для кальяна – самый важный и главный аксессуар.
+                Именно в правильно подобранной чаше табак раскроется так, как
+                задумал производитель. Да и курить на эстетически красивой чаше
+                всегда приятно.<br />
+                <span class="section2-grid__row-text__space space"></span>
                 Наши мастера всегда подскажут и подберут чашу от лучших
                 производителей, чтобы вы сполна насладились вкусами табака.
-              </td>
-            </tr>
-            <!-- 5-ая строчка -->
-            <tr class="section2-table__row6 even row">
-              <td class="row6__cell cell round-bl">06.08.2020</td>
-              <td class="row6__cell cell">Пост в ленте</td>
-              <td class="row6__cell cell">
-                <span class="row6__cell emphasized">Репутационный</span
+              </p>
+            </div>
+          </div>
+
+          <!-- Пятый ряд -->
+
+          <div class="section2-grid__row">
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >День недели</span
+                ><br />06.08.2020
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Место размещения</span
+                ><br />Пост в ленте
+              </p>
+            </div>
+
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Тип сообщения<br />Репутационный</span
                 ><br />Процесс производства
-              </td>
-              <td class="row6__cell cell">Видео</td>
-              <td class="row6__cell cell round-br">MIX дня (кальянный табак)</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+              </p>
+            </div>
 
-    <!-- Третий section - Структура коммуникации -->
+            <div class="section2-grid__row-cell">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Тип контента</span
+                ><br />Видео
+              </p>
+            </div>
 
-    <section class="section3">
-      <div class="section3__header">
-        <h2 class="section3-header__title title2">Структура коммуникации</h2>
-        <p class="section3-header__text text2">
-          Для составления публикаций мы используем исключительно продуманную и
-          рабочую структуру коммуникации. Данный инструмент помогает нашим
-          специалистам готовить контент для компаний с максимальной
-          продуманностью и эффективностью. Говоря простым языком, данная модель
-          позволяет разнообразить контент и не надоедать подписчикам
-          однотипностью материала.
-        </p>
-      </div>
-
-      <!-- Таблица "Пример контент-плана на месяц" -->
-
-      <div class="section3__border">
-        <table class="section3__table text">
-          <!-- Шапка таблицы -->
-          <thead class="section3-table__header">
-            <tr class="section3-table__row1 odd row">
-              <td td class="row1__cell header-cell round-tl">
-                <span class="row1__cell emphasized">Образовательный<br />(25%)</span>
-              </td>
-              <td class="row1__cell header-cell">
-                <span class="row1__cell emphasized">Репутационный<br />(25%)</span>
-              </td>
-              <td class="row1__cell header-cell">
-                <span class="row1__cell emphasized">Развлекательный<br />(10%)</span>
-              </td>
-              <td class="row1__cell header-cell">
-                <span class="row1__cell emphasized">Коммуникационный<br />(20%)</span>
-              </td>
-              <td class="row1__cell header-cell round-tr">
-                <span class="row1__cell emphasized">Продающий<br />(20%)</span>
-              </td>
-            </tr>
-          </thead>
-          <tbody class="section3-table__main">
-            <!-- 1-ая строчка -->
-            <tr class="section3-table__row2 row">
-              <td class="row2__cell header-cell">Задача: обучать, демонстрировать компетенцию</td>
-              <td class="row2__cell header-cell">Задача: формировать доверие, лояльность</td>
-              <td class="row2__cell header-cell">Задача: развлекать, веселить</td>
-              <td class="row2__cell header-cell">
-                Задача: вовлекать в коммуникацию, увеличить активность, получить
-                обратную связь
-              </td>
-              <td class="row2__cell header-cell">Задача: продавать</td>
-            </tr>
-            <!-- 2-ая строчка -->
-            <tr class="section3-table__row3 odd row">
-              <td class="row3__cell header-cell round-bl">
-                <ul class="row3-cell__list list">
-                  <li class="row3-cell__item">Советы,<br />рекомендации</li>
-                  <li class="row3-cell__item">Инструкции</li>
-                  <li class="row3-cell__item">Лайфхаки</li>
-                  <li class="row3-cell__item">Новости индустрии</li>
-                </ul>
-              </td>
-              <td class="row3__cell header-cell">
-                <ul class="row3-cell__list list">
-                  <li class="row3-cell__item">Отзывы</li>
-                  <li class="row3-cell__item">Кейсы</li>
-                  <li class="row3-cell__item">Новости компании</li>
-                  <li class="row3-cell__item">Знакомство с<br />сотрудниками</li>
-                  <li class="row3-cell__item">Репортаж из офиса</li>
-                  <li class="row3-cell__item">Процесс<br />производства</li>
-                </ul>
-              </td>
-              <td class="row3__cell header-cell">
-                <ul class="row3-cell__list list">
-                  <li class="row3-cell__item">Юмор</li>
-                  <li class="row3-cell__item">Мемы</li>
-                  <li class="row3-cell__item">Гифки</li>
-                  <li class="row3-cell__item">Смешные истории</li>
-                  <li class="row3-cell__item">Видео</li>
-                </ul>
-              </td>
-              <td class="row3__cell header-cell">
-                <ul class="row3-cell__list list">
-                  <li class="row3-cell__item">Обсуждения,<br />дискуссии</li>
-                  <li class="row3-cell__item">Опросы</li>
-                  <li class="row3-cell__item">Игры</li>
-                  <li class="row3-cell__item">Конкурсы</li>
-                </ul>
-              </td>
-              <td class="row3__cell header-cell round-br">
-                <ul class="row3-cell__list list">
-                  <li class="row3-cell__item">Информация о<br />товарах, услугах</li>
-                  <li class="row3-cell__item">Анонсы выхода<br />новых продуктов</li>
-                  <li class="row3-cell__item">Распродажи, акции,<br />скидки</li>
-                  <li class="row3-cell__item">Ваши преимущества</li>
-                  <li class="row3-cell__item">Продающие статьи</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- Четвёртый section - Таргетированная реклама -->
-
-    <section class="section4">
-      <div class="section4__header">
-        <h2 class="section4__title title2">Таргетированная реклама</h2>
-      </div>
-      <div class="section4__grid">
-        <div class="section4-grid__block1">
-          <h3 class="block1__title title3">
-            Специалисты Ora обеспечат точное попадание в вашу целевую аудиторию
-            и максимальный результат рекламы.
-          </h3>
-          <p class="block1__text text">
-            Мы предлагаем помощь каждому клиенту, желающему воспользоваться
-            поддержкой профессиональных специалистов в сфере SMM-продвижения.
-          </p>
-          <p class="block1__text text">
-            Таргетированная реклама в социальных сетях Facebook и Instagram ‒
-            это отличная возможность рассказать о собственном бизнесе или
-            продукте максимально большему количеству людей.
-          </p>
-          <span class="block1__element"></span>
-          <p class="block1__text text">
-            Отметим, что эти соц. сети являются одними из самых популярных и
-            распространенных на сегодня. Именно здесь есть возможность отыскать
-            новых потребителей, пополняя собственную клиентскую базу.
-          </p>
-          </div>
-          <div class="section4-grid__block2">
-            <img class="block2__img"
-            src="./assets/images/smm_img/smm-section24-img.png" alt="Таргетированная реклама">
+            <div class="section2-grid__row-cell round-b">
+              <p class="section2-grid__row-text">
+                <span class="section2-grid__row-text_emphasized emphasized"
+                  >Набросок публикации</span
+                ><br />
+                MIX дня (кальянный табак)
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Пятый section - Почему нежно использовать таргетированную рекламу в FB и Инстаграме -->
+      <!-- Третий section - Структура коммуникации -->
 
-    <section class="section5">
-      <div class="section5__header">
-        <h2 class="section5__title title2">Почему нужно использовать таргетированную рекламу в Facebook и Instagram?</h2>
-      </div>
-      <div class="section5__grid">
-        
-        <!-- Первый блок грида -->
-        
-        <div class="section5-grid__block">
-          <span class="section5-grid__element"></span>
-          <img class="section5-grid__icon" src="./assets/images/smm_img/smm-world-icon.svg">
-          <p class="sewction5-grid__text text">Мировые социальные сети, распространенные в большинстве стран.</p>
-        </div>
-        
-         <!-- Второй блок грида -->
-
-        <div class="section5-grid__block">
-          <span class="section5-grid__element"></span>
-          <img class="section5-grid__icon" src="./assets/images/smm_img/smm-people-icon.svg">
-          <p class="sewction5-grid__text text">Большой охват целевой аудитории.</p>
+      <section class="section3">
+        <div class="section3__header">
+          <h2 class="section3-header__title title2">Структура коммуникации</h2>
+          <p class="section3-header__text text">
+            Для составления публикаций мы используем исключительно продуманную и
+            рабочую структуру коммуникации. Данный инструмент помогает нашим
+            специалистам готовить контент для компаний с максимальной
+            продуманностью и эффективностью. Говоря простым языком, данная
+            модель позволяет разнообразить контент и не надоедать подписчикам
+            однотипностью материала.
+          </p>
         </div>
 
-        <!-- Третий блок грида -->
+        <!-- Таблица "Пример контент-плана на месяц" -->
 
-        <div class="section5-grid__block">
-          <span class="section5-grid__element"></span>
-          <img class="section5-grid__icon" src="./assets/images/smm_img/smm-wallet-icon.svg">
-          <p class="sewction5-grid__text text">Прогрессивная аудитория с высокой платежеспособностью.</p>
+        <div class="section3__border">
+          <table class="section3__table text">
+            <!-- Шапка таблицы -->
+            <thead class="section3-table__header">
+              <tr class="section3-table__row1 odd row">
+                <td class="row1__cell header-cell round-tl">
+                  <span class="row1__cell emphasized"
+                    >Образовательный<br />(25%)</span
+                  >
+                </td>
+                <td class="row1__cell header-cell">
+                  <span class="row1__cell emphasized"
+                    >Репутационный<br />(25%)</span
+                  >
+                </td>
+                <td class="row1__cell header-cell">
+                  <span class="row1__cell emphasized"
+                    >Развлекательный<br />(10%)</span
+                  >
+                </td>
+                <td class="row1__cell header-cell">
+                  <span class="row1__cell emphasized"
+                    >Коммуникационный<br />(20%)</span
+                  >
+                </td>
+                <td class="row1__cell header-cell round-tr">
+                  <span class="row1__cell emphasized"
+                    >Продающий<br />(20%)</span
+                  >
+                </td>
+              </tr>
+            </thead>
+            <tbody class="section3-table__main">
+              <!-- 1-ая строчка -->
+              <tr class="section3-table__row2 row">
+                <td class="row2__cell header-cell">
+                  Задача: обучать, демонстрировать компетенцию
+                </td>
+                <td class="row2__cell header-cell">
+                  Задача: формировать доверие, лояльность
+                </td>
+                <td class="row2__cell header-cell">
+                  Задача: развлекать, веселить
+                </td>
+                <td class="row2__cell header-cell">
+                  Задача: вовлекать в коммуникацию, увеличить активность,
+                  получить обратную связь
+                </td>
+                <td class="row2__cell header-cell">Задача: продавать</td>
+              </tr>
+              <!-- 2-ая строчка -->
+              <tr class="section3-table__row3 odd row">
+                <td class="row3__cell header-cell round-bl">
+                  <ul class="row3-cell__list list">
+                    <li class="row3-cell__item">Советы,<br />рекомендации</li>
+                    <li class="row3-cell__item">Инструкции</li>
+                    <li class="row3-cell__item">Лайфхаки</li>
+                    <li class="row3-cell__item">Новости индустрии</li>
+                  </ul>
+                </td>
+                <td class="row3__cell header-cell">
+                  <ul class="row3-cell__list list">
+                    <li class="row3-cell__item">Отзывы</li>
+                    <li class="row3-cell__item">Кейсы</li>
+                    <li class="row3-cell__item">Новости компании</li>
+                    <li class="row3-cell__item">
+                      Знакомство с<br />сотрудниками
+                    </li>
+                    <li class="row3-cell__item">Репортаж из офиса</li>
+                    <li class="row3-cell__item">Процесс<br />производства</li>
+                  </ul>
+                </td>
+                <td class="row3__cell header-cell">
+                  <ul class="row3-cell__list list">
+                    <li class="row3-cell__item">Юмор</li>
+                    <li class="row3-cell__item">Мемы</li>
+                    <li class="row3-cell__item">Гифки</li>
+                    <li class="row3-cell__item">Смешные истории</li>
+                    <li class="row3-cell__item">Видео</li>
+                  </ul>
+                </td>
+                <td class="row3__cell header-cell">
+                  <ul class="row3-cell__list list">
+                    <li class="row3-cell__item">Обсуждения,<br />дискуссии</li>
+                    <li class="row3-cell__item">Опросы</li>
+                    <li class="row3-cell__item">Игры</li>
+                    <li class="row3-cell__item">Конкурсы</li>
+                  </ul>
+                </td>
+                <td class="row3__cell header-cell round-br">
+                  <ul class="row3-cell__list list">
+                    <li class="row3-cell__item">
+                      Информация о<br />товарах, услугах
+                    </li>
+                    <li class="row3-cell__item">
+                      Анонсы выхода<br />новых продуктов
+                    </li>
+                    <li class="row3-cell__item">
+                      Распродажи, акции,<br />скидки
+                    </li>
+                    <li class="row3-cell__item">Ваши преимущества</li>
+                    <li class="row3-cell__item">Продающие статьи</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <!-- Четвёртый блок грида -->
+        <!-- Grid-таблица для мобильного устройства -->
 
-        <div class="section5-grid__block">
-          <span class="section5-grid__element"></span>
-          <img class="section5-grid__icon" src="./assets/images/smm_img/smm-graph-icon.svg">
-          <p class="sewction5-grid__text text">Лучшие алгоритмы оптимизации рекламы.</p>
-        </div>
-      </div>
-    </section>
+        <div class="section3__grid text">
+          <!-- Первый ряд -->
+          <div class="section3-grid__item odd round-t">
+            <p class="section3-grid__title">
+              <span class="section3-grid__emphasized emphasized"
+                >Образовательный<br />(25%)</span
+              >
+            </p>
+            <p class="section3-grid__text">
+              Задача: обучать, демонстрировать компетенцию
+            </p>
+            <ul class="section3-grid__list">
+              <li class="section3-grid__list-item">Советы, рекомендации</li>
+              <li class="section3-grid__list-item">Инструкции</li>
+              <li class="section3-grid__list-item">Лайфхаки</li>
+              <li class="section3-grid__list-item">Новости индустрии</li>
+            </ul>
+          </div>
 
-    <!-- Шестой section - Настройки таргетинга в FB и Instagram -->
+          <!-- Второй ряд -->
+          <div class="section3-grid__item even">
+            <p class="section3-grid__title">
+              <span class="section3-grid__emphasized emphasized"
+                >Репутационный<br />(25%)</span
+              >
+            </p>
+            <p class="section3-grid__text">
+              Задача: формировать доверие, лояльность
+            </p>
+            <ul class="section3-grid__list">
+              <li class="section3-grid__list-item">Отзывы</li>
+              <li class="section3-grid__list-item">Кейсы</li>
+              <li class="section3-grid__list-item">Новости компании</li>
+              <li class="section3-grid__list-item">
+                Знакомство с сотрудниками
+              </li>
+              <li class="section3-grid__list-item">Репортаж из офиса</li>
+              <li class="section3-grid__list-item">Процесс производства</li>
+            </ul>
+          </div>
 
-    <section class="section6">
-      <div class="section6__header">
-        <h2 class="section6__title title2">Настройки таргетинга в Facebook и Instagram</h2>
-        <p class="section6__text text">При настройке таргетированной рекламы мы детально изучаем профиль Вашей целевой аудитории и с высокой точностью настраиваем таргетинг для донесения рекламного сообщения до человека, который заинтересован в Вашей услуге или товаре.</p>
-      </div>
+          <!-- Третий ряд -->
+          <div class="section3-grid__item odd">
+            <p class="section3-grid__title">
+              <span class="section3-grid__emphasized emphasized"
+                >Развлекательный<br />(10%)</span
+              >
+            </p>
+            <p class="section3-grid__text">Задача: развлекать, веселить</p>
+            <ul class="section3-grid__list">
+              <li class="section3-grid__list-item">Юмор</li>
+              <li class="section3-grid__list-item">Мемы</li>
+              <li class="section3-grid__list-item">Гифки</li>
+              <li class="section3-grid__list-item">Смешные истории</li>
+              <li class="section3-grid__list-item">Видео</li>
+            </ul>
+          </div>
 
-      <!-- Грид из списков по настройкам таргетинга -->
+          <!-- Четвёртый ряд -->
+          <div class="section3-grid__item even">
+            <p class="section3-grid__title">
+              <span class="section3-grid__emphasized emphasized"
+                >Коммуникационный<br />(20%)</span
+              >
+            </p>
+            <p class="section3-grid__text">
+              Задача: вовлекать в коммуникацию, увеличить активность, получить
+              обратную связь
+            </p>
+            <ul class="section3-grid__list">
+              <li class="section3-grid__list-item">Обсуждения, дискуссии</li>
+              <li class="section3-grid__list-item">Опросы</li>
+              <li class="section3-grid__list-item">Игры</li>
+              <li class="section3-grid__list-item">Конкурсы</li>
+            </ul>
+          </div>
 
-      <div class="section6__block">
-        <h3 class="section6-block__title title3">Чтобы таргетинг был максимально точным, на этапе настройки таргетинга мы будем задавать множество определенных параметров:</h3>
-        <div class="section6-block__table text">
-
-          <!-- Первый столбик -->
-
-          <ul class="section6-block__list">
-            <li class="section6-block__item checked-item">место проживания<br>
-            <span class="section6-block__item__downsized">выбираем необходимую страну/страны или отдельные города или радиус вокруг отдельного конкретного места</span></li>
-          </ul>
-
-          <!-- Второй столбик -->
-
-          <ul class="section6-block__list">
-            <li class="section6-block__item checked-item">возраст</li>
-            <li class="section6-block__item checked-item">пол</li>
-            <li class="section6-block__item checked-item">язык</li>
-            <li class="section6-block__item checked-item">семейное положение</li>
-          </ul>
-
-          <!-- Третий столбик -->
-
-          <ul class="section6-block__list">
-            <li class="section6-block__item checked-item">предпочтения</li>
-            <li class="section6-block__item checked-item">события из жизни</li>
-            <li class="section6-block__item checked-item">сфера деятельности</li>
-            <li class="section6-block__item checked-item">хобби и интересы</li>
-          </ul>
-
-          <!-- Четвёртый столбик -->
-
-          <ul class="section6-block__list">
-            <li class="section6-block__item checked-item">образ жизни</li>
-            <li class="section6-block__item checked-item">операционная система или модель телефона</li>
-            <li class="section6-block__item checked-item">и другие второстепенные параметры</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Седьмой section - Настройка рекламы по базе клиентов и похожей аудитории -->
-
-    <section class="section7">
-      <div class="section7__header">
-        <h2 class="section7__title title2">Настройка рекламы по базе клиентов и похожей аудитории</h2>
-        <p class="section7__text text">Пожалуй, данный вид рекламы является самым эффективным с точки зрения повторных покупок или сделок. Как это работает? Всё просто. За время работы Вашего бизнеса у Вас собирается информация о клиентах (их имена, номера телефонов, e-mail и тд.). Всю эту информацию можно загрузить в рекламный кабинет Facebook, сформировать аудиторию и запускать по ней рекламу.</p>
-      </div>
-      <div class="section7__grid">
-        <div class="section7-grid__block1">
-          <h3 class="grid-block1__title title3">С теоретической точки зрения, мы можем выделить 3 цели для запуска рекламы по базе клиентов:</h3>
-          <div class="section7-block1__table text">
-            <ul class="section7-block1__list">
-              <li class="section7-block1__item">Ретаргет (ремаркетинг) с целью допродажи</li>
-              <li class="section7-block1__item">Таргет с целью подписать на Ваши социальные сети</li>
-              <li class="section7-block1__item">Создание похожей целевой аудитории с функцией LTV (работа над привлечением и удержанием клиентов)</li>
+          <!-- Пятый ряд -->
+          <div class="section3-grid__item odd round-b">
+            <p class="section3-grid__title">
+              <span class="section3-grid__emphasized emphasized"
+                >Продающий<br />(20%)</span
+              >
+            </p>
+            <p class="section3-grid__text">Задача: продавать</p>
+            <ul class="section3-grid__list">
+              <li class="section3-grid__list-item">
+                Информация о товарах, услугах
+              </li>
+              <li class="section3-grid__list-item">
+                Анонсы выхода новых продуктов
+              </li>
+              <li class="section3-grid__list-item">
+                Распродажи, акции, скидки
+              </li>
+              <li class="section3-grid__list-item">Ваши преимущества</li>
+              <li class="section3-grid__list-item">Продающие статьи</li>
             </ul>
           </div>
         </div>
-        <div class="section7-grid__block2">
-          <p class="section7-grid__block2-text text">Со своей стороны, мы рекомендуем запускать ремаркетинг на данную аудиторию. Для Ваших клиентов будет актуально получать информацию о новых товарах, акциях, грядущих мероприятиях, всё то, что будем им ценно и будет мотивировать на дальнейшее сотрудничество с Вами.</p>
+      </section>
+
+      <!-- Четвёртый section - Таргетированная реклама -->
+
+      <section class="section4">
+        <div class="section4__header">
+          <h2 class="section4__title title2">Таргетированная реклама</h2>
         </div>
-        <div class="section7-grid__block3">
-          <p class="section7-grid__block3-text text2">Дополнительным бонусом является то, что данную аудиторию можно расширить. Каким образом? Рассказываем. В Facebook есть возможность создавать «похожие аудитории».</p>
-        </div>
-        <div class="section7-grid__block4">
-          <p class="block4-title__emphasized text emphasized">Пример:</p>
-          <p class="section7-grid__block4-text text">За основу мы берем Вашу базу клиентов и формируем аудиторию. Далее мы создаем “похожую аудиторию” – алгоритмы социальной сети сами будут искать людей, которые по поведенческим характеристикам будут максимально похожи на Вашу базу клиентов. Таким образом, мы получаете практически со 100% вероятностью “клонов” Ваших клиентов, на которых можно таргетировать рекламу в Facebook и Instagram, и, скорее всего, они отреагируют на Ваше рекламное сообщение.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Восьмой section - Цели рекламной кампании -->
-
-    
-    <section class="section8">
-      <div class="section8__header">
-        <h2 class="section8__title title2">Цели рекламной кампании</h2>
-        <p class="section8__text text">После определения аудитории, по который будет запускаться реклама – необходимо выбрать цель. Сейчас мы детально расскажем о том, какие цели рекламы есть в Facebook и Instagram, и в каких случаях их необходимо использовать:</p>
-      </div>
-
-      <div class="section8__list text">
-
-      <!-- Список целей рекламной компании - grid -->
-      <div class="section8-list__block">
-          <div class="section8-list__item odd emphasized round-tl">Узнаваемость</div>
-          <div class="section8-list__item odd emphasized">Лиды</div>
-          <div class="section8-list__item odd emphasized round-tr">Конверсия</div>
-
-      <!-- Первый ряд -->
-
-          <div class="section8-list__item"><svg class="section8-list__item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M12.3904 20.8692C12.151 21.0289 11.849 21.0289 11.6096 20.8692C9.76375 19.638 2 14.1515 2 8.97403C2 2.29403 9.85 1.22403 12 5.72403C14.15 1.22403 22 2.29403 22 8.97403C22 14.1515 14.2363 19.638 12.3904 20.8692Z" fill="#376FFF"/>
-          </svg> Узнаваемость бренда</div>
-          <div class="section8-list__item"><svg class="section8-list__item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M2 2L10.3324 22L13.2905 13.2905L22 10.3324L2 2Z" fill="#376FFF" stroke="#376FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg> Трафик</div>
-          <div class="section8-list__item"><svg class="section8-list__item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9619 13.4108C14.0346 13.4705 13.0474 13.5001 12 13.5001C10.9526 13.5001 9.96537 13.4705 9.03807 13.4108C9.30546 18.3646 10.9222 22.1501 12 22.1501C13.0778 22.1501 14.6945 18.3646 14.9619 13.4108ZM7.02578 13.2221C7.17774 16.7931 7.98744 19.755 9.08516 21.6643C4.98414 20.4041 2 16.5541 2 12.0001C2 11.9703 2.00013 11.9405 2.00038 11.9108C3.32881 12.5315 5.0026 12.9661 7.02578 13.2221ZM2.24187 9.78218C3.36918 10.4445 4.96084 10.9217 7.01092 11.2026C7.11444 7.44193 7.94424 4.32031 9.08516 2.33589C5.67031 3.3852 3.02985 6.23025 2.24187 9.78218ZM9.0068 11.404C9.12879 6.05669 10.8638 1.8501 12 1.8501C13.1362 1.8501 14.8712 6.05669 14.9932 11.404C14.0675 11.4678 13.0697 11.5001 12 11.5001C10.9303 11.5001 9.93248 11.4678 9.0068 11.404ZM16.9742 13.2221C18.9974 12.9661 20.6712 12.5315 21.9996 11.9108C21.9999 11.9405 22 11.9703 22 12.0001C22 16.5541 19.0159 20.4041 14.9148 21.6643C16.0126 19.755 16.8223 16.7931 16.9742 13.2221ZM21.7581 9.78218C20.6308 10.4445 19.0392 10.9217 16.9891 11.2026C16.8856 7.44193 16.0558 4.32031 14.9148 2.33589C18.3297 3.3852 20.9701 6.23025 21.7581 9.78218Z" fill="#376FFF"/>
-          </svg> Конверсия</div>
-
-      <!-- Второй ряд -->
-
-          <div class="section8-list__item odd"><svg class="section8-list__item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4998 5.93699C13.3624 5.71497 13.9998 4.93192 13.9998 4C13.9998 2.89543 13.1044 2 11.9998 2C10.8953 2 9.99983 2.89543 9.99983 4C9.99983 4.93192 10.6372 5.71497 11.4998 5.93699V10.063C11.1424 10.155 10.8236 10.3433 10.5728 10.5987L6.99928 8.53548C7.23831 7.67743 6.87886 6.73391 6.0718 6.26795C5.11521 5.71566 3.89203 6.04341 3.33975 7C2.78746 7.95658 3.11521 9.17977 4.0718 9.73205C4.87886 10.198 5.8757 10.0375 6.49928 9.40151L10.0723 11.4644C10.0251 11.6349 9.99983 11.8145 9.99983 12C9.99983 12.1855 10.0251 12.3651 10.0723 12.5355L6.49911 14.5985C5.87552 13.9625 4.87869 13.802 4.07162 14.2679C3.11504 14.8202 2.78729 16.0434 3.33957 17C3.89186 17.9566 5.11504 18.2843 6.07162 17.732C6.87869 17.2661 7.23814 16.3226 6.99911 15.4645L10.5728 13.4013C10.8236 13.6566 11.1424 13.845 11.4998 13.937V18.063C10.6372 18.285 9.99983 19.0681 9.99983 20C9.99983 21.1046 10.8953 22 11.9998 22C13.1044 22 13.9998 21.1046 13.9998 20C13.9998 19.0681 13.3624 18.285 12.4998 18.063V13.937C12.8573 13.845 13.1761 13.6566 13.4269 13.4012L17.0007 15.4645C16.7617 16.3226 17.1211 17.2661 17.9282 17.7321C18.8848 18.2843 20.108 17.9566 20.6603 17C21.2125 16.0434 20.8848 14.8202 19.9282 14.2679C19.1211 13.802 18.1243 13.9625 17.5007 14.5985L13.9274 12.5354C13.9746 12.365 13.9998 12.1854 13.9998 12C13.9998 11.8145 13.9746 11.6349 13.9273 11.4645L17.5005 9.40151C18.1241 10.0375 19.121 10.198 19.928 9.73205C20.8846 9.17977 21.2124 7.95658 20.6601 7C20.1078 6.04341 18.8846 5.71566 17.928 6.26795C17.121 6.73391 16.7615 7.67743 17.0005 8.53548L13.4269 10.5987C13.1761 10.3434 12.8573 10.155 12.4998 10.063V5.93699Z" fill="#376FFF"/>
-          </svg> Охват</div>
-          <div class="section8-list__item odd"><svg class="section8-list__item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7776 14.1009C7.7193 14.1003 7.66052 14.1 7.60127 14.1C3.9545 14.1 2.08883 15.2132 2.00428 17.4396C1.99978 17.5581 2.03553 17.6747 2.10575 17.7703C2.42558 18.2057 3.09236 18.5255 4.10607 18.7297C4.41899 16.9262 5.42214 15.458 7.06917 14.4752C7.29571 14.34 7.53203 14.2154 7.7776 14.1009ZM11.9768 15.092C12.7527 15.6441 13.1598 16.4267 13.1983 17.4397C13.2028 17.5582 13.167 17.6748 13.0967 17.7704C12.4945 18.5901 10.6627 19 7.60127 19C7.06153 19 6.56 18.9873 6.09669 18.9618C6.53874 16.7231 8.49876 15.4332 11.9768 15.092ZM7.71405 5.00142C7.67676 5.00047 7.63917 5 7.60127 5C5.61305 5 4.45127 6.307 4.45127 8.54375C4.45127 10.7805 5.80127 12.7 7.60127 12.7C8.1311 12.7 8.62194 12.5337 9.05083 12.2419C8.04794 10.803 7.50015 8.96473 7.50015 7.0625C7.50015 6.3524 7.5683 5.65988 7.71405 5.00142ZM9.62315 5.64629C9.54178 6.08361 9.50015 6.5564 9.50015 7.0625C9.50015 8.35229 9.81437 9.56824 10.3583 10.5598C10.6101 9.95708 10.7513 9.267 10.7513 8.54375C10.7513 7.23376 10.3528 6.24268 9.62315 5.64629Z" fill="#376FFF"/>
-            <path d="M14.0001 13C11.4287 13 9.50015 10.2579 9.50015 7.0625C9.50015 3.86714 11.1598 2 14.0001 2C16.8405 2 18.5001 3.86714 18.5001 7.0625C18.5001 10.2579 16.5716 13 14.0001 13ZM14.0001 22C9.62651 22 7.0096 21.4144 6.14939 20.2433C6.04908 20.1067 5.99802 19.9402 6.00445 19.7708C6.12523 16.5903 8.79046 15 14.0001 15C19.2099 15 21.8751 16.5903 21.9959 19.771C22.0023 19.9403 21.9511 20.1069 21.8508 20.2435C20.9904 21.4145 18.3736 22 14.0001 22Z" fill="#376FFF"/>
-          </svg> Вовлеченность</div>
-          <div class="section8-list__item odd"><svg class="section8-list__item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 6H7.58198L7.16573 4.47377C6.92843 3.60364 6.13811 3 5.2362 3H3C2.44772 3 2 3.44772 2 4C2 4.55228 2.44772 5 3 5H5.2362L7.79746 14.3913C8.06753 15.3815 9.04335 16.0066 10.0558 15.8378L20.3288 14.1257C21.2932 13.9649 22 13.1306 22 12.1529V7.5C22 6.67157 21.3284 6 20.5 6ZM7 21C8.10457 21 9 20.1046 9 19C9 17.8954 8.10457 17 7 17C5.89543 17 5 17.8954 5 19C5 20.1046 5.89543 21 7 21ZM17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21Z" fill="#376FFF"/>
-          </svg> Продажи товаров из каталога</div>
-
-      <!-- Третий ряд -->
-
-          <!-- Пустые ряды в первой колонке -->
-          
-          <div class="section8-list__item item-merged1 round-bl"></div>
-          <div class="section8-list__item"><svg class="section8-list__item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M4.2041 6.49976L11.9994 1.99951L19.7948 6.49976L11.9994 11L4.2041 6.49976Z" fill="#376FFF"/>
-            <rect width="9" height="9" transform="matrix(0.866025 0.5 -2.20305e-08 1 3 8)" fill="#376FFF"/>
-            <rect width="9" height="9" transform="matrix(-0.866025 0.5 2.20305e-08 1 20.7939 8)" fill="#376FFF"/>
-          </svg> Установки приложения</div>
-          <div class="section8-list__item item-merged2 round-br"><svg class="section8-list__item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2C11 1.44772 11.4477 1 12 1C12.5523 1 13 1.44772 13 2V4.06189C16.6187 4.51314 19.4869 7.38128 19.9381 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H19.9381C19.4869 16.6187 16.6187 19.4869 13 19.9381V22C13 22.5523 12.5523 23 12 23C11.4477 23 11 22.5523 11 22V19.9381C7.38128 19.4869 4.51314 16.6187 4.06189 13H2C1.44772 13 1 12.5523 1 12C1 11.4477 1.44772 11 2 11H4.06189C4.51314 7.38128 7.38128 4.51314 11 4.06189V2ZM15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" fill="#376FFF"/>
-          </svg> Посещения точек</div>
-      
-      <!-- Четвёртый ряд -->
-
-          <div class="section8-list__item odd"><svg class="section8-list__item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3H6.20486C5.09046 3 4.68635 3.11603 4.27894 3.33392C3.87154 3.5518 3.5518 3.87154 3.33392 4.27894C3.11603 4.68635 3 5.09046 3 6.20486V7V9V11V13V15V17V17.7951C3 18.9095 3.11603 19.3137 3.33392 19.7211C3.5518 20.1285 3.87154 20.4482 4.27894 20.6661C4.68635 20.884 5.09046 21 6.20486 21H8H16H17.7951C18.9095 21 19.3137 20.884 19.7211 20.6661C20.1285 20.4482 20.4482 20.1285 20.6661 19.7211C20.884 19.3137 21 18.9095 21 17.7951V17V15V13V11V9V7V6.20486C21 5.09046 20.884 4.68635 20.6661 4.27894C20.4482 3.87154 20.1285 3.5518 19.7211 3.33392C19.3137 3.11603 18.9095 3 17.7951 3H16H8ZM8 5H6.20486C5.77844 5 5.51125 5.01899 5.35599 5.04897C5.29517 5.06072 5.28173 5.06567 5.22214 5.09754C5.16327 5.12903 5.12903 5.16327 5.09754 5.22214C5.06567 5.28173 5.06072 5.29517 5.04897 5.35599C5.01899 5.51125 5 5.77844 5 6.20486V7H8V5ZM8 9H5V11H8V9ZM16 11V9H19V11H16ZM8 13H5V15H8V13ZM16 15V13H19V15H16ZM8 17H5V17.7951C5 18.2216 5.01899 18.4887 5.04897 18.644C5.06072 18.7048 5.06567 18.7183 5.09754 18.7779C5.12903 18.8367 5.16327 18.871 5.22214 18.9025C5.28173 18.9343 5.29517 18.9393 5.35599 18.951C5.51125 18.981 5.77844 19 6.20486 19H8V17ZM16 19V17H19V17.7951C19 18.2216 18.981 18.4887 18.951 18.644C18.9393 18.7048 18.9343 18.7183 18.9025 18.7779C18.871 18.8367 18.8367 18.871 18.7779 18.9025C18.7183 18.9343 18.7048 18.9393 18.644 18.951C18.4887 18.981 18.2216 19 17.7951 19H16ZM16 7V5H17.7951C18.2216 5 18.4887 5.01899 18.644 5.04897C18.7048 5.06072 18.7183 5.06567 18.7779 5.09754C18.8367 5.12903 18.871 5.16327 18.9025 5.22214C18.9343 5.28173 18.9393 5.29517 18.951 5.35599C18.981 5.51125 19 5.77844 19 6.20486V7H16Z" fill="#376FFF"/>
-          </svg> Просмотры видео</div>
-        
-      <!-- Пятый ряд -->
-
-          <div class="section8-list__item"><svg class="section8-list__item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6.37574L9 14.3757V22.943L15 20.693V14.3757L22 6.37574V4C22 2.89543 21.1046 2 20 2H4C2.89543 2 2 2.89543 2 4V6.37574ZM20 4V5H4V4H20ZM11 15V20.057L13 19.307V15H11Z" fill="#376FFF"/>
-          </svg> Генерация лидов</div>
-        
-      <!-- Шестой ряд -->
-
-          <div class="section8-list__item odd"><svg class="section8-list__item-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M10.9688 18.7688C15.4951 18.1071 19.0007 14.4343 19.0007 9.93764C19.0007 9.28069 18.9259 8.64133 18.784 8.02637C20.719 9.17837 22.0007 11.1883 22.0007 13.4751C22.0007 14.7669 21.5917 15.9704 20.887 16.9807C20.9467 17.93 21.2838 18.7626 21.8984 19.4787L21.8984 19.4787C22.0531 19.6589 22.0324 19.9304 21.8522 20.085C21.7651 20.1598 21.6518 20.1966 21.5375 20.1874C20.1704 20.077 19.0525 19.7623 18.1838 19.2435C17.2289 19.6953 16.1469 19.9501 15.0007 19.9501C13.4994 19.9501 12.1086 19.513 10.9688 18.7688Z" fill="#376FFF"/>
-            <path d="M7.62507 16.6565C8.22433 16.7991 8.85259 16.875 9.5 16.875C13.6421 16.875 17 13.769 17 9.9375C17 6.10602 13.6421 3 9.5 3C5.35786 3 2 6.10602 2 9.9375C2 11.8838 2.8665 13.643 4.26215 14.9029C4.13972 15.7615 3.79132 16.5252 3.21696 17.1939C3.05141 17.3867 3.07346 17.6771 3.26619 17.8426C3.35931 17.9226 3.48053 17.9621 3.60289 17.9522C5.30334 17.8151 6.64406 17.3832 7.62507 16.6565Z" fill="#376FFF"/>
-          </svg> Сообщения</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Девятый section -  ...после определения аудитории... -->
-
-    <section class="section9">
-      <div class="section9__text text2">После определения аудитории, по который будет запускаться реклама – необходимо выбрать цель. Сейчас мы детально расскажем о том, какие цели рекламы есть в Facebook и Instagram, и в каких случаях их необходимо использовать:</div>
-      <div class="section9__block text">
-      
-        <!-- Первая кнопка -->
-
-        <div class="section9-block__item">
-          <img class="section9-block__item-icon" src="./assets/images/smm_img/smm-minus-icon.png">
-          <div class="section9-block__item-content">
-            <p class="section9-block__item-title1 emphasized">Узнаваемость (узнаваемость бренда и охват).</p>
-            <p class="section9-block__item-text1">Данные виды целей РК дают возможность показать рекламу как можно большему количеству людей (охват) или определенной группе людей максимальное количество раз. Главная цель — показать рекламное сообщение максимальному числу пользователей, чтобы аудитория смогла запомнить вашу компанию.
+        <div class="section4__grid">
+          <div class="section4-grid__block1">
+            <h3 class="block1__title title3">
+              Специалисты Ora обеспечат точное попадание в вашу целевую
+              аудиторию и максимальный результат рекламы.
+            </h3>
+            <p class="block1__text text">
+              Мы предлагаем помощь каждому клиенту, желающему воспользоваться
+              поддержкой профессиональных специалистов в сфере SMM-продвижения.
             </p>
-            <p class="section9-block__item-title2 emphasized">Кому подходит:</p>
-            <p class="section9-block__item-text">Идеально подходит для производителей, которые реализует свою продукцию через партнеров или сети. При выборе данной цели в рекламе, вы повысите спрос и продажи в магазинах партнеров.</p>
+            <p class="block1__text text">
+              Таргетированная реклама в социальных сетях Facebook и Instagram ‒
+              это отличная возможность рассказать о собственном бизнесе или
+              продукте максимально большему количеству людей.
+            </p>
+            <span class="block1__element"></span>
+            <p class="block1__text text">
+              Отметим, что эти соц. сети являются одними из самых популярных и
+              распространенных на сегодня. Именно здесь есть возможность
+              отыскать новых потребителей, пополняя собственную клиентскую базу.
+            </p>
+          </div>
+          <div class="section4-grid__block2">
+            <img
+              class="section4-grid__block2-img"
+              src="./assets/images/smm_img/smm-section24-img.png"
+              alt="Таргетированная реклама"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Пятый section - Почему нежно использовать таргетированную рекламу в FB и Инстаграме -->
+
+      <section class="section5">
+        <div class="section5__header">
+          <h2 class="section5__title title2">
+            Почему нужно использовать таргетированную рекламу в Facebook и
+            Instagram?
+          </h2>
+        </div>
+        <div class="section5__grid">
+          <!-- Первый блок грида -->
+
+          <div class="section5-grid__block">
+            <span class="section5-grid__element"></span>
+            <img
+              class="section5-grid__icon"
+              src="./assets/images/smm_img/smm-world-icon.svg"
+            />
+            <p class="section5-grid__text text">
+              Мировые социальные сети, распространенные в большинстве стран.
+            </p>
+          </div>
+
+          <!-- Второй блок грида -->
+
+          <div class="section5-grid__block">
+            <span class="section5-grid__element"></span>
+            <img
+              class="section5-grid__icon"
+              src="./assets/images/smm_img/smm-people-icon.svg"
+            />
+            <p class="section5-grid__text text">
+              Большой охват целевой аудитории.
+            </p>
+          </div>
+
+          <!-- Третий блок грида -->
+
+          <div class="section5-grid__block">
+            <span class="section5-grid__element"></span>
+            <img
+              class="section5-grid__icon"
+              src="./assets/images/smm_img/smm-wallet-icon.svg"
+            />
+            <p class="section5-grid__text text">
+              Прогрессивная аудитория с высокой платежеспособностью.
+            </p>
+          </div>
+
+          <!-- Четвёртый блок грида -->
+
+          <div class="section5-grid__block">
+            <span class="section5-grid__element"></span>
+            <img
+              class="section5-grid__icon"
+              src="./assets/images/smm_img/smm-graph-icon.svg"
+            />
+            <p class="section5-grid__text text">
+              Лучшие алгоритмы оптимизации рекламы.
+            </p>
           </div>
         </div>
 
-        <!-- Вторая кнопка -->
+        <!-- Навигация на странице мобильного устройства -->
 
-        <div class="section9-block__item2">
-          <div class="section9-block__item2-block">
-            <img class="item2-block__img" src="./assets/images/smm_img/smm-plus-icon.png">
-            <p class="item2-block__text_emphasized emphasized">Вовлеченность.</p>
+        <div class="section5__menu">
+          <button class="section5-menu__button-left button"></button>
+          <div class="section-menu__nav">
+            <img
+              class="section-menu__nav-img"
+              src="./assets/images/smm_img/smm-navbar-img1.svg"
+            />
+            <img
+              class="section-menu__nav-img"
+              src="./assets/images/smm_img/smm-navbar-img2.svg"
+            />
+            <img
+              class="section-menu__nav-img"
+              src="./assets/images/smm_img/smm-navbar-img3.svg"
+            />
+          </div>
+          <button class="section5-menu__button-right button"></button>
+        </div>
+      </section>
+
+      <!-- Шестой section - Настройки таргетинга в FB и Instagram -->
+
+      <section class="section6">
+        <div class="section6__header">
+          <h2 class="section6__title title2">
+            Настройки таргетинга в Facebook и Instagram
+          </h2>
+          <p class="section6__text text">
+            При настройке таргетированной рекламы мы детально изучаем профиль
+            Вашей целевой аудитории и с высокой точностью настраиваем таргетинг
+            для донесения рекламного сообщения до человека, который
+            заинтересован в Вашей услуге или товаре.
+          </p>
+        </div>
+
+        <!-- Грид из списков по настройкам таргетинга -->
+
+        <div class="section6__block">
+          <h3 class="section6-block__title title3">
+            Чтобы таргетинг был максимально точным, на этапе настройки
+            таргетинга мы будем задавать множество определенных параметров:
+          </h3>
+          <div class="section6-block__table text">
+            <!-- Первый столбик -->
+
+            <ul class="section6-block__list">
+              <li class="section6-block__item checked-item">
+                место проживания<br />
+                <span class="section6-block__item__downsized downsized"
+                  >выбираем необходимую страну/страны или отдельные города или
+                  радиус вокруг отдельного конкретного места</span
+                >
+              </li>
+            </ul>
+
+            <!-- Второй столбик -->
+
+            <ul class="section6-block__list">
+              <li class="section6-block__item checked-item">возраст</li>
+              <li class="section6-block__item checked-item">пол</li>
+              <li class="section6-block__item checked-item">язык</li>
+              <li class="section6-block__item checked-item">
+                семейное положение
+              </li>
+            </ul>
+
+            <!-- Третий столбик -->
+
+            <ul class="section6-block__list">
+              <li class="section6-block__item checked-item">предпочтения</li>
+              <li class="section6-block__item checked-item">
+                события из жизни
+              </li>
+              <li class="section6-block__item checked-item">
+                сфера деятельности
+              </li>
+              <li class="section6-block__item checked-item">
+                хобби и интересы
+              </li>
+            </ul>
+
+            <!-- Четвёртый столбик -->
+
+            <ul class="section6-block__list">
+              <li class="section6-block__item checked-item">образ жизни</li>
+              <li class="section6-block__item checked-item">
+                операционная система или модель телефона
+              </li>
+              <li class="section6-block__item checked-item">
+                и другие второстепенные параметры
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Седьмой section - Настройка рекламы по базе клиентов и похожей аудитории -->
+
+      <section class="section7">
+        <div class="section7__header">
+          <h2 class="section7__title title2">
+            Настройка рекламы по базе клиентов и похожей аудитории
+          </h2>
+          <p class="section7__text text">
+            Пожалуй, данный вид рекламы является самым эффективным с точки
+            зрения повторных покупок или сделок. Как это работает? Всё просто.
+            За время работы Вашего бизнеса у Вас собирается информация о
+            клиентах (их имена, номера телефонов, e-mail и тд.). Всю эту
+            информацию можно загрузить в рекламный кабинет Facebook,
+            сформировать аудиторию и запускать по ней рекламу.
+          </p>
+        </div>
+        <div class="section7__grid">
+          <div class="section7-grid__block1">
+            <h3 class="grid-block1__title title3">
+              С теоретической точки зрения, мы можем выделить 3 цели для запуска
+              рекламы по базе клиентов:
+            </h3>
+            <div class="section7-block1__table text">
+              <ul class="section7-block1__list">
+                <li class="section7-block1__item checked-item">
+                  Ретаргет (ремаркетинг) с целью допродажи
+                </li>
+                <li class="section7-block1__item checked-item">
+                  Таргет с целью подписать на Ваши социальные сети
+                </li>
+                <li class="section7-block1__item checked-item">
+                  Создание похожей целевой аудитории с функцией LTV (работа над
+                  привлечением и удержанием клиентов)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="section7-grid__block2">
+            <p class="section7-grid__block2-text text">
+              Со своей стороны, мы рекомендуем запускать ремаркетинг на данную
+              аудиторию. Для Ваших клиентов будет актуально получать информацию
+              о новых товарах, акциях, грядущих мероприятиях, всё то, что будем
+              им ценно и будет мотивировать на дальнейшее сотрудничество с Вами.
+            </p>
+          </div>
+          <div class="section7-grid__block3">
+            <p class="section7-grid__block3-text text2">
+              Дополнительным бонусом является то, что данную аудиторию можно
+              расширить. Каким образом? Рассказываем. В Facebook есть
+              возможность создавать «похожие аудитории».
+            </p>
+          </div>
+          <div class="section7-grid__block4">
+            <p class="block4-title__emphasized text emphasized">Пример:</p>
+            <p class="section7-grid__block4-text text">
+              За основу мы берем Вашу базу клиентов и формируем аудиторию. Далее
+              мы создаем “похожую аудиторию” – алгоритмы социальной сети сами
+              будут искать людей, которые по поведенческим характеристикам будут
+              максимально похожи на Вашу базу клиентов. Таким образом, мы
+              получаете практически со 100% вероятностью “клонов” Ваших
+              клиентов, на которых можно таргетировать рекламу в Facebook и
+              Instagram, и, скорее всего, они отреагируют на Ваше рекламное
+              сообщение.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Восьмой section - Цели рекламной кампании -->
+
+      <section class="section8">
+        <div class="section8__header">
+          <h2 class="section8__title title2">Цели рекламной кампании</h2>
+          <p class="section8__text text">
+            После определения аудитории, по который будет запускаться реклама –
+            необходимо выбрать цель. Сейчас мы детально расскажем о том, какие
+            цели рекламы есть в Facebook и Instagram, и в каких случаях их
+            необходимо использовать:
+          </p>
+        </div>
+
+        <div class="section8__list text">
+          <!-- Список целей рекламной компании - grid -->
+          <div class="section8-list__block">
+            <div class="section8-list__item odd emphasized round-tl">
+              Узнаваемость
+            </div>
+            <div class="section8-list__item odd emphasized">Лиды</div>
+            <div class="section8-list__item odd emphasized round-tr">
+              Конверсия
+            </div>
+
+            <!-- Первый ряд -->
+
+            <div class="section8-list__item">
+              <svg
+                class="section8-list__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M12.3904 20.8692C12.151 21.0289 11.849 21.0289 11.6096 20.8692C9.76375 19.638 2 14.1515 2 8.97403C2 2.29403 9.85 1.22403 12 5.72403C14.15 1.22403 22 2.29403 22 8.97403C22 14.1515 14.2363 19.638 12.3904 20.8692Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Узнаваемость бренда
+            </div>
+            <div class="section8-list__item">
+              <svg
+                class="section8-list__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M2 2L10.3324 22L13.2905 13.2905L22 10.3324L2 2Z"
+                  fill="#376FFF"
+                  stroke="#376FFF"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Трафик
+            </div>
+            <div class="section8-list__item">
+              <svg
+                class="section8-list__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.9619 13.4108C14.0346 13.4705 13.0474 13.5001 12 13.5001C10.9526 13.5001 9.96537 13.4705 9.03807 13.4108C9.30546 18.3646 10.9222 22.1501 12 22.1501C13.0778 22.1501 14.6945 18.3646 14.9619 13.4108ZM7.02578 13.2221C7.17774 16.7931 7.98744 19.755 9.08516 21.6643C4.98414 20.4041 2 16.5541 2 12.0001C2 11.9703 2.00013 11.9405 2.00038 11.9108C3.32881 12.5315 5.0026 12.9661 7.02578 13.2221ZM2.24187 9.78218C3.36918 10.4445 4.96084 10.9217 7.01092 11.2026C7.11444 7.44193 7.94424 4.32031 9.08516 2.33589C5.67031 3.3852 3.02985 6.23025 2.24187 9.78218ZM9.0068 11.404C9.12879 6.05669 10.8638 1.8501 12 1.8501C13.1362 1.8501 14.8712 6.05669 14.9932 11.404C14.0675 11.4678 13.0697 11.5001 12 11.5001C10.9303 11.5001 9.93248 11.4678 9.0068 11.404ZM16.9742 13.2221C18.9974 12.9661 20.6712 12.5315 21.9996 11.9108C21.9999 11.9405 22 11.9703 22 12.0001C22 16.5541 19.0159 20.4041 14.9148 21.6643C16.0126 19.755 16.8223 16.7931 16.9742 13.2221ZM21.7581 9.78218C20.6308 10.4445 19.0392 10.9217 16.9891 11.2026C16.8856 7.44193 16.0558 4.32031 14.9148 2.33589C18.3297 3.3852 20.9701 6.23025 21.7581 9.78218Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Конверсия
+            </div>
+
+            <!-- Второй ряд -->
+
+            <div class="section8-list__item odd">
+              <svg
+                class="section8-list__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.4998 5.93699C13.3624 5.71497 13.9998 4.93192 13.9998 4C13.9998 2.89543 13.1044 2 11.9998 2C10.8953 2 9.99983 2.89543 9.99983 4C9.99983 4.93192 10.6372 5.71497 11.4998 5.93699V10.063C11.1424 10.155 10.8236 10.3433 10.5728 10.5987L6.99928 8.53548C7.23831 7.67743 6.87886 6.73391 6.0718 6.26795C5.11521 5.71566 3.89203 6.04341 3.33975 7C2.78746 7.95658 3.11521 9.17977 4.0718 9.73205C4.87886 10.198 5.8757 10.0375 6.49928 9.40151L10.0723 11.4644C10.0251 11.6349 9.99983 11.8145 9.99983 12C9.99983 12.1855 10.0251 12.3651 10.0723 12.5355L6.49911 14.5985C5.87552 13.9625 4.87869 13.802 4.07162 14.2679C3.11504 14.8202 2.78729 16.0434 3.33957 17C3.89186 17.9566 5.11504 18.2843 6.07162 17.732C6.87869 17.2661 7.23814 16.3226 6.99911 15.4645L10.5728 13.4013C10.8236 13.6566 11.1424 13.845 11.4998 13.937V18.063C10.6372 18.285 9.99983 19.0681 9.99983 20C9.99983 21.1046 10.8953 22 11.9998 22C13.1044 22 13.9998 21.1046 13.9998 20C13.9998 19.0681 13.3624 18.285 12.4998 18.063V13.937C12.8573 13.845 13.1761 13.6566 13.4269 13.4012L17.0007 15.4645C16.7617 16.3226 17.1211 17.2661 17.9282 17.7321C18.8848 18.2843 20.108 17.9566 20.6603 17C21.2125 16.0434 20.8848 14.8202 19.9282 14.2679C19.1211 13.802 18.1243 13.9625 17.5007 14.5985L13.9274 12.5354C13.9746 12.365 13.9998 12.1854 13.9998 12C13.9998 11.8145 13.9746 11.6349 13.9273 11.4645L17.5005 9.40151C18.1241 10.0375 19.121 10.198 19.928 9.73205C20.8846 9.17977 21.2124 7.95658 20.6601 7C20.1078 6.04341 18.8846 5.71566 17.928 6.26795C17.121 6.73391 16.7615 7.67743 17.0005 8.53548L13.4269 10.5987C13.1761 10.3434 12.8573 10.155 12.4998 10.063V5.93699Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Охват
+            </div>
+            <div class="section8-list__item odd">
+              <svg
+                class="section8-list__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.7776 14.1009C7.7193 14.1003 7.66052 14.1 7.60127 14.1C3.9545 14.1 2.08883 15.2132 2.00428 17.4396C1.99978 17.5581 2.03553 17.6747 2.10575 17.7703C2.42558 18.2057 3.09236 18.5255 4.10607 18.7297C4.41899 16.9262 5.42214 15.458 7.06917 14.4752C7.29571 14.34 7.53203 14.2154 7.7776 14.1009ZM11.9768 15.092C12.7527 15.6441 13.1598 16.4267 13.1983 17.4397C13.2028 17.5582 13.167 17.6748 13.0967 17.7704C12.4945 18.5901 10.6627 19 7.60127 19C7.06153 19 6.56 18.9873 6.09669 18.9618C6.53874 16.7231 8.49876 15.4332 11.9768 15.092ZM7.71405 5.00142C7.67676 5.00047 7.63917 5 7.60127 5C5.61305 5 4.45127 6.307 4.45127 8.54375C4.45127 10.7805 5.80127 12.7 7.60127 12.7C8.1311 12.7 8.62194 12.5337 9.05083 12.2419C8.04794 10.803 7.50015 8.96473 7.50015 7.0625C7.50015 6.3524 7.5683 5.65988 7.71405 5.00142ZM9.62315 5.64629C9.54178 6.08361 9.50015 6.5564 9.50015 7.0625C9.50015 8.35229 9.81437 9.56824 10.3583 10.5598C10.6101 9.95708 10.7513 9.267 10.7513 8.54375C10.7513 7.23376 10.3528 6.24268 9.62315 5.64629Z"
+                  fill="#376FFF"
+                />
+                <path
+                  d="M14.0001 13C11.4287 13 9.50015 10.2579 9.50015 7.0625C9.50015 3.86714 11.1598 2 14.0001 2C16.8405 2 18.5001 3.86714 18.5001 7.0625C18.5001 10.2579 16.5716 13 14.0001 13ZM14.0001 22C9.62651 22 7.0096 21.4144 6.14939 20.2433C6.04908 20.1067 5.99802 19.9402 6.00445 19.7708C6.12523 16.5903 8.79046 15 14.0001 15C19.2099 15 21.8751 16.5903 21.9959 19.771C22.0023 19.9403 21.9511 20.1069 21.8508 20.2435C20.9904 21.4145 18.3736 22 14.0001 22Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Вовлеченность
+            </div>
+            <div class="section8-list__item odd">
+              <svg
+                class="section8-list__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20.5 6H7.58198L7.16573 4.47377C6.92843 3.60364 6.13811 3 5.2362 3H3C2.44772 3 2 3.44772 2 4C2 4.55228 2.44772 5 3 5H5.2362L7.79746 14.3913C8.06753 15.3815 9.04335 16.0066 10.0558 15.8378L20.3288 14.1257C21.2932 13.9649 22 13.1306 22 12.1529V7.5C22 6.67157 21.3284 6 20.5 6ZM7 21C8.10457 21 9 20.1046 9 19C9 17.8954 8.10457 17 7 17C5.89543 17 5 17.8954 5 19C5 20.1046 5.89543 21 7 21ZM17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Продажи товаров из каталога
+            </div>
+
+            <!-- Третий ряд -->
+
+            <!-- Пустые ряды в первой колонке -->
+
+            <div class="section8-list__item item-merged1 round-bl"></div>
+            <div class="section8-list__item">
+              <svg
+                class="section8-list__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M4.2041 6.49976L11.9994 1.99951L19.7948 6.49976L11.9994 11L4.2041 6.49976Z"
+                  fill="#376FFF"
+                />
+                <rect
+                  width="9"
+                  height="9"
+                  transform="matrix(0.866025 0.5 -2.20305e-08 1 3 8)"
+                  fill="#376FFF"
+                />
+                <rect
+                  width="9"
+                  height="9"
+                  transform="matrix(-0.866025 0.5 2.20305e-08 1 20.7939 8)"
+                  fill="#376FFF"
+                />
+              </svg>
+              Установки приложения
+            </div>
+            <div class="section8-list__item item-merged2 round-br">
+              <svg
+                class="section8-list__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11 2C11 1.44772 11.4477 1 12 1C12.5523 1 13 1.44772 13 2V4.06189C16.6187 4.51314 19.4869 7.38128 19.9381 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H19.9381C19.4869 16.6187 16.6187 19.4869 13 19.9381V22C13 22.5523 12.5523 23 12 23C11.4477 23 11 22.5523 11 22V19.9381C7.38128 19.4869 4.51314 16.6187 4.06189 13H2C1.44772 13 1 12.5523 1 12C1 11.4477 1.44772 11 2 11H4.06189C4.51314 7.38128 7.38128 4.51314 11 4.06189V2ZM15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Посещения точек
+            </div>
+
+            <!-- Четвёртый ряд -->
+
+            <div class="section8-list__item odd">
+              <svg
+                class="section8-list__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8 3H6.20486C5.09046 3 4.68635 3.11603 4.27894 3.33392C3.87154 3.5518 3.5518 3.87154 3.33392 4.27894C3.11603 4.68635 3 5.09046 3 6.20486V7V9V11V13V15V17V17.7951C3 18.9095 3.11603 19.3137 3.33392 19.7211C3.5518 20.1285 3.87154 20.4482 4.27894 20.6661C4.68635 20.884 5.09046 21 6.20486 21H8H16H17.7951C18.9095 21 19.3137 20.884 19.7211 20.6661C20.1285 20.4482 20.4482 20.1285 20.6661 19.7211C20.884 19.3137 21 18.9095 21 17.7951V17V15V13V11V9V7V6.20486C21 5.09046 20.884 4.68635 20.6661 4.27894C20.4482 3.87154 20.1285 3.5518 19.7211 3.33392C19.3137 3.11603 18.9095 3 17.7951 3H16H8ZM8 5H6.20486C5.77844 5 5.51125 5.01899 5.35599 5.04897C5.29517 5.06072 5.28173 5.06567 5.22214 5.09754C5.16327 5.12903 5.12903 5.16327 5.09754 5.22214C5.06567 5.28173 5.06072 5.29517 5.04897 5.35599C5.01899 5.51125 5 5.77844 5 6.20486V7H8V5ZM8 9H5V11H8V9ZM16 11V9H19V11H16ZM8 13H5V15H8V13ZM16 15V13H19V15H16ZM8 17H5V17.7951C5 18.2216 5.01899 18.4887 5.04897 18.644C5.06072 18.7048 5.06567 18.7183 5.09754 18.7779C5.12903 18.8367 5.16327 18.871 5.22214 18.9025C5.28173 18.9343 5.29517 18.9393 5.35599 18.951C5.51125 18.981 5.77844 19 6.20486 19H8V17ZM16 19V17H19V17.7951C19 18.2216 18.981 18.4887 18.951 18.644C18.9393 18.7048 18.9343 18.7183 18.9025 18.7779C18.871 18.8367 18.8367 18.871 18.7779 18.9025C18.7183 18.9343 18.7048 18.9393 18.644 18.951C18.4887 18.981 18.2216 19 17.7951 19H16ZM16 7V5H17.7951C18.2216 5 18.4887 5.01899 18.644 5.04897C18.7048 5.06072 18.7183 5.06567 18.7779 5.09754C18.8367 5.12903 18.871 5.16327 18.9025 5.22214C18.9343 5.28173 18.9393 5.29517 18.951 5.35599C18.981 5.51125 19 5.77844 19 6.20486V7H16Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Просмотры видео
+            </div>
+
+            <!-- Пятый ряд -->
+
+            <div class="section8-list__item">
+              <svg
+                class="section8-list__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2 6.37574L9 14.3757V22.943L15 20.693V14.3757L22 6.37574V4C22 2.89543 21.1046 2 20 2H4C2.89543 2 2 2.89543 2 4V6.37574ZM20 4V5H4V4H20ZM11 15V20.057L13 19.307V15H11Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Генерация лидов
+            </div>
+
+            <!-- Шестой ряд -->
+
+            <div class="section8-list__item odd">
+              <svg
+                class="section8-list__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M10.9688 18.7688C15.4951 18.1071 19.0007 14.4343 19.0007 9.93764C19.0007 9.28069 18.9259 8.64133 18.784 8.02637C20.719 9.17837 22.0007 11.1883 22.0007 13.4751C22.0007 14.7669 21.5917 15.9704 20.887 16.9807C20.9467 17.93 21.2838 18.7626 21.8984 19.4787L21.8984 19.4787C22.0531 19.6589 22.0324 19.9304 21.8522 20.085C21.7651 20.1598 21.6518 20.1966 21.5375 20.1874C20.1704 20.077 19.0525 19.7623 18.1838 19.2435C17.2289 19.6953 16.1469 19.9501 15.0007 19.9501C13.4994 19.9501 12.1086 19.513 10.9688 18.7688Z"
+                  fill="#376FFF"
+                />
+                <path
+                  d="M7.62507 16.6565C8.22433 16.7991 8.85259 16.875 9.5 16.875C13.6421 16.875 17 13.769 17 9.9375C17 6.10602 13.6421 3 9.5 3C5.35786 3 2 6.10602 2 9.9375C2 11.8838 2.8665 13.643 4.26215 14.9029C4.13972 15.7615 3.79132 16.5252 3.21696 17.1939C3.05141 17.3867 3.07346 17.6771 3.26619 17.8426C3.35931 17.9226 3.48053 17.9621 3.60289 17.9522C5.30334 17.8151 6.64406 17.3832 7.62507 16.6565Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Сообщения
+            </div>
+          </div>
+        </div>
+
+        <!-- Таблица в виде грида для мобильного устройства -->
+
+        <div class="section8__grid text">
+          <!-- Первый блок -->
+          <div class="section8-grid__column odd">
+            <div class="section8-grid__item emphasized round-t">
+              Узнаваемость
+            </div>
+            <div class="section8-grid__item">
+              <svg
+                class="section8-grid__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M12.3904 20.8692C12.151 21.0289 11.849 21.0289 11.6096 20.8692C9.76375 19.638 2 14.1515 2 8.97403C2 2.29403 9.85 1.22403 12 5.72403C14.15 1.22403 22 2.29403 22 8.97403C22 14.1515 14.2363 19.638 12.3904 20.8692Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Узнаваемость бренда
+            </div>
+            <div class="section8-grid__item">
+              <svg
+                class="section8-grid__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.4998 5.93699C13.3624 5.71497 13.9998 4.93192 13.9998 4C13.9998 2.89543 13.1044 2 11.9998 2C10.8953 2 9.99983 2.89543 9.99983 4C9.99983 4.93192 10.6372 5.71497 11.4998 5.93699V10.063C11.1424 10.155 10.8236 10.3433 10.5728 10.5987L6.99928 8.53548C7.23831 7.67743 6.87886 6.73391 6.0718 6.26795C5.11521 5.71566 3.89203 6.04341 3.33975 7C2.78746 7.95658 3.11521 9.17977 4.0718 9.73205C4.87886 10.198 5.8757 10.0375 6.49928 9.40151L10.0723 11.4644C10.0251 11.6349 9.99983 11.8145 9.99983 12C9.99983 12.1855 10.0251 12.3651 10.0723 12.5355L6.49911 14.5985C5.87552 13.9625 4.87869 13.802 4.07162 14.2679C3.11504 14.8202 2.78729 16.0434 3.33957 17C3.89186 17.9566 5.11504 18.2843 6.07162 17.732C6.87869 17.2661 7.23814 16.3226 6.99911 15.4645L10.5728 13.4013C10.8236 13.6566 11.1424 13.845 11.4998 13.937V18.063C10.6372 18.285 9.99983 19.0681 9.99983 20C9.99983 21.1046 10.8953 22 11.9998 22C13.1044 22 13.9998 21.1046 13.9998 20C13.9998 19.0681 13.3624 18.285 12.4998 18.063V13.937C12.8573 13.845 13.1761 13.6566 13.4269 13.4012L17.0007 15.4645C16.7617 16.3226 17.1211 17.2661 17.9282 17.7321C18.8848 18.2843 20.108 17.9566 20.6603 17C21.2125 16.0434 20.8848 14.8202 19.9282 14.2679C19.1211 13.802 18.1243 13.9625 17.5007 14.5985L13.9274 12.5354C13.9746 12.365 13.9998 12.1854 13.9998 12C13.9998 11.8145 13.9746 11.6349 13.9273 11.4645L17.5005 9.40151C18.1241 10.0375 19.121 10.198 19.928 9.73205C20.8846 9.17977 21.2124 7.95658 20.6601 7C20.1078 6.04341 18.8846 5.71566 17.928 6.26795C17.121 6.73391 16.7615 7.67743 17.0005 8.53548L13.4269 10.5987C13.1761 10.3434 12.8573 10.155 12.4998 10.063V5.93699Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Охват
+            </div>
+          </div>
+
+          <!-- Второй блок -->
+
+          <div class="section8-grid__column even">
+            <div class="section8-grid__item emphasized">Лиды</div>
+            <div class="section8-grid__item">
+              <svg
+                class="section8-grid__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M2 2L10.3324 22L13.2905 13.2905L22 10.3324L2 2Z"
+                  fill="#376FFF"
+                  stroke="#376FFF"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Трафик
+            </div>
+            <div class="section8-grid__item">
+              <svg
+                class="section8-grid__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.7776 14.1009C7.7193 14.1003 7.66052 14.1 7.60127 14.1C3.9545 14.1 2.08883 15.2132 2.00428 17.4396C1.99978 17.5581 2.03553 17.6747 2.10575 17.7703C2.42558 18.2057 3.09236 18.5255 4.10607 18.7297C4.41899 16.9262 5.42214 15.458 7.06917 14.4752C7.29571 14.34 7.53203 14.2154 7.7776 14.1009ZM11.9768 15.092C12.7527 15.6441 13.1598 16.4267 13.1983 17.4397C13.2028 17.5582 13.167 17.6748 13.0967 17.7704C12.4945 18.5901 10.6627 19 7.60127 19C7.06153 19 6.56 18.9873 6.09669 18.9618C6.53874 16.7231 8.49876 15.4332 11.9768 15.092ZM7.71405 5.00142C7.67676 5.00047 7.63917 5 7.60127 5C5.61305 5 4.45127 6.307 4.45127 8.54375C4.45127 10.7805 5.80127 12.7 7.60127 12.7C8.1311 12.7 8.62194 12.5337 9.05083 12.2419C8.04794 10.803 7.50015 8.96473 7.50015 7.0625C7.50015 6.3524 7.5683 5.65988 7.71405 5.00142ZM9.62315 5.64629C9.54178 6.08361 9.50015 6.5564 9.50015 7.0625C9.50015 8.35229 9.81437 9.56824 10.3583 10.5598C10.6101 9.95708 10.7513 9.267 10.7513 8.54375C10.7513 7.23376 10.3528 6.24268 9.62315 5.64629Z"
+                  fill="#376FFF"
+                />
+                <path
+                  d="M14.0001 13C11.4287 13 9.50015 10.2579 9.50015 7.0625C9.50015 3.86714 11.1598 2 14.0001 2C16.8405 2 18.5001 3.86714 18.5001 7.0625C18.5001 10.2579 16.5716 13 14.0001 13ZM14.0001 22C9.62651 22 7.0096 21.4144 6.14939 20.2433C6.04908 20.1067 5.99802 19.9402 6.00445 19.7708C6.12523 16.5903 8.79046 15 14.0001 15C19.2099 15 21.8751 16.5903 21.9959 19.771C22.0023 19.9403 21.9511 20.1069 21.8508 20.2435C20.9904 21.4145 18.3736 22 14.0001 22Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Вовлеченность
+            </div>
+            <div class="section8-grid__item">
+              <svg
+                class="section8-grid__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M4.2041 6.49976L11.9994 1.99951L19.7948 6.49976L11.9994 11L4.2041 6.49976Z"
+                  fill="#376FFF"
+                />
+                <rect
+                  width="9"
+                  height="9"
+                  transform="matrix(0.866025 0.5 -2.20305e-08 1 3 8)"
+                  fill="#376FFF"
+                />
+                <rect
+                  width="9"
+                  height="9"
+                  transform="matrix(-0.866025 0.5 2.20305e-08 1 20.7939 8)"
+                  fill="#376FFF"
+                />
+              </svg>
+              Установки приложения
+            </div>
+            <div class="section8-grid__item">
+              <svg
+                class="section8-grid__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8 3H6.20486C5.09046 3 4.68635 3.11603 4.27894 3.33392C3.87154 3.5518 3.5518 3.87154 3.33392 4.27894C3.11603 4.68635 3 5.09046 3 6.20486V7V9V11V13V15V17V17.7951C3 18.9095 3.11603 19.3137 3.33392 19.7211C3.5518 20.1285 3.87154 20.4482 4.27894 20.6661C4.68635 20.884 5.09046 21 6.20486 21H8H16H17.7951C18.9095 21 19.3137 20.884 19.7211 20.6661C20.1285 20.4482 20.4482 20.1285 20.6661 19.7211C20.884 19.3137 21 18.9095 21 17.7951V17V15V13V11V9V7V6.20486C21 5.09046 20.884 4.68635 20.6661 4.27894C20.4482 3.87154 20.1285 3.5518 19.7211 3.33392C19.3137 3.11603 18.9095 3 17.7951 3H16H8ZM8 5H6.20486C5.77844 5 5.51125 5.01899 5.35599 5.04897C5.29517 5.06072 5.28173 5.06567 5.22214 5.09754C5.16327 5.12903 5.12903 5.16327 5.09754 5.22214C5.06567 5.28173 5.06072 5.29517 5.04897 5.35599C5.01899 5.51125 5 5.77844 5 6.20486V7H8V5ZM8 9H5V11H8V9ZM16 11V9H19V11H16ZM8 13H5V15H8V13ZM16 15V13H19V15H16ZM8 17H5V17.7951C5 18.2216 5.01899 18.4887 5.04897 18.644C5.06072 18.7048 5.06567 18.7183 5.09754 18.7779C5.12903 18.8367 5.16327 18.871 5.22214 18.9025C5.28173 18.9343 5.29517 18.9393 5.35599 18.951C5.51125 18.981 5.77844 19 6.20486 19H8V17ZM16 19V17H19V17.7951C19 18.2216 18.981 18.4887 18.951 18.644C18.9393 18.7048 18.9343 18.7183 18.9025 18.7779C18.871 18.8367 18.8367 18.871 18.7779 18.9025C18.7183 18.9343 18.7048 18.9393 18.644 18.951C18.4887 18.981 18.2216 19 17.7951 19H16ZM16 7V5H17.7951C18.2216 5 18.4887 5.01899 18.644 5.04897C18.7048 5.06072 18.7183 5.06567 18.7779 5.09754C18.8367 5.12903 18.871 5.16327 18.9025 5.22214C18.9343 5.28173 18.9393 5.29517 18.951 5.35599C18.981 5.51125 19 5.77844 19 6.20486V7H16Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Просмотры видео
+            </div>
+            <div class="section8-grid__item">
+              <svg
+                class="section8-grid__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2 6.37574L9 14.3757V22.943L15 20.693V14.3757L22 6.37574V4C22 2.89543 21.1046 2 20 2H4C2.89543 2 2 2.89543 2 4V6.37574ZM20 4V5H4V4H20ZM11 15V20.057L13 19.307V15H11Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Генерация лидов
+            </div>
+            <div class="section8-grid__item">
+              <svg
+                class="section8-grid__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M10.9688 18.7688C15.4951 18.1071 19.0007 14.4343 19.0007 9.93764C19.0007 9.28069 18.9259 8.64133 18.784 8.02637C20.719 9.17837 22.0007 11.1883 22.0007 13.4751C22.0007 14.7669 21.5917 15.9704 20.887 16.9807C20.9467 17.93 21.2838 18.7626 21.8984 19.4787L21.8984 19.4787C22.0531 19.6589 22.0324 19.9304 21.8522 20.085C21.7651 20.1598 21.6518 20.1966 21.5375 20.1874C20.1704 20.077 19.0525 19.7623 18.1838 19.2435C17.2289 19.6953 16.1469 19.9501 15.0007 19.9501C13.4994 19.9501 12.1086 19.513 10.9688 18.7688Z"
+                  fill="#376FFF"
+                />
+                <path
+                  d="M7.62507 16.6565C8.22433 16.7991 8.85259 16.875 9.5 16.875C13.6421 16.875 17 13.769 17 9.9375C17 6.10602 13.6421 3 9.5 3C5.35786 3 2 6.10602 2 9.9375C2 11.8838 2.8665 13.643 4.26215 14.9029C4.13972 15.7615 3.79132 16.5252 3.21696 17.1939C3.05141 17.3867 3.07346 17.6771 3.26619 17.8426C3.35931 17.9226 3.48053 17.9621 3.60289 17.9522C5.30334 17.8151 6.64406 17.3832 7.62507 16.6565Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Сообщения
+            </div>
+          </div>
+
+          <!-- Третий блок -->
+
+          <div class="section8-grid__column odd">
+            <div class="section8-grid__item emphasized">Конверсия</div>
+            <div class="section8-grid__item">
+              <svg
+                class="section8-grid__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.9619 13.4108C14.0346 13.4705 13.0474 13.5001 12 13.5001C10.9526 13.5001 9.96537 13.4705 9.03807 13.4108C9.30546 18.3646 10.9222 22.1501 12 22.1501C13.0778 22.1501 14.6945 18.3646 14.9619 13.4108ZM7.02578 13.2221C7.17774 16.7931 7.98744 19.755 9.08516 21.6643C4.98414 20.4041 2 16.5541 2 12.0001C2 11.9703 2.00013 11.9405 2.00038 11.9108C3.32881 12.5315 5.0026 12.9661 7.02578 13.2221ZM2.24187 9.78218C3.36918 10.4445 4.96084 10.9217 7.01092 11.2026C7.11444 7.44193 7.94424 4.32031 9.08516 2.33589C5.67031 3.3852 3.02985 6.23025 2.24187 9.78218ZM9.0068 11.404C9.12879 6.05669 10.8638 1.8501 12 1.8501C13.1362 1.8501 14.8712 6.05669 14.9932 11.404C14.0675 11.4678 13.0697 11.5001 12 11.5001C10.9303 11.5001 9.93248 11.4678 9.0068 11.404ZM16.9742 13.2221C18.9974 12.9661 20.6712 12.5315 21.9996 11.9108C21.9999 11.9405 22 11.9703 22 12.0001C22 16.5541 19.0159 20.4041 14.9148 21.6643C16.0126 19.755 16.8223 16.7931 16.9742 13.2221ZM21.7581 9.78218C20.6308 10.4445 19.0392 10.9217 16.9891 11.2026C16.8856 7.44193 16.0558 4.32031 14.9148 2.33589C18.3297 3.3852 20.9701 6.23025 21.7581 9.78218Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Конверсия
+            </div>
+            <div class="section8-grid__item">
+              <svg
+                class="section8-grid__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20.5 6H7.58198L7.16573 4.47377C6.92843 3.60364 6.13811 3 5.2362 3H3C2.44772 3 2 3.44772 2 4C2 4.55228 2.44772 5 3 5H5.2362L7.79746 14.3913C8.06753 15.3815 9.04335 16.0066 10.0558 15.8378L20.3288 14.1257C21.2932 13.9649 22 13.1306 22 12.1529V7.5C22 6.67157 21.3284 6 20.5 6ZM7 21C8.10457 21 9 20.1046 9 19C9 17.8954 8.10457 17 7 17C5.89543 17 5 17.8954 5 19C5 20.1046 5.89543 21 7 21ZM17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Продажи товаров из каталога
+            </div>
+            <div class="section8-grid__item round-b">
+              <svg
+                class="section8-grid__item-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11 2C11 1.44772 11.4477 1 12 1C12.5523 1 13 1.44772 13 2V4.06189C16.6187 4.51314 19.4869 7.38128 19.9381 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H19.9381C19.4869 16.6187 16.6187 19.4869 13 19.9381V22C13 22.5523 12.5523 23 12 23C11.4477 23 11 22.5523 11 22V19.9381C7.38128 19.4869 4.51314 16.6187 4.06189 13H2C1.44772 13 1 12.5523 1 12C1 11.4477 1.44772 11 2 11H4.06189C4.51314 7.38128 7.38128 4.51314 11 4.06189V2ZM15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                  fill="#376FFF"
+                />
+              </svg>
+              Посещения точек
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Девятый section -  ...после определения аудитории... -->
+
+      <section class="section9">
+        <div class="section9__text text2">
+          После определения аудитории, по который будет запускаться реклама –
+          необходимо выбрать цель. Сейчас мы детально расскажем о том, какие
+          цели рекламы есть в Facebook и Instagram, и в каких случаях их
+          необходимо использовать:
+        </div>
+
+        <!-- Аккордеон -->
+
+        <div class="section9__block text">
+          <!-- Первая кнопка -->
+          <div class="section9-block__item">
+            <input
+              class="section9-block__input"
+              type="checkbox"
+              id="collapse-1"
+              checked
+            />
+            <label class="section9-block__label" for="collapse-1">
+              <!-- Выпадающий текст -->
+              <div class="section9_block__label-item"></div>
+              <p class="section9-block__label-text emphasized">
+                Узнаваемость (узнаваемость бренда и охват).
+              </p>
+            </label>
+            <div class="section9-block__content">
+              <p class="section9-block__content-text1">
+                Данные виды целей РК дают возможность показать рекламу как можно
+                большему количеству людей (охват) или определенной группе людей
+                максимальное количество раз. Главная цель — показать рекламное
+                сообщение максимальному числу пользователей, чтобы аудитория
+                смогла запомнить вашу компанию.
+              </p>
+              <p class="section9-block__content-title emphasized">
+                Кому подходит:
+              </p>
+              <p class="section9-block__content-text2">
+                Идеально подходит для производителей, которые реализует свою
+                продукцию через партнеров или сети. При выборе данной цели в
+                рекламе, вы повысите спрос и продажи в магазинах партнеров.
+              </p>
+            </div>
+          </div>
+
+          <!-- Вторая кнопка -->
+          <div class="section9-block__item">
+            <input
+              class="section9-block__input"
+              type="checkbox"
+              id="collapse-2"
+            />
+            <label class="section9-block__label" for="collapse-2">
+              <!-- Выпадающий текст -->
+              <div class="section9_block__label-item"></div>
+              <p class="section9-block__label-text emphasized">
+                Вовлеченность.
+              </p>
+            </label>
+            <div class="section9-block__content">
+              <p class="section9-block__content-text1">
+                Данные виды целей РК дают возможность показать рекламу как можно
+                большему количеству людей (охват) или определенной группе людей
+                максимальное количество раз. Главная цель — показать рекламное
+                сообщение максимальному числу пользователей, чтобы аудитория
+                смогла запомнить вашу компанию.
+              </p>
+              <p class="section9-block__content-title emphasized">
+                Кому подходит:
+              </p>
+              <p class="section9-block__content-text2">
+                Идеально подходит для производителей, которые реализует свою
+                продукцию через партнеров или сети. При выборе данной цели в
+                рекламе, вы повысите спрос и продажи в магазинах партнеров.
+              </p>
+            </div>
           </div>
 
           <!-- Третья кнопка -->
-
-          <div class="section9-block__item2-block">
-            <img class="item2-block__img" src="./assets/images/smm_img/smm-plus-icon.png">
-            <p class="item2-block__text_emphasized emphasized">Установки приложения.</p>
+          <div class="section9-block__item">
+            <input
+              class="section9-block__input"
+              type="checkbox"
+              id="collapse-3"
+            />
+            <label class="section9-block__label" for="collapse-3">
+              <!-- Выпадающий текст -->
+              <div class="section9_block__label-item"></div>
+              <p class="section9-block__label-text emphasized">
+                Установки приложения.
+              </p>
+            </label>
+            <div class="section9-block__content">
+              <p class="section9-block__content-text1">
+                Данные виды целей РК дают возможность показать рекламу как можно
+                большему количеству людей (охват) или определенной группе людей
+                максимальное количество раз. Главная цель — показать рекламное
+                сообщение максимальному числу пользователей, чтобы аудитория
+                смогла запомнить вашу компанию.
+              </p>
+              <p class="section9-block__content-title emphasized">
+                Кому подходит:
+              </p>
+              <p class="section9-block__content-text2">
+                Идеально подходит для производителей, которые реализует свою
+                продукцию через партнеров или сети. При выборе данной цели в
+                рекламе, вы повысите спрос и продажи в магазинах партнеров.
+              </p>
+            </div>
           </div>
 
           <!-- Четвёртая кнопка -->
-
-          <div class="section9-block__item2-block">
-            <img class="item2-block__img" src="./assets/images/smm_img/smm-plus-icon.png">
-            <p class="item2-block__text_emphasized emphasized">Просмотры видео.</p>
-          </div>  
+          <div class="section9-block__item">
+            <input
+              class="section9-block__input"
+              type="checkbox"
+              id="collapse-4"
+            />
+            <label class="section9-block__label" for="collapse-4">
+              <!-- Выпадающий текст -->
+              <div class="section9_block__label-item"></div>
+              <p class="section9-block__label-text emphasized">
+                Просмотры видео.
+              </p>
+            </label>
+            <div class="section9-block__content">
+              <p class="section9-block__content-text1">
+                Данные виды целей РК дают возможность показать рекламу как можно
+                большему количеству людей (охват) или определенной группе людей
+                максимальное количество раз. Главная цель — показать рекламное
+                сообщение максимальному числу пользователей, чтобы аудитория
+                смогла запомнить вашу компанию.
+              </p>
+              <p class="section9-block__content-title emphasized">
+                Кому подходит:
+              </p>
+              <p class="section9-block__content-text2">
+                Идеально подходит для производителей, которые реализует свою
+                продукцию через партнеров или сети. При выборе данной цели в
+                рекламе, вы повысите спрос и продажи в магазинах партнеров.
+              </p>
+            </div>
+          </div>
 
           <!-- Пятая кнопка -->
-
-          <div class="section9-block__item2-block">
-            <img class="item2-block__img" src="./assets/images/smm_img/smm-plus-icon.png">
-            <p class="item2-block__text_emphasized emphasized">Генерация лидов.</p>
+          <div class="section9-block__item">
+            <input
+              class="section9-block__input"
+              type="checkbox"
+              id="collapse-5"
+            />
+            <label class="section9-block__label" for="collapse-5">
+              <!-- Выпадающий текст -->
+              <div class="section9_block__label-item"></div>
+              <p class="section9-block__label-text emphasized">
+                Генерация лидов.
+              </p>
+            </label>
+            <div class="section9-block__content">
+              <p class="section9-block__content-text1">
+                Данные виды целей РК дают возможность показать рекламу как можно
+                большему количеству людей (охват) или определенной группе людей
+                максимальное количество раз. Главная цель — показать рекламное
+                сообщение максимальному числу пользователей, чтобы аудитория
+                смогла запомнить вашу компанию.
+              </p>
+              <p class="section9-block__content-title emphasized">
+                Кому подходит:
+              </p>
+              <p class="section9-block__content-text2">
+                Идеально подходит для производителей, которые реализует свою
+                продукцию через партнеров или сети. При выборе данной цели в
+                рекламе, вы повысите спрос и продажи в магазинах партнеров.
+              </p>
+            </div>
           </div>
 
           <!-- Шестая кнопка -->
-
-          <div class="section9-block__item2-block">
-            <img class="item2-block__img" src="./assets/images/smm_img/smm-plus-icon.png">
-            <p class="item2-block__text_emphasized emphasized">Сообщения.</p>
+          <div class="section9-block__item">
+            <input
+              class="section9-block__input"
+              type="checkbox"
+              id="collapse-6"
+            />
+            <label class="section9-block__label" for="collapse-6">
+              <!-- Выпадающий текст -->
+              <div class="section9_block__label-item"></div>
+              <p class="section9-block__label-text emphasized">Сообщения.</p>
+            </label>
+            <div class="section9-block__content">
+              <p class="section9-block__content-text1">
+                Данные виды целей РК дают возможность показать рекламу как можно
+                большему количеству людей (охват) или определенной группе людей
+                максимальное количество раз. Главная цель — показать рекламное
+                сообщение максимальному числу пользователей, чтобы аудитория
+                смогла запомнить вашу компанию.
+              </p>
+              <p class="section9-block__content-title emphasized">
+                Кому подходит:
+              </p>
+              <p class="section9-block__content-text2">
+                Идеально подходит для производителей, которые реализует свою
+                продукцию через партнеров или сети. При выборе данной цели в
+                рекламе, вы повысите спрос и продажи в магазинах партнеров.
+              </p>
+            </div>
           </div>
 
           <!-- Седьмая кнопка -->
-
-          <div class="section9-block__item2-block">
-            <img class="item2-block__img" src="./assets/images/smm_img/smm-plus-icon.png">
-            <p class="item2-block__text_emphasized emphasized">Конверсии.</p>
-          </div>  
+          <div class="section9-block__item">
+            <input
+              class="section9-block__input"
+              type="checkbox"
+              id="collapse-7"
+            />
+            <label class="section9-block__label" for="collapse-7">
+              <!-- Выпадающий текст -->
+              <div class="section9_block__label-item"></div>
+              <p class="section9-block__label-text emphasized">Конверсии.</p>
+            </label>
+            <div class="section9-block__content">
+              <p class="section9-block__content-text1">
+                Данные виды целей РК дают возможность показать рекламу как можно
+                большему количеству людей (охват) или определенной группе людей
+                максимальное количество раз. Главная цель — показать рекламное
+                сообщение максимальному числу пользователей, чтобы аудитория
+                смогла запомнить вашу компанию.
+              </p>
+              <p class="section9-block__content-title emphasized">
+                Кому подходит:
+              </p>
+              <p class="section9-block__content-text2">
+                Идеально подходит для производителей, которые реализует свою
+                продукцию через партнеров или сети. При выборе данной цели в
+                рекламе, вы повысите спрос и продажи в магазинах партнеров.
+              </p>
+            </div>
+          </div>
 
           <!-- Восьмая кнопка -->
-
-          <div class="section9-block__item2-block">
-            <img class="item2-block__img" src="./assets/images/smm_img/smm-plus-icon.png">
-            <p class="item2-block__text_emphasized emphasized">Продажи товаров из каталога.</p>
-          </div> 
+          <div class="section9-block__item">
+            <input
+              class="section9-block__input"
+              type="checkbox"
+              id="collapse-8"
+            />
+            <label class="section9-block__label" for="collapse-8">
+              <!-- Выпадающий текст -->
+              <div class="section9_block__label-item"></div>
+              <p class="section9-block__label-text emphasized">
+                Продажи товаров из каталога.
+              </p>
+            </label>
+            <div class="section9-block__content">
+              <p class="section9-block__content-text1">
+                Данные виды целей РК дают возможность показать рекламу как можно
+                большему количеству людей (охват) или определенной группе людей
+                максимальное количество раз. Главная цель — показать рекламное
+                сообщение максимальному числу пользователей, чтобы аудитория
+                смогла запомнить вашу компанию.
+              </p>
+              <p class="section9-block__content-title emphasized">
+                Кому подходит:
+              </p>
+              <p class="section9-block__content-text2">
+                Идеально подходит для производителей, которые реализует свою
+                продукцию через партнеров или сети. При выборе данной цели в
+                рекламе, вы повысите спрос и продажи в магазинах партнеров.
+              </p>
+            </div>
+          </div>
 
           <!-- Девятая кнопка -->
-
-          <div class="section9-block__item2-block">
-            <img class="item2-block__img" src="./assets/images/smm_img/smm-plus-icon.png">
-            <p class="item2-block__text_emphasized emphasized">Посещения точек.</p>
-          </div> 
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <!-- Десятый section -  Стоимость услуг -->
-
-    <section class="section10">
-      <h2 class="section10__title title2">Стоимость услуг</h2>
-
-      <!-- Таблица "Стоимость услуг" -->
-
-      <div class="section10__border">
-        <table class="section10__table text">
-          <!-- Шапка таблицы -->
-          <thead class="section10-table__header">
-            <tr class="section10-table__row1 odd row">
-              <td td class="row1__cell header-cell round-tl">
-                <span class="row1__cell emphasized">Стратегия SMM продвижения</span>
-              </td>
-              <td class="row1__cell header-cell">
-                <span class="row1__cell emphasized">Ведение соц.сетей</span>
-              </td>
-              <td class="row1__cell header-cell round-tr">
-                <span class="row1__cell emphasized">Таргетированная реклама</span>
-              </td>
-            </tr>
-          </thead>
-          <tbody class="section10-table__main">
-            <!-- 1-ая строчка -->
-            <tr class="section10-table__row2 row">
-              <td class="row2__cell header-cell">Цена: <span class="row2__cell emphasized">от 0 EUR</span></td>
-              <td class="row2__cell header-cell">Цена: <span class="row2__cell emphasized">от 0 EUR</span></td>
-              <td class="row2__cell header-cell">Цена: <span class="row2__cell emphasized">от 0 EUR</span></td>
-            </tr>
-            <!-- 2-ая строчка -->
-            <tr class="section10-table__row3 odd row">
-              <td class="row3__cell header-cell round-bl">
-                <ul class="row3-cell__list list">
-                  <li class="row3-cell__item">SMM-стратегия</li>
-                  <li class="row3-cell__item">Аудит страниц и рекламы</li>
-                  <li class="row3-cell__item">Концепция, контент-планы</li>
-                  <li class="row3-cell__item">Анализ бренда и конкурентов</li>
-                </ul>
-              </td>
-              <td class="row3__cell header-cell">
-                <ul class="row3-cell__list list">
-                  <li class="row3-cell__item">Графическое оформление аккаунтов</li>
-                  <li class="row3-cell__item">Шаблоны для постов и хайлайтс</li>
-                  <li class="row3-cell__item">Конкурсы и марафоны</li>
-                  <li class="row3-cell__item">Создание контента</li>
-                  <li class="row3-cell__item">Детальная аналитика</li>
-                </ul>
-              </td>
-              <td class="row3__cell header-cell round-br">
-                <ul class="row3-cell__list list">
-                  <li class="row3-cell__item">Таргетированная реклама в Facebook и Instagram</li>
-                  <li class="row3-cell__item">Реклама по базам клиентов и look-a-like (похожие аудитории)</li>
-                  <li class="row3-cell__item">Подбор аудиторий, сегментация по интересам, разбивка на группы</li>
-                  <li class="row3-cell__item">Настройка рекламных кампаний, подбор плейсментов</li>
-                  <li class="row3-cell__item">Установка Facebook Pixel, настройка конверсий</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      
-      <!-- Инфо блок-сноска -->
-
-      <div class="section10__block">
-        <img class="section10__img" src="./assets/images/smm_img/smm-info-icon.png">
-        <p class="section10__text text">Минимальный бюджет на рекламу составляет от 100 евро / месяц.<br>
-          Базовые услуги по SMM, которые мы предлагаем, подходят для малого бизнеса с небольшим количеством товаров и услуг.
-          Наши услуги подходят для небольших интернет-магазинов, мед. клиник, косметологии, стоматологии.
-          </p>
-      </div>
-    </section>
-
-    <!-- Одиннадцатый section - Клиенты, которые нам доверяют -->
-
-    <section class="content-clients">
-      <div class="content-clients__wrapper">
-        <p class="content-clients__subtitle">
-          Клиенты, которые нам доверяют​
-        </p>
-        <div class="content-clients__items">
-          <div class="content-clients_item">
-            <img
-              class="content-clients_img"
-              src="./assets/images/Header_footer_img/airtable.png"
-              alt=""
+          <div class="section9-block__item">
+            <input
+              class="section9-block__input"
+              type="checkbox"
+              id="collapse-9"
             />
-          </div>
-          <div class="content-clients_item">
-            <img
-              class="content-clients_img"
-              src="./assets/images/Header_footer_img/crunchbase.png"
-              alt=""
-            />
-          </div>
-          <div class="content-clients_item">
-            <img
-              class="content-clients_img"
-              src="./assets/images/Header_footer_img/hop_work.png"
-              alt=""
-            />
-          </div>
-          <div class="content-clients_item">
-            <img
-              class="content-clients_img"
-              src="./assets/images/Header_footer_img/amazon.png"
-              alt=""
-            />
-          </div>
-          <div class="content-clients_item">
-            <img
-              class="content-clients_img"
-              src="./assets/images/Header_footer_img/outreach.png"
-              alt=""
-            />
-          </div>
-          <div class="content-clients_item">
-            <img
-              class="content-clients_img"
-              src="./assets/images/Header_footer_img/sales_force.png"
-              alt=""
-            />
-          </div>
-          <div class="content-clients_item">
-            <img
-              class="content-clients_img"
-              src="./assets/images/Header_footer_img/content_square.png"
-              alt=""
-            />
-          </div>
-          <div class="content-clients_item">
-            <img
-              class="content-clients_img"
-              src="./assets/images/Header_footer_img/hub_spot.png"
-              alt=""
-            />
-          </div>
-          <div class="content-clients_item">
-            <img
-              class="content-clients_img"
-              src="./assets/images/Header_footer_img/zendesk.png"
-              alt=""
-            />
-          </div>
-          <div class="content-clients_item">
-            <img
-              class="content-clients_img"
-              src="./assets/images/Header_footer_img/airbnb.png"
-              alt=""
-            />
+            <label class="section9-block__label" for="collapse-9">
+              <!-- Выпадающий текст -->
+              <div class="section9_block__label-item"></div>
+              <p class="section9-block__label-text emphasized">
+                Посещения точек.
+              </p>
+            </label>
+            <div class="section9-block__content">
+              <p class="section9-block__content-text1">
+                Данные виды целей РК дают возможность показать рекламу как можно
+                большему количеству людей (охват) или определенной группе людей
+                максимальное количество раз. Главная цель — показать рекламное
+                сообщение максимальному числу пользователей, чтобы аудитория
+                смогла запомнить вашу компанию.
+              </p>
+              <p class="section9-block__content-title emphasized">
+                Кому подходит:
+              </p>
+              <p class="section9-block__content-text2">
+                Идеально подходит для производителей, которые реализует свою
+                продукцию через партнеров или сети. При выборе данной цели в
+                рекламе, вы повысите спрос и продажи в магазинах партнеров.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="content-call">
-          <div class="content-call__description">
-            <p class="content-call__subtitle">
-              Хотите чтобы мы поучаствовали в развитии Вашего проекта?
+      </section>
+
+      <!-- Десятый section -  Стоимость услуг -->
+
+      <section class="section10">
+        <h2 class="section10__title title2">Стоимость услуг</h2>
+
+        <!-- Таблица "Стоимость услуг" -->
+
+        <div class="section10__border">
+          <table class="section10__table text">
+            <!-- Шапка таблицы -->
+            <thead class="section10-table__header">
+              <tr class="section10-table__row1 odd row">
+                <td class="row1__cell header-cell round-tl">
+                  <span class="row1__cell emphasized"
+                    >Стратегия SMM продвижения</span
+                  >
+                </td>
+                <td class="row1__cell header-cell">
+                  <span class="row1__cell emphasized">Ведение соц.сетей</span>
+                </td>
+                <td class="row1__cell header-cell round-tr">
+                  <span class="row1__cell emphasized"
+                    >Таргетированная реклама</span
+                  >
+                </td>
+              </tr>
+            </thead>
+            <tbody class="section10-table__main">
+              <!-- 1-ая строчка -->
+              <tr class="section10-table__row2 row">
+                <td class="row2__cell header-cell">
+                  Цена: <span class="row2__cell emphasized">от 0 EUR</span>
+                </td>
+                <td class="row2__cell header-cell">
+                  Цена: <span class="row2__cell emphasized">от 0 EUR</span>
+                </td>
+                <td class="row2__cell header-cell">
+                  Цена: <span class="row2__cell emphasized">от 0 EUR</span>
+                </td>
+              </tr>
+              <!-- 2-ая строчка -->
+              <tr class="section10-table__row3 odd row">
+                <td class="row3__cell header-cell round-bl">
+                  <ul class="row3-cell__list list">
+                    <li class="row3-cell__item">SMM-стратегия</li>
+                    <li class="row3-cell__item">Аудит страниц и рекламы</li>
+                    <li class="row3-cell__item">Концепция, контент-планы</li>
+                    <li class="row3-cell__item">Анализ бренда и конкурентов</li>
+                  </ul>
+                </td>
+                <td class="row3__cell header-cell">
+                  <ul class="row3-cell__list list">
+                    <li class="row3-cell__item">
+                      Графическое оформление аккаунтов
+                    </li>
+                    <li class="row3-cell__item">
+                      Шаблоны для постов и хайлайтс
+                    </li>
+                    <li class="row3-cell__item">Конкурсы и марафоны</li>
+                    <li class="row3-cell__item">Создание контента</li>
+                    <li class="row3-cell__item">Детальная аналитика</li>
+                  </ul>
+                </td>
+                <td class="row3__cell header-cell round-br">
+                  <ul class="row3-cell__list list">
+                    <li class="row3-cell__item">
+                      Таргетированная реклама в Facebook и Instagram
+                    </li>
+                    <li class="row3-cell__item">
+                      Реклама по базам клиентов и look-a-like (похожие
+                      аудитории)
+                    </li>
+                    <li class="row3-cell__item">
+                      Подбор аудиторий, сегментация по интересам, разбивка на
+                      группы
+                    </li>
+                    <li class="row3-cell__item">
+                      Настройка рекламных кампаний, подбор плейсментов
+                    </li>
+                    <li class="row3-cell__item">
+                      Установка Facebook Pixel, настройка конверсий
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Таблица "Стоимость услуг" для мобильных устройств в виде грида -->
+
+        <div class="section10__grid">
+          <!-- Первый блок -->
+          <div class="section10-grid__item odd round-t">
+            <p class="section10-grid__item-text emphasized">
+              Стратегия SMM продвижения
             </p>
-            <p class="content-call__text">Просто позвоните нам!</p>
+            <p class="section10-grid__item-text">
+              Цена:
+              <span class="item-text__emphasized emphasized">от 0 EUR</span>
+            </p>
+            <ul class="section10-grid__item-list list">
+              <li class="item-list__row">SMM-стратегия</li>
+              <li class="item-list__row">Аудит страниц и рекламы</li>
+              <li class="item-list__row">Концепция, контент-планы</li>
+              <li class="item-list__row">Анализ бренда и конкурентов</li>
+            </ul>
           </div>
-          <p class="content-call__tel">+371 0000 0000</p>
+
+          <!-- Второй блок -->
+          <div class="section10-grid__item even">
+            <p class="section10-grid__item-text emphasized">
+              Ведение соц.сетей
+            </p>
+            <p class="section10-grid__item-text">
+              Цена:
+              <span class="item-text__emphasized emphasized">от 0 EUR</span>
+            </p>
+            <ul class="section10-grid__item-list list">
+              <li class="item-list__row">Графическое оформление аккаунтов</li>
+              <li class="item-list__row">Шаблоны для постов и хайлайтс</li>
+              <li class="item-list__row">Конкурсы и марафоны</li>
+              <li class="item-list__row">Создание контента</li>
+              <li class="item-list__row">Детальная аналитика</li>
+            </ul>
+          </div>
+
+          <!-- Третий блок -->
+          <div class="section10-grid__item odd round-b">
+            <p class="section10-grid__item-text emphasized">
+              Таргетированная реклама
+            </p>
+            <p class="section10-grid__item-text">
+              Цена:
+              <span class="item-text__emphasized emphasized">от 0 EUR</span>
+            </p>
+            <ul class="section10-grid__item-list list">
+              <li class="item-list__row">
+                Таргетированная реклама в Facebook и Instagram
+              </li>
+              <li class="item-list__row">
+                Реклама по базам клиентов и look-a-like (похожие аудитории)
+              </li>
+              <li class="item-list__row">
+                Подбор аудиторий, сегментация по интересам, разбивка на группы
+              </li>
+              <li class="item-list__row">
+                Настройка рекламных кампаний, подбор плейсментов
+              </li>
+              <li class="item-list__row">
+                Установка Facebook Pixel, настройка конверсий
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+
+        <!-- Инфо блок-сноска -->
+
+        <div class="section10__block text">
+          <img
+            class="section10__img"
+            src="./assets/images/smm_img/smm-info-icon.png"
+          />
+          <p class="section10__text">
+            Минимальный бюджет на рекламу составляет от 100 евро / месяц.
+          </p>
+          <p class="section10__text">
+            Базовые услуги по SMM, которые мы предлагаем, подходят для малого
+            бизнеса с небольшим количеством товаров и услуг.
+          </p>
+          <p class="section10__text">
+            Наши услуги подходят для небольших интернет-магазинов, мед. клиник,
+            косметологии, стоматологии.
+          </p>
+        </div>
+      </section>
+
+      <!-- Одиннадцатый section - Клиенты, которые нам доверяют -->
+
+      <section class="content-clients">
+        <div class="content-clients__wrapper">
+          <p class="content-clients__subtitle">
+            Клиенты, которые нам доверяют​
+          </p>
+          <div class="content-clients__items">
+            <div class="content-clients_item">
+              <img
+                class="content-clients_img"
+                src="./assets/images/Header_footer_img/airtable.png"
+                alt=""
+              />
+            </div>
+            <div class="content-clients_item">
+              <img
+                class="content-clients_img"
+                src="./assets/images/Header_footer_img/crunchbase.png"
+                alt=""
+              />
+            </div>
+            <div class="content-clients_item">
+              <img
+                class="content-clients_img"
+                src="./assets/images/Header_footer_img/hop_work.png"
+                alt=""
+              />
+            </div>
+            <div class="content-clients_item">
+              <img
+                class="content-clients_img"
+                src="./assets/images/Header_footer_img/amazon.png"
+                alt=""
+              />
+            </div>
+            <div class="content-clients_item">
+              <img
+                class="content-clients_img"
+                src="./assets/images/Header_footer_img/outreach.png"
+                alt=""
+              />
+            </div>
+            <div class="content-clients_item">
+              <img
+                class="content-clients_img content-clients_img__size"
+                src="./assets/images/Header_footer_img/sales_force.png"
+                alt=""
+              />
+            </div>
+            <div class="content-clients_item">
+              <img
+                class="content-clients_img"
+                src="./assets/images/Header_footer_img/content_square.png"
+                alt=""
+              />
+            </div>
+            <div class="content-clients_item">
+              <img
+                class="content-clients_img"
+                src="./assets/images/Header_footer_img/hub_spot.png"
+                alt=""
+              />
+            </div>
+            <div class="content-clients_item content-clients_item__position">
+              <img
+                class="content-clients_img"
+                src="./assets/images/Header_footer_img/zendesk.png"
+                alt=""
+              />
+            </div>
+            <div class="content-clients_item">
+              <img
+                class="content-clients_img"
+                src="./assets/images/Header_footer_img/airbnb.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="content-call">
+            <div class="content-call__description">
+              <p class="content-call__subtitle">
+                Хотите чтобы мы поучаствовали в развитии Вашего проекта?
+              </p>
+              <p class="content-call__text">Просто позвоните нам!</p>
+            </div>
+            <p class="content-call__tel">+371 0000 0000</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
-    
+
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer-content">
           <div class="footer-contacts">
             <div class="footer-logo">
               <img
-            class="footer-logo__img"
-            src="./assets/images/Header_footer_img/logo_footer.svg"
-            alt=""
-            />
-          </div>
+                class="footer-logo__img"
+                src="./assets/images/Header_footer_img/logo_footer.svg"
+                alt=""
+              />
+            </div>
             <div class="footer-contacts__tel footer-contacts__tel-first">
               <p class="footer-contacts__text">Телефон</p>
               <p class="footer-contacts__tel-num">+001 987-654-3210</p>
             </div>
-            <div class="footer-contacts__tel-num footer-contacts__tel-second">+001 987-654-3210</div>
+            <div class="footer-contacts__tel-num footer-contacts__tel-second">
+              +001 987-654-3210
+            </div>
             <div class="footer-contacts__email">
               <p class="footer-contacts__text">Email</p>
               <p class="footer-contacts__email-adress">info@example.com</p>
             </div>
             <div class="footer-contacts__adress">
               <p class="footer-contacts__text">Адрес</p>
-              <p class="footer-contacts__adress-text">123/B, Route 66, Downtown, Washington, DC 20004, US​</p>
+              <p class="footer-contacts__adress-text">
+                123/B, Route 66, Downtown, Washington, DC 20004, US​
+              </p>
             </div>
-            <div class="footer-contacts__map">
-            </div>
+            <div class="footer-contacts__map"></div>
           </div>
           <div class="footer-form">
             <form action="#" method="post">
               <p class="footer-form__title">Есть вопросы?</p>
-              <p class="form__subtitle">
-                Свяжитесь с нами</p>
-                <input
-                  class="form-item"
-                  id="input-name"
-                  type="text"
-                  placeholder="Имя"
-                />
-                <input
-                  class="form-item"
-                  id="input-email"
-                  type="email"
-                  placeholder="Email"
-                />
-                <input
-                  class="form-item"
-                  id="input-tel"
-                  type="tel"
-                  placeholder="+7 999 999 99 99"
-                />
-                <textarea
-                  class="form-message"
-                  name=""
-                  id=""
-                  placeholder="Ваше сообщение"
-                ></textarea>
-              </p>
+              <p class="form__subtitle">Свяжитесь с нами</p>
+              <input
+                class="form-item"
+                id="footer_input-name"
+                type="text"
+                placeholder="Имя"
+              />
+              <input
+                class="form-item"
+                id="footer_input-email"
+                type="email"
+                placeholder="Email"
+              />
+              <input
+                class="form-item"
+                id="footer_input-tel"
+                type="tel"
+                placeholder="+7 999 999 99 99"
+              />
+              <textarea
+                class="form-message"
+                name="form-message"
+                id="footer_your-message"
+                placeholder="Ваше сообщение"
+              ></textarea>
 
               <div class="form-items">
-                <button id="" class="form-button">Отправить</button>
+                <button id="footer_send-button" class="form-button">
+                  Отправить
+                </button>
                 <div class="form-checkbox">
                   <input class="checkbox-item" type="checkbox" />
                   <p class="checkbox-text">
@@ -892,7 +2148,11 @@
         </div>
         <p class="watermark">SIA OL © Visas tiesības aizsargātas 2021</p>
       </div>
-      
     </footer>
+
+    <!-- Подключение JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/main_js/main.js"></script>
   </body>
 </html>
