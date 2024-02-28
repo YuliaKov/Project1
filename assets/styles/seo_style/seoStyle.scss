@@ -127,7 +127,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
-    margin-bottom: 40px;
     .title__accordeon {
       color: $color_second;
       font-family: $font_main;
@@ -136,73 +135,22 @@
       line-height: 40px;
       letter-spacing: 0%;
       text-align: center;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #c1d3de;
     }
   }
-  .wrapper__accordeon {
-    max-width: 1400px;
-    height: 494px;
-    display: flex;
-    margin: 0 auto;
-    border-bottom: 1px solid #c1d3de;
-    .wrapper__icon-minus {
-      width: 42px;
-      height: 176px;
-      padding-right: 20px;
-      border-top: 1px solid #c1d3de;
-      .image__icon-minus {
-        width: 22px;
-        height: 22px;
-        margin-bottom: 163px;
-        margin-top: 23px;
-      }
-      .wrapper__icon-plus {
-        border-top: 1px solid #c1d3de;
-        width: 42px;
-      }
 
-      .image__icon-plus {
-        width: 22px;
-        height: 22px;
-        margin-bottom: 23px;
-        margin-top: 23px;
-        display: flex;
-        align-items: center;
-      }
-    }
-  }
-}
-.wrapper__text-plus-minus {
-  width: 1358px;
-  border-top: 1px solid #c1d3de;
-  .title__plus-minus {
-    color: $color_second;
-    font-family: $font_main;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0%;
-    text-align: left;
-    margin-top: 20px;
-  }
-  .text__minus {
-    color: $color_second;
-    font-family: $font_main;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0%;
-    text-align: left;
-    padding-top: 8px;
-  }
+  
   ::marker {
     unicode-bidi: isolate;
     font-variant-numeric: tabular-nums;
     text-transform: none;
-    text-indent: 5px !important;
-    text-align: center !important;
-    text-align-last: center !important;
-    font-size: 10px;
+    text-indent: 5px;
+    text-align: center;
+    text-align-last: center;
+    font-size: 16px;
     color: #376fff;
+    padding-bottom: 10px;
   }
   .wrapper__minus-line {
     margin-bottom: 20px;
@@ -221,6 +169,109 @@
   }
 }
 
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  padding: 80px 14%;
+  column-gap: 10px;
+  @media screen and (max-width: 1024px) {
+    padding: 60px 4%;
+  }
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+  .benefits__picture {
+    max-width: 670px;
+    display: grid;
+    align-content: center;
+    .benefits__picture_size {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  .betefits__list {
+    display: flex;
+    flex-direction: column;
+
+    .betefits__title {
+      color: $color_second;
+      font-family: $font_main;
+      font-size: 38px;
+      font-weight: 900;
+      line-height: 40px;
+      border-bottom: 1px solid #c1d3de;
+      padding: 40px 0;
+      @media screen and (max-width: 1024px) {
+        font-size: 28px;
+        line-height: 36px;
+        padding: 24px 0;
+      }
+      @media screen and (max-width: 320px) {
+        padding: 20px 0;
+        padding-bottom: 32px;
+      }
+    }
+  }
+}
+.benefits__collapsible {
+  border-bottom: 1px solid #c1d3de;
+  .collapse-button__title {
+    padding-left: 10px;
+    color: $color_third;
+    font-family: $font_main;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    @media screen and (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  input {
+    display: none;
+  }
+  .benefits__information {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    @media screen and (max-width: 768px) {
+      padding: 16px 0;
+    }
+    @media screen and (max-width: 320px) {
+      padding: 12px 0;
+    }
+  }
+  .collapse-summary {
+    .collapse-button {
+      width: 22px;
+      height: 22px;
+      background-size: contain;
+      background-image: url(../../images/about_img/circle-plus.png);
+      display: inline-block;
+    }
+  }
+  input:checked ~ .collapse-summary {
+    .collapse-button {
+      background-image: url(../../images/about_img/circle-minus.png);
+    }
+  }
+  .collapse-details {
+    display: none;
+    padding-left: 32px;
+    padding-bottom: 20px;
+    @extend %normal-text;
+    @media screen and (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  input:checked ~ .collapse-details {
+    display: block;
+  }
+}
 /*--accordion end--*/
 
 /*--table start--*/
