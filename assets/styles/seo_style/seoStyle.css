@@ -1052,9 +1052,6 @@
   color: #376fff;
   padding-bottom: 10px;
 }
-.container__accordeon .wrapper__minus-line {
-  margin-bottom: 20px;
-}
 .container__accordeon .li__line {
   list-style: disc;
   margin-left: 27px;
@@ -1262,7 +1259,7 @@
 /*--table end--*/
 /*--cards start--*/
 .container__card {
-  max-width: 1920px;
+  max-width: 100%;
   height: 822px;
   background-color: #393a56;
 }
@@ -1544,4 +1541,161 @@
 
 /*--content end--*/
 /*--footer start--*/
-/*--footer end--*//*# sourceMappingURL=seoStyle.css.map */
+/*--footer end--*/
+@media (max-width: 1024px) {
+  .header__title-box {
+    margin-left: 40px;
+  }
+  .container__main {
+    height: 570px;
+  }
+  .container__main .wrapper__main {
+    padding-top: 60px;
+    max-width: 1024px;
+  }
+  .container__main .wrapper__main .wrapper__image-comp {
+    margin-right: 20px;
+  }
+  .container__main .wrapper__main .wrapper__image-comp .image__comp {
+    width: 462px;
+    padding-top: 51px;
+    margin-left: 40px;
+  }
+  .container__main .wrapper__main .wrapper__text-comp {
+    width: 462px;
+  }
+  .container__main .wrapper__main .wrapper__text-comp .line__text-comp {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .container__main .wrapper__main .wrapper__text-comp .label__text-comp {
+    font-size: 28px;
+    line-height: 36px;
+    padding-bottom: 24px;
+  }
+  .wrapper__line-text {
+    width: 450px;
+    height: 128px;
+    margin-top: 24px;
+  }
+  .wrapper__line-text .line__text {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px;
+  }
+  .container__accordeon {
+    height: 530px;
+  }
+  .container__accordeon .wrapper__title-accordeon {
+    width: 944px;
+    margin-top: 40px;
+  }
+  .container__accordeon .wrapper__title-accordeon .title__accordeon {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .container__accordeon .clr_text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .container__ {
+    max-width: 1024px;
+    height: 629px;
+  }
+  .container__ .wrapper__ {
+    width: 942px;
+  }
+  .container__ .wrapper__ .column__service {
+    width: 590px;
+  }
+  .container__ .wrapper__ .column__work {
+    width: 240px;
+  }
+  .container__ .wrapper__ .column__price {
+    width: 112px;
+  }
+  .container__ .wrapper__ .text__column {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 10px;
+  }
+  .container__ .wrapper__ .first-column {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 10px;
+  }
+  .container__ .wrapper__title-table {
+    margin-top: 40px;
+  }
+  .container__ .wrapper__title-table .table__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .container__card {
+    max-width: 1024px;
+    height: 718px;
+  }
+  .container__card .container__card-title {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .container__card .container__card-title .card__title-cup {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .container__card .wrapper__card {
+    width: 943px;
+  }
+  .container__card .wrapper__card .wrapper__cup {
+    margin-right: 20PX;
+  }
+  .container__card .wrapper__card .wrapper__cup .cup__image {
+    width: 48px;
+    height: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .container__card .wrapper__card .wrapper__cup .little__card-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .container__card .wrapper__card .wrapper__cup .little__card-line {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .container__backgrnd {
+    max-width: 1024px;
+    height: 950px;
+  }
+  .result__container {
+    width: 943px;
+  }
+  .result__title {
+    padding-top: 60px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .result__text-container {
+    width: 426px;
+  }
+  .result__text-container .result__text-ladel {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .result__text-container .result__text-line {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0px;
+  }
+  .result__image-container {
+    width: 462px;
+    height: 462px;
+  }
+  .result__image {
+    width: inherit;
+    margin-top: 150px;
+  }
+}/*# sourceMappingURL=seoStyle.css.map */
