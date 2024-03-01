@@ -5,50 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Roboto:wght@400;700&display=swap"/>
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/styles/reset.css" />
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/slick.css" />
+    <link rel="stylesheet" href="./assets/styles/slick-theme.css" />
     <link rel="stylesheet" href="./assets/styles/seo_style/seoStyle.css" />
     <title>SEO</title>
     </head>
-
     <body>
-
-<!--header start 1 page -->
-
-    <!-- <div class="header__backgrn"> -->
+<div class="header__backgrn">
       <div class="container">
         <header class="header">
           <div class="header-top">
             <img
-              class="header-logo"
+              class="header-logo header-logo__white"
               src="./assets/images/Header_footer_img/logo_header.svg"
-              alt="header logo"
+              alt=""
+            />
+            <img
+              class="header-logo header-logo__dark"
+              src="./assets/images/Header_footer_img/logo_dark.svg"
+              alt=""
             />
             <div class="header-wrapper">
               <nav class="header-nav">
                 <ul class="header-nav__items">
                   <li class="header-nav__item">
-                  <a class="header-nav__link" href="index.html">Главная</a>
-                </li>
-                <li class="header-nav__item">
-                  <a class="header-nav__link" href="about.html">О нас</a>
-                </li>
-                <li class="header-nav__item">
-                  <a class="header-nav__link" href="adwords.html"
-                    >Google Adwords</a
-                  >
-                </li>
-                <li class="header-nav__item">
-                  <a class="header-nav__link" href="smm.html">SMM</a>
-                </li>
-                <li class="header-nav__item">
-                  <a class="header-nav__link" href="seo.html">SEO</a>
-                </li>
-                <li class="header-nav__item">
-                  <a class="header-nav__link" href="contacts.html">Контакты</a>
-                </li>
+                    <a class="header-nav__link" href="index.html">Главная</a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a class="header-nav__link active-page" href="about.html"
+                      >О нас</a
+                    >
+                  </li>
+                  <li class="header-nav__item">
+                    <a class="header-nav__link" href="adwords.html"
+                      >Google Adwords</a
+                    >
+                  </li>
+                  <li class="header-nav__item">
+                    <a class="header-nav__link" href="smm.html">SMM</a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a class="header-nav__link" href="seo.html">SEO</a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a class="header-nav__link" href="contacts.html">Контакты</a>
+                  </li>
                 </ul>
               </nav>
               <div class="header-top__buttons">
@@ -58,6 +65,9 @@
                 <button class="header-top__button header-top__lang">LV</button>
               </div>
             </div>
+            <div class="burger">
+              <span></span>
+            </div>
           </div>
           <div class="header__title-box">
             <div class="header__title">Оптимизация сайта SEO</div>
@@ -65,18 +75,13 @@
           </div>
         </header>
       </div>
-    <!-- </div> -->
-
-<!--header end-->
-
-<!--main start 2 page-->
-
+</div>
 <div class="container__main">
   <div class="wrapper__main">
     <div class="wrapper__image-comp">
       <img src="./assets/images/seo_img/img_search_seo.png" alt="Поисковая оптимизация. Что мы предлагаем?" class="image__comp">
     </div>
-    <div class="wrapper__text-comp">
+    <div id="belle_scroll" class="wrapper__text-comp">
       <h3 class="label__text-comp">
         Поисковая оптимизация. Что мы предлагаем?
       </h3>
@@ -94,11 +99,6 @@
     </div>
   </div>
 </div>
-
-<!--main end-->
-
-<!--accordion start 3 page-->
-
 <div class="container__accordeon">
   <div class="wrapper__title-accordeon">
     <h3 class="title__accordeon">Как мы работаем?​</h3>
@@ -186,10 +186,6 @@
     </div>
   </div>
 </div>
-<!--accordion end-->
-
-<!--table start 4 page-->
-
 <div class="container__">
   <div class="wrapper__title-table">
     <h3 class="table__title">Стоимость услуг</h3>
@@ -230,11 +226,6 @@
     </div>
   </div>
 </div>
-
-<!--table end-->
-
-<!--cards start 5 page-->
-
 <div class="container__card">
   <div class="container__card-title">
     <h3 class="card__title-cup">Чем SEO отличается от других инструментов продвижения?</h3>
@@ -263,15 +254,10 @@
     </div>
   </div>
 </div>
-
-<!--card end-->
-
-<!--result start 6 page-->
-
 <div class="container__backgrnd">
   <h3 class="result__title">В конце мы ответим на часто задаваемые вопросы</h3>
   <div class="result__container">
-    <div class="result__text-container">
+    <div id="belle_scroll" class="result__text-container">
       <h3 class="result__text-ladel">Что такое оптимизация сайта (SEO)?</h3>
       <p class="result__text-line">Оптимизация сайта включает в себя определенный фронт работ по изменению и улучшению (непосредственно на сайте и за его пределами), которые делают сайт более заметным в поисковых системах Google, Yandex, Bing и др., и, соответственно, более полезным для посетителей.</p>
       <span class="block__element">_____</span>
@@ -286,13 +272,7 @@
     </div>
   </div>
 </div>
-
-<!--result end-->
-
-<!--content start-->
-
-
-<section class="content-clients">
+<div class="content-clients">
   <div class="content-clients__wrapper">
     <p class="content-clients__subtitle">
       Клиенты, которые нам доверяют​
@@ -335,7 +315,7 @@
       </div>
       <div class="content-clients_item">
         <img
-          class="content-clients_img"
+          class="content-clients_img content-clients_img__size"
           src="./assets/images/Header_footer_img/sales_force.png"
           alt=""
         />
@@ -354,7 +334,7 @@
           alt=""
         />
       </div>
-      <div class="content-clients_item">
+      <div class="content-clients_item content-clients_item__position">
         <img
           class="content-clients_img"
           src="./assets/images/Header_footer_img/zendesk.png"
@@ -379,73 +359,70 @@
       <p class="content-call__tel">+371 0000 0000</p>
     </div>
   </div>
-</section>
-
-<!--content end-->
-
-<!--footer start-->
-
-
+</div>
 <footer class="footer">
   <div class="footer__wrapper">
     <div class="footer-content">
       <div class="footer-contacts">
         <div class="footer-logo">
           <img
-        class="footer-logo__img"
-        src="./assets/images/Header_footer_img/logo_footer.svg"
-        alt=""
-        />
-      </div>
+            class="footer-logo__img"
+            src="./assets/images/Header_footer_img/logo_footer.svg"
+            alt=""
+          />
+        </div>
         <div class="footer-contacts__tel footer-contacts__tel-first">
           <p class="footer-contacts__text">Телефон</p>
           <p class="footer-contacts__tel-num">+001 987-654-3210</p>
         </div>
-        <div class="footer-contacts__tel-num footer-contacts__tel-second">+001 987-654-3210</div>
+        <div class="footer-contacts__tel-num footer-contacts__tel-second">
+          +001 987-654-3210
+        </div>
         <div class="footer-contacts__email">
           <p class="footer-contacts__text">Email</p>
           <p class="footer-contacts__email-adress">info@example.com</p>
         </div>
         <div class="footer-contacts__adress">
           <p class="footer-contacts__text">Адрес</p>
-          <p class="footer-contacts__adress-text">123/B, Route 66, Downtown, Washington, DC 20004, US​</p>
+          <p class="footer-contacts__adress-text">
+            123/B, Route 66, Downtown, Washington, DC 20004, US​
+          </p>
         </div>
-        <div class="footer-contacts__map">
-        </div>
+        <div class="footer-contacts__map"></div>
       </div>
       <div class="footer-form">
         <form action="#" method="post">
           <p class="footer-form__title">Есть вопросы?</p>
-          <p class="form__subtitle">
-            Свяжитесь с нами</p>
-            <input
-              class="form-item"
-              id="input-name"
-              type="text"
-              placeholder="Имя"
-            />
-            <input
-              class="form-item"
-              id="input-email"
-              type="email"
-              placeholder="Email"
-            />
-            <input
-              class="form-item"
-              id="input-tel"
-              type="tel"
-              placeholder="+7 999 999 99 99"
-            />
-            <textarea
-              class="form-message"
-              name=""
-              id=""
-              placeholder="Ваше сообщение"
-            ></textarea>
-          </p>
+          <p class="form__subtitle">Свяжитесь с нами</p>
+          <input
+            class="form-item"
+            id="footer_input-name"
+            type="text"
+            placeholder="Имя"
+          />
+          <input
+            class="form-item"
+            id="footer_input-email"
+            type="email"
+            placeholder="Email"
+          />
+          <input
+            class="form-item"
+            id="footer_input-tel"
+            type="tel"
+            placeholder="+7 999 999 99 99"
+          />
+          <textarea
+            class="form-message"
+            name="form-message"
+            id="footer_your-message"
+            placeholder="Ваше сообщение"
+          ></textarea>
 
           <div class="form-items">
-            <button id="" class="form-button">Отправить</button>
+            <button id="footer_send-button" class="form-button">
+              Отправить
+            </button>
             <div class="form-checkbox">
               <input class="checkbox-item" type="checkbox" />
               <p class="checkbox-text">
@@ -461,10 +438,10 @@
     </div>
     <p class="watermark">SIA OL © Visas tiesības aizsargātas 2021</p>
   </div>
-  
 </footer>
-
-<!--footer end-->
-
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<script src="./assets/js/main_js/main.js"></script>
 </body>
 </html>
