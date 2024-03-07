@@ -5,50 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Roboto:wght@400;700&display=swap"/>
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/reset.css" />
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/slick.css" />
+    <link rel="stylesheet" href="./assets/styles/slick-theme.css" />
     <link rel="stylesheet" href="./assets/styles/seo_style/seoStyle.css" />
     <title>SEO</title>
     </head>
-
     <body>
-
-<!--header start 1 page -->
-
-    <!-- <div class="header__backgrn"> -->
+<div class="header__backgrn">
       <div class="container">
         <header class="header">
           <div class="header-top">
             <img
-              class="header-logo"
+              class="header-logo header-logo__white"
               src="./assets/images/Header_footer_img/logo_header.svg"
-              alt="header logo"
+              alt=""
+            />
+            <img
+              class="header-logo header-logo__dark"
+              src="./assets/images/Header_footer_img/logo_dark.svg"
+              alt=""
             />
             <div class="header-wrapper">
               <nav class="header-nav">
                 <ul class="header-nav__items">
                   <li class="header-nav__item">
-                  <a class="header-nav__link" href="index.html">Главная</a>
-                </li>
-                <li class="header-nav__item">
-                  <a class="header-nav__link" href="about.html">О нас</a>
-                </li>
-                <li class="header-nav__item">
-                  <a class="header-nav__link" href="adwords.html"
-                    >Google Adwords</a
-                  >
-                </li>
-                <li class="header-nav__item">
-                  <a class="header-nav__link" href="smm.html">SMM</a>
-                </li>
-                <li class="header-nav__item">
-                  <a class="header-nav__link" href="seo.html">SEO</a>
-                </li>
-                <li class="header-nav__item">
-                  <a class="header-nav__link" href="contacts.html">Контакты</a>
-                </li>
+                    <a class="header-nav__link" href="index.html">Главная</a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a class="header-nav__link" href="about.html"
+                      >О нас</a
+                    >
+                  </li>
+                  <li class="header-nav__item">
+                    <a class="header-nav__link" href="adwords.html"
+                      >Google Adwords</a
+                    >
+                  </li>
+                  <li class="header-nav__item">
+                    <a class="header-nav__link" href="smm.html">SMM</a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a class="header-nav__link active-page" href="seo.html">SEO</a>
+                  </li>
+                  <li class="header-nav__item">
+                    <a class="header-nav__link" href="contacts.html">Контакты</a>
+                  </li>
                 </ul>
               </nav>
               <div class="header-top__buttons">
@@ -58,6 +66,9 @@
                 <button class="header-top__button header-top__lang">LV</button>
               </div>
             </div>
+            <div class="burger">
+              <span></span>
+            </div>
           </div>
           <div class="header__title-box">
             <div class="header__title">Оптимизация сайта SEO</div>
@@ -65,18 +76,13 @@
           </div>
         </header>
       </div>
-    <!-- </div> -->
-
-<!--header end-->
-
-<!--main start 2 page-->
-
+</div>
 <div class="container__main">
   <div class="wrapper__main">
     <div class="wrapper__image-comp">
       <img src="./assets/images/seo_img/img_search_seo.png" alt="Поисковая оптимизация. Что мы предлагаем?" class="image__comp">
     </div>
-    <div class="wrapper__text-comp">
+    <div id="belle_scroll" class="wrapper__text-comp">
       <h3 class="label__text-comp">
         Поисковая оптимизация. Что мы предлагаем?
       </h3>
@@ -94,133 +100,271 @@
     </div>
   </div>
 </div>
-
-<!--main end-->
-
-<!--accordion start 3 page-->
-
 <div class="container__accordeon">
   <div class="wrapper__title-accordeon">
     <h3 class="title__accordeon">Как мы работаем?​</h3>
-  </div>
-  <div class="wrapper__accordeon">
-    <div class="wrapper__icon-minus">
-      <img src="./assets/images/seo_img/icon_minus.png" alt="icon_minus" class="image__icon-minus">
-      <div class="wrapper__icon-plus">
-        <img src="./assets/images/seo_img/icon__plus.png" alt="icon_plus" class="image__icon-plus">
+    <div class="betefits__list">
+      <div class="benefits__collapsible">
+        <input type="checkbox" id="collapse-1" checked />
+        <label
+          class="collapse-summary benefits__information"
+          for="collapse-1"
+        >
+          <div class="collapse-button"></div>
+          <p class="collapse-button__title">Проводим аудит сайта​</p>
+        </label>
+        <div class="collapse-details">
+          <p>
+            На первом этапе работы мы будем изучать и анализировать текущую ситуацию вашего сайта:
+          </p>
+          <ul class="wrapper__minus-line">
+            <li class="text__minus li__line"><span class="clr_text">Правильность составленных заголовков, описаний и семантического ядра (ключевых запросов)</span></li>
+            <li class="text__minus li__line"><span class="clr_text">Уникальность размещенных на сайте текстов</span></li>
+            <li class="text__minus li__line"><span class="clr_text">Читаемость информации с точки зрения поисковых роботов и реальных посетителей сайта</span></li>
+          </ul>
+        </div>
       </div>
-      <div class="wrapper__icon-plus">
-        <img src="./assets/images/seo_img/icon__plus.png" alt="icon_plus" class="image__icon-plus">
+      <div class="benefits__collapsible">
+        <input type="checkbox" id="collapse-2" />
+        <label
+          class="collapse-summary benefits__information"
+          for="collapse-2"
+        >
+          <div class="collapse-button"></div>
+          <p class="collapse-button__title">
+            Исправление ошибок на сайте
+          ​</p>
+        </label>
+        <div class="collapse-details">
+          <p>Текст</p>
+        </div>
       </div>
-      <div class="wrapper__icon-plus">
-        <img src="./assets/images/seo_img/icon__plus.png" alt="icon_plus" class="image__icon-plus">
+      <div class="benefits__collapsible">
+        <input type="checkbox" id="collapse-3" />
+        <label
+          class="collapse-summary benefits__information"
+          for="collapse-3"
+        >
+          <div class="collapse-button"></div>
+          <p class="collapse-button__title">
+            Внутренняя оптимизация
+          </p>
+        </label>
+        <div class="collapse-details">
+          <p>Текст</p>
+        </div>
       </div>
-      <div class="wrapper__icon-plus">
-        <img src="./assets/images/seo_img/icon__plus.png" alt="icon_plus" class="image__icon-plus">
+      <div class="benefits__collapsible">
+        <input type="checkbox" id="collapse-4" />
+        <label
+          class="collapse-summary benefits__information"
+          for="collapse-4"
+        >
+          <div class="collapse-button"></div>
+          <p class="collapse-button__title">
+            Внешняя оптимизация
+          ​</p>
+        </label>
+        <div class="collapse-details">
+          <p>Текст</p>
+        </div>
       </div>
-    </div>
-    <div class="wrapper__text-plus-minus">
-      <p class="title__plus-minus">Проводим аудит сайта</p>
-      <p class="text__minus">На первом этапе работы мы будем изучать и анализировать текущую ситуацию вашего сайта: </p>
-        <ul class="wrapper__minus-line">
-          <li class="text__minus li__line"><span class="clr_text">Правильность составленных заголовков, описаний и семантического ядра (ключевых запросов)</span></li>
-          <li class="text__minus li__line"><span class="clr_text">Уникальность размещенных на сайте текстов</span></li>
-          <li class="text__minus li__line"><span class="clr_text">Читаемость информации с точки зрения поисковых роботов и реальных посетителей сайта</span></li>
-        </ul>
-        <p class="title__plus-minus plus__line">Исправление ошибок на сайте</p>
-        <p class="title__plus-minus plus__line">Внутренняя оптимизация</p>
-        <p class="title__plus-minus plus__line">Внешняя оптимизация</p>
-        <p class="title__plus-minus plus__line">Реализация проекта</p>
+      <div class="benefits__collapsible">
+        <input type="checkbox" id="collapse-5" />
+        <label
+          class="collapse-summary benefits__information"
+          for="collapse-5"
+        >
+          <div class="collapse-button"></div>
+          <p class="collapse-button__title">
+            Реализация проекта
+          ​</p>
+        </label>
+        <div class="collapse-details">
+          <p>Текст</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-<!--accordion end-->
-
-<!--table start 4 page-->
-
 <div class="container__">
   <div class="wrapper__title-table">
     <h3 class="table__title">Стоимость услуг</h3>
   </div>
   <div class="wrapper__">
     <div class="column__service">
-      <p class="first-column">Услуга</p>
-      <p class="text__column column-grey">SEO-аудит</p>
-      <p class="text__column">Технический аудит сайта</p>
-      <p class="text__column column-grey">Сбор семантического ядра</p>
-      <p class="text__column">Исправление ошибок на сайте</p>
-      <p class="text__column column-grey">Комплексная оптимизация страниц под семантическое ядро</p>
-      <p class="text__column">Формирование оптимизированной структуры</p>
-      <p class="text__column column-grey">SEO-копирайтинг</p>
-      <p class="text__column">Реализация проекта</p>
+      <p id="one_clm" class="first-column">Услуга</p>
+      <p id="one_clm" class="text__column column-grey">SEO-аудит</p>
+      <p id="three_clm" class="text__column">Технический аудит сайта</p>
+      <p id="three_clm" class="text__column column-grey">Сбор семантического ядра</p>
+      <p id="five_clm" class="text__column">Исправление ошибок на сайте</p>
+      <p id="six_clm" class="text__column column-grey">Комплексная оптимизация страниц под семантическое ядро</p>
+      <p id="three_clm" class="text__column">Формирование оптимизированной структуры</p>
+      <p id="eight_clm" class="text__column column-grey">SEO-копирайтинг</p>
+      <p id="five_clm" class="text__column">Реализация проекта</p>
     </div>
     <div class="column__work">
-      <p class="first-column">Объем работ</p>
-      <p class="text__column column-grey">от 10 часов</p>
-      <p class="text__column">весь сайт</p>
-      <p class="text__column column-grey">от 30 запросов</p>
-      <p class="text__column">весь сайт</p>
-      <p class="text__column column-grey">весь сайт</p>
-      <p class="text__column">весь сайт</p>
-      <p class="text__column column-grey">определенные абзацы, страницы или весь сайт</p>
-      <p class="text__column">весь сайт</p>
+      <p id="one_clm" class="first-column">Объем работ</p>
+      <p id="one_clm" class="text__column column-grey">от 10 часов</p>
+      <p id="three_clm" class="text__column">весь сайт</p>
+      <p id="three_clm" class="text__column column-grey">от 30 запросов</p>
+      <p id="five_clm" class="text__column">весь сайт</p>
+      <p id="six_clm" class="text__column column-grey">весь сайт</p>
+      <p id="three_clm" class="text__column">весь сайт</p>
+      <p id="eight_clm" class="text__column column-grey">определенные абзацы, страницы или весь сайт</p>
+      <p id="five_clm" class="text__column">весь сайт</p>
     </div>
     <div class="column__price">
-      <p class="first-column">Стоимость</p>
-      <p class="text__column column-grey">от 0 EUR</p>
-      <p class="text__column">от 0 EUR</p>
-      <p class="text__column column-grey">от 0 EUR</p>
-      <p class="text__column">от 0 EUR</p>
-      <p class="text__column column-grey">от 0 EUR</p>
-      <p class="text__column">от 0 EUR</p>
-      <p class="text__column column-grey">от 0 EUR</p>
-      <p class="text__column last-column">Бесценно</p>
+      <p id="one_clm" class="first-column">Стоимость</p>
+      <p id="one_clm" class="text__column column-grey">от 0 EUR</p>
+      <p id="three_clm"class="text__column">от 0 EUR</p>
+      <p id="three_clm" class="text__column column-grey">от 0 EUR</p>
+      <p id="five_clm" class="text__column">от 0 EUR</p>
+      <p id="six_clm" class="text__column column-grey">от 0 EUR</p>
+      <p id="three_clm" class="text__column">от 0 EUR</p>
+      <p id="eight_clm" class="text__column column-grey">от 0 EUR</p>
+      <p id="five_clm" class="text__column last-column">Бесценно</p>
     </div>
   </div>
 </div>
+    <div class="container__card">
+      <div class="container__card-title">
+        <h3 class="card__title-cup">Чем SEO отличается от других инструментов продвижения?</h3>
+      </div>
+      <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="btn-my active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    class="btn-my"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    class="btn-my"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="3"
+                    class="btn-my"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="container-offer__box-items d-block w-100">
+                      <div class="container-offer__box-img">
+                        <img id="cup__image" src="./assets/images/seo_img/icon_cup.png" alt="Долгосрочный результат"/>
+                      </div>
+                      <div class="container-offer__box-content">
+                        <p class="container-offer__box-title">
+                          Долгосрочный результат
+                        </p>
+                        <p class="container-offer__box-text">
+                          Пожалуй, самое главное - долгосрочность результатов. После того, как комплекс работ по поисковой оптимизации выведет ваш сайт на более высокие позиции выдачи поисковых систем, то можно с уверенностью сказать, что вы надолго останетесь там, при условии, что будете продолжать работу над поисковой оптимизацией, не забывая про другие эффективные методы продвижения. Помните, только комплекс продвижения будет приносить постоянные результаты.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-<!--table end-->
-
-<!--cards start 5 page-->
-
-<div class="container__card">
-  <div class="container__card-title">
-    <h3 class="card__title-cup">Чем SEO отличается от других инструментов продвижения?</h3>
-  </div>
-  <div class="wrapper__card">
-    <div class="wrapper__cup">
-      <img src="./assets/images/seo_img/icon_cup.png" alt="Долгосрочный результат" class="cup__image">
-      <h3 class="little__card-title">
-        Долгосрочный результат
-      </h3>
-      <p class="little__card-line">Пожалуй, самое главное - долгосрочность результатов. После того, как комплекс работ по поисковой оптимизации выведет ваш сайт на более высокие позиции выдачи поисковых систем, то можно с уверенностью сказать, что вы надолго останетесь там, при условии, что будете продолжать работу над поисковой оптимизацией, не забывая про другие эффективные методы продвижения. Помните, только комплекс продвижения будет приносить постоянные результаты.</p>
-    </div>
-    <div class="wrapper__cup">
-      <img src="./assets/images/seo_img/icon_like.png" alt="Доверие людей" class="cup__image">
-      <h3 class="little__card-title">
-        Доверие людей
-      </h3>
-      <p class="little__card-line">Будем откровенны, люди больше доверяют органике, нежели рекламным сообщениям. На подсознательном уровне заложено то, что компании, которые появляются на первых 2-3 страницах выдачи Google, Yandex и др. являются неким эталоном надежности и бесопасны для клиента (клиенты определенно предполагают, что такая компания давно на рынке, определенно у нее большой и компетентный штат сотрудников и т.д.).</p>
-    </div>
-    <div class="wrapper__cup">
-      <img src="./assets/images/seo_img/icon_euro.png" alt="Низкая стоимость клиента ​" class="cup__image">
-      <h3 class="little__card-title">
-        Низкая стоимость клиента ​
-      </h3>
-      <p class="little__card-line">Определенно, вы будете конкурировать с рекламными сообщениями в Google или Yandex. Но если ваш сайт находится на высоких позициях выдачи, то потенциальный клиент его с большей доли вероятности посетит, так как все изучают множество предложений перед покупкой. Находясь на высоких позициях вы можете получать клиента с более скромными бюджетами на рекламу или вообще не вкладываясь в рекламы (но этого делать мы искренне не советуем) нежели конкуренты.</p>
-    </div>
+                  <div class="carousel-item">
+                    <div class="container-offer__box-items d-block w-100">
+                      <div class="container-offer__box-img">
+                        <img src="./assets/images/seo_img/icon_like.png" alt="Доверие людей" id="cup__image"/>
+                      </div>
+                      <div class="container-offer__box-content">
+                        <p class="container-offer__box-title">Доверие людей</p>
+                        <p class="container-offer__box-text">
+                          Будем откровенны, люди больше доверяют органике, нежели рекламным сообщениям. На подсознательном уровне заложено то, что компании, которые появляются на первых 2-3 страницах выдачи Google, Yandex и др. являются неким эталоном надежности и бесопасны для клиента (клиенты определенно предполагают, что такая компания давно на рынке, определенно у нее большой и компетентный штат сотрудников и т.д.).
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container-offer__box-items d-block w-100">
+                      <div class="container-offer__box-img">
+                        <img id="cup__image" src="./assets/images/seo_img/icon_euro.png" alt="Низкая стоимость клиента ​"/>
+                      </div>
+                      <div class="container-offer__box-content">
+                        <p class="container-offer__box-title">Низкая стоимость клиента</p>
+                        <p class="container-offer__box-text">
+                          Определенно, вы будете конкурировать с рекламными сообщениями в Google или Yandex. Но если ваш сайт находится на высоких позициях выдачи, то потенциальный клиент его с большей доли вероятности посетит, так как все изучают множество предложений перед покупкой. Находясь на высоких позициях вы можете получать клиента с более скромными бюджетами на рекламу или вообще не вкладываясь в рекламы (но этого делать мы искренне не советуем) нежели конкуренты.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon" aria-hidden="true"
+                    ><img src="./assets/images/adwords_img/prev.png" alt=""
+                  /></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon" aria-hidden="true"
+                    ><img src="./assets/images/adwords_img/next.png" alt=""
+                  /></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+      <div id="wrapper__card" class="wrapper__card">
+        <div class="wrapper__cup">
+          <img src="./assets/images/seo_img/icon_cup.png" alt="Долгосрочный результат" class="cup__image">
+          <h3 class="little__card-title">
+            Долгосрочный результат
+          </h3>
+          <p class="little__card-line">Пожалуй, самое главное - долгосрочность результатов. После того, как комплекс работ по поисковой оптимизации выведет ваш сайт на более высокие позиции выдачи поисковых систем, то можно с уверенностью сказать, что вы надолго останетесь там, при условии, что будете продолжать работу над поисковой оптимизацией, не забывая про другие эффективные методы продвижения. Помните, только комплекс продвижения будет приносить постоянные результаты.</p>
+        </div>
+        <div class="wrapper__cup">
+          <img src="./assets/images/seo_img/icon_like.png" alt="Доверие людей" class="cup__image">
+          <h3 class="little__card-title">
+            Доверие людей
+          </h3>
+          <p class="little__card-line">Будем откровенны, люди больше доверяют органике, нежели рекламным сообщениям. На подсознательном уровне заложено то, что компании, которые появляются на первых 2-3 страницах выдачи Google, Yandex и др. являются неким эталоном надежности и бесопасны для клиента (клиенты определенно предполагают, что такая компания давно на рынке, определенно у нее большой и компетентный штат сотрудников и т.д.).</p>
+        </div>
+        <div class="wrapper__cup">
+          <img src="./assets/images/seo_img/icon_euro.png" alt="Низкая стоимость клиента ​" class="cup__image">
+          <h3 class="little__card-title">
+            Низкая стоимость клиента ​
+          </h3>
+          <p class="little__card-line">Определенно, вы будете конкурировать с рекламными сообщениями в Google или Yandex. Но если ваш сайт находится на высоких позициях выдачи, то потенциальный клиент его с большей доли вероятности посетит, так как все изучают множество предложений перед покупкой. Находясь на высоких позициях вы можете получать клиента с более скромными бюджетами на рекламу или вообще не вкладываясь в рекламы (но этого делать мы искренне не советуем) нежели конкуренты.</p>
+        </div>
+      </div>
+    </div>    
   </div>
 </div>
-
-<!--card end-->
-
-<!--result start 6 page-->
 
 <div class="container__backgrnd">
   <h3 class="result__title">В конце мы ответим на часто задаваемые вопросы</h3>
   <div class="result__container">
-    <div class="result__text-container">
+    <div id="belle_scroll" class="result__text-container">
       <h3 class="result__text-ladel">Что такое оптимизация сайта (SEO)?</h3>
       <p class="result__text-line">Оптимизация сайта включает в себя определенный фронт работ по изменению и улучшению (непосредственно на сайте и за его пределами), которые делают сайт более заметным в поисковых системах Google, Yandex, Bing и др., и, соответственно, более полезным для посетителей.</p>
       <span class="block__element">_____</span>
@@ -235,13 +379,7 @@
     </div>
   </div>
 </div>
-
-<!--result end-->
-
-<!--content start-->
-
-
-<section class="content-clients">
+<div class="content-clients">
   <div class="content-clients__wrapper">
     <p class="content-clients__subtitle">
       Клиенты, которые нам доверяют​
@@ -284,7 +422,7 @@
       </div>
       <div class="content-clients_item">
         <img
-          class="content-clients_img"
+          class="content-clients_img content-clients_img__size"
           src="./assets/images/Header_footer_img/sales_force.png"
           alt=""
         />
@@ -303,7 +441,7 @@
           alt=""
         />
       </div>
-      <div class="content-clients_item">
+      <div class="content-clients_item content-clients_item__position">
         <img
           class="content-clients_img"
           src="./assets/images/Header_footer_img/zendesk.png"
@@ -328,73 +466,70 @@
       <p class="content-call__tel">+371 0000 0000</p>
     </div>
   </div>
-</section>
-
-<!--content end-->
-
-<!--footer start-->
-
-
+</div>
 <footer class="footer">
   <div class="footer__wrapper">
     <div class="footer-content">
       <div class="footer-contacts">
         <div class="footer-logo">
           <img
-        class="footer-logo__img"
-        src="./assets/images/Header_footer_img/logo_footer.svg"
-        alt=""
-        />
-      </div>
+            class="footer-logo__img"
+            src="./assets/images/Header_footer_img/logo_footer.svg"
+            alt=""
+          />
+        </div>
         <div class="footer-contacts__tel footer-contacts__tel-first">
           <p class="footer-contacts__text">Телефон</p>
           <p class="footer-contacts__tel-num">+001 987-654-3210</p>
         </div>
-        <div class="footer-contacts__tel-num footer-contacts__tel-second">+001 987-654-3210</div>
+        <div class="footer-contacts__tel-num footer-contacts__tel-second">
+          +001 987-654-3210
+        </div>
         <div class="footer-contacts__email">
           <p class="footer-contacts__text">Email</p>
           <p class="footer-contacts__email-adress">info@example.com</p>
         </div>
         <div class="footer-contacts__adress">
           <p class="footer-contacts__text">Адрес</p>
-          <p class="footer-contacts__adress-text">123/B, Route 66, Downtown, Washington, DC 20004, US​</p>
+          <p class="footer-contacts__adress-text">
+            123/B, Route 66, Downtown, Washington, DC 20004, US​
+          </p>
         </div>
-        <div class="footer-contacts__map">
-        </div>
+        <div class="footer-contacts__map"></div>
       </div>
       <div class="footer-form">
         <form action="#" method="post">
           <p class="footer-form__title">Есть вопросы?</p>
-          <p class="form__subtitle">
-            Свяжитесь с нами</p>
-            <input
-              class="form-item"
-              id="input-name"
-              type="text"
-              placeholder="Имя"
-            />
-            <input
-              class="form-item"
-              id="input-email"
-              type="email"
-              placeholder="Email"
-            />
-            <input
-              class="form-item"
-              id="input-tel"
-              type="tel"
-              placeholder="+7 999 999 99 99"
-            />
-            <textarea
-              class="form-message"
-              name=""
-              id=""
-              placeholder="Ваше сообщение"
-            ></textarea>
-          </p>
+          <p class="form__subtitle">Свяжитесь с нами</p>
+          <input
+            class="form-item"
+            id="footer_input-name"
+            type="text"
+            placeholder="Имя"
+          />
+          <input
+            class="form-item"
+            id="footer_input-email"
+            type="email"
+            placeholder="Email"
+          />
+          <input
+            class="form-item"
+            id="footer_input-tel"
+            type="tel"
+            placeholder="+7 999 999 99 99"
+          />
+          <textarea
+            class="form-message"
+            name="form-message"
+            id="footer_your-message"
+            placeholder="Ваше сообщение"
+          ></textarea>
 
           <div class="form-items">
-            <button id="" class="form-button">Отправить</button>
+            <button id="footer_send-button" class="form-button">
+              Отправить
+            </button>
             <div class="form-checkbox">
               <input class="checkbox-item" type="checkbox" />
               <p class="checkbox-text">
@@ -410,10 +545,13 @@
     </div>
     <p class="watermark">SIA OL © Visas tiesības aizsargātas 2021</p>
   </div>
-  
 </footer>
-
-<!--footer end-->
-
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<script src="./assets/js/main_js/main.js"></script>
 </body>
 </html>
