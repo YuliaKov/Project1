@@ -985,6 +985,7 @@
 @media screen and (max-width: 1440px) {
   .container__main {
     max-width: 1440px;
+    padding-right: 3%;
   }
 }
 .container__main .wrapper__main {
@@ -1799,7 +1800,8 @@
   }
   .wrapper__line-text {
     width: 100%;
-    height: 50%;
+    height: -moz-max-content;
+    height: max-content;
   }
   .container__accordeon {
     height: auto;
@@ -2095,7 +2097,6 @@
   }
   .container__ .wrapper__title-table {
     margin-bottom: 10%;
-    padding-top: 15%;
   }
   .container__ .wrapper__ {
     width: 92%;
@@ -2113,10 +2114,10 @@
     line-height: 16px;
   }
   .container__ .wrapper__ .column__service {
-    width: 50%;
+    width: 47%;
   }
   .container__ .wrapper__ .column__work {
-    width: 25%;
+    width: 28%;
   }
   .container__ .wrapper__ .column__price {
     width: 25%;
@@ -2224,5 +2225,15 @@
   }
   .carousel-indicators {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .container__main .wrapper__main .wrapper__image-comp .image__comp {
+    margin-left: 0;
+  }
+}
+@media (max-width: 400px) {
+  .header__title {
+    font-size: 32px;
   }
 }/*# sourceMappingURL=seoStyle.css.map */
